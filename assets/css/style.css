@@ -124,3 +124,25 @@ header i {
     box-shadow: 0.1em 0.1em 0.5em var(--black);
     outline: none;
 }
+
+/* ----------- Footer style */
+
+footer {
+    height: 8vh;
+    background-color: var(--black);
+    color: var(--light-grey);
+    position: relative;
+}
+
+footer i {
+    font-size: 6.3vh;
+    margin: 1vh;
+}
+
+footer span {
+    font-size: 0.7em;
+    position: absolute;
+    bottom: 0;
+    right: 1em;
+    max-width: 55%;
+}
