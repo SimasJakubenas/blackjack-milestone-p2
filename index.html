@@ -8,6 +8,59 @@
     <title>Simo's Blackjack</title>
 </head>
 <body>
+    <header></header>
+    <main>
+        <!-- Section that displays table with players name and remaining balance -->
+        <section id="display-info">
+            <table>
+                <tr>
+                    <th>Player</th>
+                    <td>x</td>
+                </tr>
+                <tr>
+                    <th>Balance</th>
+                    <td>$xxx</td>
+                </tr>
+            </table>
+        </section>
+        <!-- Dealers side of the field that displays dealers cards and card count -->
+        <section id="dealers-field">
+            <div id="dealers-count" class="count-box"></div>
+            <div id="dealers-card-container"></div>
+        </section>
+        <!-- Message field that lets the player know the outcome of the hand -->
+        <section id="message-field">
+            <h1 id="outcome-message"></h1>
+        </section>
+        <!-- Dealers side of the field that displays players cards and card count -->
+        <section id="players-field">
+            <div id="players-count" class="count-box"></div>
+            <div id="players-card-container"></div>
+        </section>
+        <!-- Section that displays a current bet -->
+        <section id="betting-field">
+            <div id="chip-count" class="count-box"></div>
+            <div id="chip-stack-container"></div>
+        </section>
+        <!-- Displays the selection of bet sizes -->
+        <section id="bet-selection">
+            <div id="bet-container">
+                <div id="50-chip" class="bet-chips"></div>
+                <div id="100-chip" class="bet-chips"></div>
+                <div id="200-chip" class="bet-chips"></div>
+                <div id="500-chip" class="bet-chips"></div>
+                <div id="1000-chip" class="bet-chips"></div>
+            </div>
+        </section>
+        <!-- Buttons that controls the flow of the game -->
+        <section id="game-controls">
+            <button id="deal-btn" class="control-btn betting-btn"></button>
+            <button id="reset-btn" class="control-btn betting-btn"></button>
+            <button id="hit-btn" class="control-btn play-btn"></button>
+            <button id="stand-btn" class="control-btn play-btn"></button>
+        </section>
+    </main>
+    <footer></footer>
 
     <script src="assets/js/script.js"></script>
 </body>
