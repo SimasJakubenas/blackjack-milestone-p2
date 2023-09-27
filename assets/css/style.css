@@ -45,3 +45,26 @@ body {
 a {
     background-color: rgba(0, 0, 0, 0);
 }
+
+/* ----------- Button style */
+
+/* ----------- Button style */
+
+.control-btn {
+    width: 6em;
+    height: 2em;
+    background-color:var(--red);
+    color: var(--light-grey);
+    font-family: 'Lalezar', cursive;
+    font-size: 1.2em;
+    margin: 0.5em;
+    border-radius: 0.3em;
+    border: 0.15em solid var(--black);
+    box-shadow: 0.1em 0.1em 0.3em var(--black);
+}
+
+.control-btn:hover, .control-btn:focus{
+    scale: 1.05;
+    box-shadow: 0.1em 0.1em 0.5em var(--black);
+    outline: none;
+}
