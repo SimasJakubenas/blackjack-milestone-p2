@@ -68,6 +68,26 @@ header i {
     right: 2vw;
 }
 
+/* ------------Betting field style */
+
+#bet-position-container {
+    width: 3em;
+    height: 1.7em;
+    background-color: rgba(221, 222, 198, 0.5);
+    border-radius: 0.05 solid black;
+    box-shadow: 0 0.15em 0.5em rgba(221, 222, 198, 1),
+                0 0.25em 0.6em black;
+    border-radius: 50%;
+    margin: 1em;
+}
+
+#bet-position {
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(rgba(187, 0, 0, 1), rgba(187, 0, 0, 0) 75%);
+    border-radius: 50%;
+}
+
 /* ------------Betting section style */
 
 #bet-section {
