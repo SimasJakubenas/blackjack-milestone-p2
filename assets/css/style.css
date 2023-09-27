@@ -46,7 +46,41 @@ a {
     background-color: rgba(0, 0, 0, 0);
 }
 
-/* ----------- Button style */
+/* ------------Betting section style */
+
+#bet-section {
+    width: 100%;
+    border-top: 0.15em solid var(--black);
+    border-bottom: 0.15em solid var(--black);
+    box-shadow: 0 0 15px;
+}
+
+#bet-container {
+    background-color: rgba(221, 222, 198, 0.7);
+    padding-top: 0.5em;
+    height: 4.3em;
+}
+
+.bet-chips button {
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    background-color: rgba(221, 222, 198, 0.7);
+}
+
+.bet-chips button:hover img, .bet-chips button:focus img {
+    translate: 0 -0.4em;
+    scale: 1.2;
+    transform-origin: left;
+    border-radius: 50%;
+    border: 0.2em solid yellow;
+    transform-origin: top;
+}
+
+.bet-chips img {
+    height: 3.8em;
+    margin: 0.1em 0.2em;
+}
 
 /* ----------- Button style */
 
