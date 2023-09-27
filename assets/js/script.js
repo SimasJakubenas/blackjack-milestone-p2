@@ -313,3 +313,63 @@ let cards = [
         image: "2diamonds.png"
     },
 ]
+
+function dealHand() {
+
+}
+
+function selectInitialCards() {
+
+}
+
+function displayInitialCards() {
+
+}
+
+function displayCardValuesSum() {
+
+}
+
+function buttonSwap() {
+
+}
+
+function dealerBlackjackCheck() {
+
+}
+
+function selectBetSize() {
+
+}
+
+function drawCard() {
+
+}
+
+function determineAceValue() {
+
+}
+
+function dealerDraw() {
+
+}
+
+function bet50() {
+
+}
+
+function bet100() {
+
+}
+
+function bet200() {
+
+}
+
+function bet500() {
+
+}
+
+function bet1000() {
+    
+}
