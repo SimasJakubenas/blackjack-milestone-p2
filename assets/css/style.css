@@ -46,6 +46,28 @@ a {
     background-color: rgba(0, 0, 0, 0);
 }
 
+/* ------------Header style */
+
+header {
+    height: 10vh;
+    background-color: var(--black);
+    justify-content: space-between;
+}
+
+header img {
+    height: 9vh;
+    margin-top: 0.5vh;
+    margin-left: 2vw;
+}
+
+header i {
+    color: var(--light-grey);
+    font-size: 6vh;
+    position: relative;
+    top: 2.2vh;
+    right: 2vw;
+}
+
 /* ------------Betting section style */
 
 #bet-section {
