@@ -86,3 +86,37 @@ Simos-Blackjack is for anyone looking to learn the game of blackjack or expand t
 ##### Future Development
 - FTU_06 As a first-time user, I want to hear the sounds of the game, so that I can be more engaged
 - RU_04 As a returning user, I want to find out what kind of conditions would make this game profitable, so that I can use it to my advantage
+
+#### Content Requirements and Feature Sets
+
+In the table bellow i tried to extract requirements for the site from user and developer stories and match those requirements with a set of features. Moreover I tried to follow agile approach where project features were split into sprints allowing for an early deployment of the project with basic controls of the game running. This permits the user the ability to test the game while I wonk on the second sprint.
+
+| Requirement | Feature | sprint |
+| -- | -- | -- |
+| Free and fun to play game of blackjack | A functional classic casino –style game of blackjack | 1 |
+| | Player and a dealer gets 2 cards. One of dealers cards is hidden | 1 |
+| | The total value of players cards is displayed on the screen | 1 |
+| | The total value of dealers cards is displayed on the screen | 1 |
+| Player is able to make choices of actions they want to take | The game is contolled via play buttons | 1 |
+| | Deal button starts the game | 1 |
+| | Hit button draws a new card | 1 | 
+| | Stand button passes the d=turn to dealer | 1 | 
+| | Split button beraks up the hand in to two separate games | 3 |
+| | Double button doubles the size of the bet and draws one card ony | 2 |
+| | Bet button brings the player back to the betting stage | 1 | 
+| Game elicits some kind of excitement and positive response | Player is able to select the sie of the bet | 1 |
+| | Player is able to place a bet by mix and maching chips | 3 |
+| | A game‘s outcome will result in player gaining/losing chips | 2 | 
+| | A game‘s number counter  might provide a way for the user to challenge themselves | 2 |
+| | Game outcome is displayed in the middle of the screen | 1 | 
+| The website provides extensive informatikon about the game | Game rules are provided in the menu | 1 |
+| | Optimal game strategy is provided in the menu | 1 | 
+| | Advanced concepts of the game and expected outcomes are provided in the menu | 1 | 
+| Engaging sound effects | Sound of placing a bet | 3 |
+| | Soud of drawing a card | 3 | 
+| | Mute all sound | 3 | 
+| Clear purpose of the website | User is greeted with a welcome message containing website logo and short description | 1 | 
+| Ease of navigating the website | Home page overlay that lets user to imput their name which brings them directly to the game | 1 | 
+| | Play buttons change depending on the game mode you‘re on | 1 | 
+| | Menu is classic ‘gear‘ icon in the top right corner exactly where one would expect it | 1 |
+| A way to reach out to the developer of the site | Foooter icons with links to my GitHub and LinkedIn in the footer | 1 |
