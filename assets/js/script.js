@@ -693,6 +693,22 @@ function bet500() {
     document.getElementById('chip-count').textContent = '500';
 }
 
+/**
+ * Clears current bet 
+ * Bets 1000$ chip
+ * Change displayed bet amount
+ */
 function bet1000() {
-    
+    // Creates variable and ssign it value of img
+    let bet1000Chips = document.createElement('img');
+
+    // Add attributes to bet1000Chips variable
+    bet1000Chips.src = "assets/images/chips/1000-slanted.png";
+    bet1000Chips.alt = "1000$ chip has been bet";
+    // Clears current bet and add an image of new bet
+    document.getElementById('bet-position').innerHTML = '';
+    document.getElementById('bet-position').appendChild(bet1000Chips);
+    // Changes chip count counter
+    betAmount = 1000;
+    document.getElementById('chip-count').textContent = '1000';
 }
