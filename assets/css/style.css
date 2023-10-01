@@ -88,6 +88,13 @@ header i {
     border-radius: 50%;
 }
 
+#bet-position img {
+    height: 2.7em;
+    position: relative;
+    top: -0.8em;
+    left: 0.15em;
+}
+
 /* ------------Betting section style */
 
 #bet-section {
