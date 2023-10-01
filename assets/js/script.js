@@ -314,6 +314,30 @@ let cards = [
     },
 ]
 
+// Loads the page before adding event listeners to game buttons and chip selection
+window.onload = function() {
+    //Control button calls function on click
+    let deal = document.getElementById('deal-btn')
+    deal.addEventListener('click', startGame);
+    let hit = document.getElementById('hit-btn')
+    hit.addEventListener('click', drawCard);
+    let stand = document.getElementById('stand-btn')
+    stand.addEventListener('click', dealerDraw);
+    let bet = document.getElementById('bet-btn')
+    bet.addEventListener('click', selectBetSize);
+    //Chip selecton calls function on click
+    let chip50 = document.getElementById('50-chip')
+    chip50.addEventListener('click', bet50);
+    let chip100 = document.getElementById('100-chip')
+    chip100.addEventListener('click', bet100);
+    let chip200 = document.getElementById('200-chip')
+    chip200.addEventListener('click', bet200);
+    let chip500 = document.getElementById('500-chip')
+    chip500.addEventListener('click', bet500);
+    let chip1000 = document.getElementById('1000-chip')
+    chip1000.addEventListener('click', bet1000);
+}
+
 function dealHand() {
 
 }
