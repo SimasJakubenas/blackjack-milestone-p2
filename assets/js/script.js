@@ -353,6 +353,7 @@ function dealHand() {
     displayInitialCards()
     displayCardValuesSum()
     buttonSwap()
+    dealerBlackjackCheck()
 }
 
 /** Randomises numbers to select cards from cards array
@@ -436,8 +437,30 @@ function buttonSwap() {
     document.getElementById('bet-section').style.visibility ='hidden'; // Hide chip selection section
 }
 
+/**
+ * When player hits Blackjack this checks if dealer has an ace, if so
+ * it checks the second dealer cards incase dealer has Blackjack also
+ */
 function dealerBlackjackCheck() {
-
+    if (playerSum === 21) { // If player has Blackjack
+        // Hides hit and stand buttons, reveals bet button
+        document.getElementById('hit-btn').style.display ='none';
+        document.getElementById('stand-btn').style.display ='none';
+        document.getElementById('bet-btn').style.display ='unset';
+        if (dealerSum === 11) { // If dealer has an ace the second card is checked
+            displayReverseCard.src = `assets/images/cards/${dealerCards[1].image}`;
+            // Calculates dealer sum
+            dealerSum += dealerCards[1].value;
+            document.getElementById('dealers-count').textContent = dealerSum;
+            if (dealerSum === 21) { // If dealer has Blackjack it's a draw
+                console.log('push') 
+            } else { // Player wins if the second card does not have value of 10
+                console.log('you win') 
+            }
+        } else { // Player wins if dealer does not have an ace
+            console.log('you win')
+        }
+    }
 }
 
 function selectBetSize() {
