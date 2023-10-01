@@ -77,22 +77,23 @@ header i {
     transform: rotateX(15deg);
 }
 
-#players-card-container {
+#players-card-container, #dealers-card-container {
     position: relative;
     height: 10em;
 }
 
-#players-card-container img:nth-child(1), #players-card-container img:nth-child(2) {
+#players-card-container img:nth-child(1), #players-card-container img:nth-child(2),
+#dealers-card-container img:nth-child(1), #dealers-card-container img:nth-child(2) {
     position: absolute;
     transform-origin: bottom left;
 }
 
-#players-card-container img:nth-child(1) {
+#players-card-container img:nth-child(1), #dealers-card-container img:nth-child(1) {
     right: 0.5em;
     transform: rotate3d(-2, -1, 1, -15deg);
 }
 
-#players-card-container img:nth-child(2) {
+#players-card-container img:nth-child(2), #dealers-card-container img:nth-child(2) {
     right: -1.5em;
     transform: rotate3d(-2, -1, 1, -10deg);
 }
