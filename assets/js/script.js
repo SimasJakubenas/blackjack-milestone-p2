@@ -322,7 +322,7 @@ let dealerCards = [];
 window.onload = function() {
     //Control button calls function on click
     let deal = document.getElementById('deal-btn')
-    deal.addEventListener('click', startGame);
+    deal.addEventListener('click', dealHand);
     let hit = document.getElementById('hit-btn')
     hit.addEventListener('click', drawCard);
     let stand = document.getElementById('stand-btn')
