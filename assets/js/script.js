@@ -349,6 +349,9 @@ window.onload = function() {
     chip1000.addEventListener('click', bet1000);
 }
 
+/** Main game function was is called when 'deal' button is pressed
+ * Contains all the game logic functions 
+ */
 function dealHand() {
     // Checks if bet has been placed
     if (betAmount > 0) {
