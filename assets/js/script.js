@@ -320,6 +320,7 @@ let dealerCards = [];
 
 let playerSum = 0;
 let dealerSum = 0;
+let betAmount = 0;
 
 let newAceValue = { name: "ace", value: 1}; // Changes ace value to 1
 let displayReverseCard = document.createElement('img'); // Dealers reverse card
@@ -349,12 +350,17 @@ window.onload = function() {
 }
 
 function dealHand() {
-    selectInitialCards()
-    displayInitialCards()
-    displayCardValuesSum()
-    buttonSwap()
-    dealerBlackjackCheck()
-    playerAceValue()
+    // Checks if bet has been placed
+    if (betAmount > 0) {
+        selectInitialCards()
+        displayInitialCards()
+        displayCardValuesSum()
+        buttonSwap()
+        dealerBlackjackCheck()
+        playerAceValue()
+    } else { // If bet has not been placed displays a message
+        console.log('select bet');
+    }
 }
 
 /** Randomises numbers to select cards from cards array
