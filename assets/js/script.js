@@ -613,8 +613,24 @@ function dealerDraw() {
     document.getElementById('bet-btn').style.display ='unset';
 }
 
+/**
+ * Clears current bet 
+ * Bets 50$ chip
+ * Change displayed bet amount
+ */
 function bet50() {
+    // Creates variable and ssign it value of img
+    let bet50Chips = document.createElement('img');
 
+    // Add attributes to bet50Chips variable
+    bet50Chips.src = "assets/images/chips/50-slanted.png";
+    bet50Chips.alt = "50$ chip has been bet";
+    // Clears current bet and add an image of new bet
+    document.getElementById('bet-position').innerHTML = '';
+    document.getElementById('bet-position').appendChild(bet50Chips);
+    // Changes chip count counter
+    betAmount = 50;
+    document.getElementById('chip-count').textContent = '50';
 }
 
 function bet100() {
