@@ -145,6 +145,11 @@ header i {
     outline: none;
 }
 
+/* hides play buttons on loading the game */
+.play-btn {
+    display: none;
+}
+
 /* ----------- Footer style */
 
 footer {
