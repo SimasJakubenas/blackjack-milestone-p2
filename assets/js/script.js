@@ -484,8 +484,45 @@ function determineAceValue() {
 
 }
 
+/**
+ * Removes hit and stand buttons
+ * Displays second dealer card
+ * Changes the value of sum of dealers cards
+ * Checks if dealers card sum is less than 17 and draws new card if so
+ */
 function dealerDraw() {
+    // Hides hit and stand buttons
+    document.getElementById('hit-btn').style.display ='none';
+    document.getElementById('stand-btn').style.display ='none';
+    //Displays second dealer card
+    displayReverseCard.src = `assets/images/cards/${dealerCards[1].image}`;
+    dealerSum += dealerCards[1].value;
+    //Updates dealer's cards value sum
+    document.getElementById('dealers-count').textContent = dealerSum;
+    // Checks if dealer's sum is less than 17 and if so draws a new card
+    while (dealerSum < 17) {
+        let dealerDrawnCard = Math.floor(Math.random() * 52); // Selects drawn card's number
+        let dealerDrawsCard = document.createElement('img'); // Create drawn card variable
 
+        // Assign drawn card's attributes
+        dealerDrawsCard.src = `assets/images/cards/${cards[dealerDrawnCard].image}`;
+        dealerDrawsCard.alt = `${cards[dealerDrawnCard].name}`;
+        // Adds drawn card to player cards container
+        document.getElementById('dealers-card-container').appendChild(dealerDrawsCard);
+        // Updates dealer's card value sum
+        dealerSum += cards[dealerDrawnCard].value;
+        document.getElementById('dealers-count').textContent = dealerSum;
+    }
+    // Checks for game outcomes depending on dealer sum
+    if (dealerSum === 21) {
+        console.log('Dealer has Blackjack!');
+    } else if (dealerSum > 21){
+        console.log('bust');
+    } else {
+        console.log('dealerSum');
+    }
+    // Displays bet button
+    document.getElementById('bet-btn').style.display ='unset';
 }
 
 function bet50() {
