@@ -314,6 +314,10 @@ let cards = [
     },
 ]
 
+// Global variables that has to be accessed by multiple functions
+let playerCards = [];
+let dealerCards = [];
+
 // Loads the page before adding event listeners to game buttons and chip selection
 window.onload = function() {
     //Control button calls function on click
@@ -339,11 +343,26 @@ window.onload = function() {
 }
 
 function dealHand() {
-
+    selectInitialCards()
 }
 
+/** Randomises numbers to select cards from cards array
+ * Adds selected cards to new arrays
+ */
 function selectInitialCards() {
+    // Selects player cards number
+    let firstPlayerCard = Math.floor(Math.random() * 52);
+    let secondPlayerCard = Math.floor(Math.random() * 52);
+    // Selects dealers cards number
+    let firstDealerCard = Math.floor(Math.random() * 52);
+    let secondDealerCard = Math.floor(Math.random() * 52);
 
+    // Adds selected cards to playerCards array
+    playerCards.push(cards[firstPlayerCard]);
+    playerCards.push(cards[secondPlayerCard]);
+    // Adds selected cards to dealerCards Araay
+    dealerCards.push(cards[firstDealerCard]);
+    dealerCards.push(cards[secondDealerCard]);
 }
 
 function displayInitialCards() {
