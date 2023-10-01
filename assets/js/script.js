@@ -321,6 +321,7 @@ let dealerCards = [];
 let playerSum = 0;
 let dealerSum = 0;
 
+let newAceValue = { name: "ace", value: 1}; // Changes ace value to 1
 let displayReverseCard = document.createElement('img'); // Dealers reverse card
 
 // Loads the page before adding event listeners to game buttons and chip selection
@@ -462,6 +463,8 @@ function drawCard() {
     // Update player card's value sum
     playerSum += cards[drawnCard].value;
     document.getElementById('players-count').textContent = playerSum;
+    // Checks ace value
+    playerAceValue()
     // Check the sum of player's cards to determine game outcome
     if (playerSum > 21) { // Game lost
         console.log('game over')
@@ -480,8 +483,24 @@ function drawCard() {
     }
 }
 
-function determineAceValue() {
-
+/** Iterates playersCards array looking an ace card 
+ * If ace is found and player sum is more than 21 that card is assigned to a new variable
+ * Player's cards value sum is then calculated by looping through playerCards array
+ */
+function playerAceValue() {
+    for (let i = 0; i < playerCards.length; i++) {
+        // Looks for an ace card and assign it to new variable if condition is met
+        if (playerCards[i].value === 11 && playerSum > 21) {
+            playerCards[i] = newAceValue;
+            // Resets players sum
+            playerSum = 0;
+            // updates player's cards value sum 
+            for (let playerCard of playerCards) {
+                playerSum += playerCard.value;
+                document.getElementById('players-count').textContent = playerSum;
+            } 
+        }
+    }
 }
 
 /**
