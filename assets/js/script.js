@@ -546,8 +546,9 @@ function dealerDraw() {
         // Assign drawn card's attributes
         dealerDrawsCard.src = `assets/images/cards/${cards[dealerDrawnCard].image}`;
         dealerDrawsCard.alt = `${cards[dealerDrawnCard].name}`;
-        // Adds drawn card to player cards container
+        // Adds drawn card to dealers cards container and dealerCards array
         document.getElementById('dealers-card-container').appendChild(dealerDrawsCard);
+        dealerCards.push(cards[dealerDrawnCard]);
         // Updates dealer's card value sum
         dealerSum += cards[dealerDrawnCard].value;
         document.getElementById('dealers-count').textContent = dealerSum;
