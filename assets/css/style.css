@@ -68,6 +68,35 @@ header i {
     right: 2vw;
 }
 
+/* ------------Dealer and player cards field style*/
+
+#players-card-container img, #dealers-card-container img {
+    height: 7em;
+    box-shadow: 0.15em 0.15em 0.45em;
+    border-radius: 0.15em;
+    transform: rotateX(15deg);
+}
+
+#players-card-container {
+    position: relative;
+    height: 10em;
+}
+
+#players-card-container img:nth-child(1), #players-card-container img:nth-child(2) {
+    position: absolute;
+    transform-origin: bottom left;
+}
+
+#players-card-container img:nth-child(1) {
+    right: 0.5em;
+    transform: rotate3d(-2, -1, 1, -15deg);
+}
+
+#players-card-container img:nth-child(2) {
+    right: -1.5em;
+    transform: rotate3d(-2, -1, 1, -10deg);
+}
+
 /* ------------Betting field style */
 
 #bet-position-container {
