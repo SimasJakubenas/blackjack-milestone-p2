@@ -354,6 +354,7 @@ function dealHand() {
     displayCardValuesSum()
     buttonSwap()
     dealerBlackjackCheck()
+    playerAceValue()
 }
 
 /** Randomises numbers to select cards from cards array
