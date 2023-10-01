@@ -503,6 +503,26 @@ function playerAceValue() {
     }
 }
 
+/** Iterates dealersCards array looking an ace card 
+ * If ace is found and dealer sum is more than 21 that card is assigned to a new variable
+ * Dealers's cards value sum is then calculated by looping through dealerCards array
+ */
+function dealerAceValue() {
+    for (let i = 0; i < dealerCards.length; i++) {
+        // Looks for an ace card and assign it to new variable if condition is met
+        if (dealerCards[i].value === 11 && dealerSum > 21) {
+            dealerCards[i] = newAceValue;
+            // Resets dealer's sum
+            dealerSum = 0;
+            // updates dealer's cards value sum 
+            for (let dealerCard of dealerCards) {
+                dealerSum += dealerCard.value;
+                document.getElementById('dealers-count').textContent = dealerSum;
+            } 
+        }
+    }
+}
+
 /**
  * Removes hit and stand buttons
  * Displays second dealer card
@@ -531,6 +551,7 @@ function dealerDraw() {
         // Updates dealer's card value sum
         dealerSum += cards[dealerDrawnCard].value;
         document.getElementById('dealers-count').textContent = dealerSum;
+        dealerAceValue();
     }
     // Checks for game outcomes depending on dealer sum
     if (dealerSum === 21) {
