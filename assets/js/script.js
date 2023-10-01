@@ -443,8 +443,41 @@ function selectBetSize() {
 
 }
 
+/**
+ * Generates a new card when HIT button is presset
+ * Adds that card to the players card container
+ * Updates the player's cards value sum figure
+ * Looks for game outcomes depending on player's cards value sum
+ */
 function drawCard() {
+    let drawnCard = Math.floor(Math.random() * 52); // Selects drawn card's number
+    let drawOneCard = document.createElement('img'); // Create drawn card variable
 
+    // Assign drawn card's attributes
+    drawOneCard.src = `assets/images/cards/${cards[drawnCard].image}`;
+    drawOneCard.alt = `${cards[drawnCard].name}`;
+    
+    document.getElementById('players-card-container').appendChild(drawOneCard); // Adds drawn card to player cards container
+    playerCards.push(cards[drawnCard]); // Adds drawn card to playerCards array
+    // Update player card's value sum
+    playerSum += cards[drawnCard].value;
+    document.getElementById('players-count').textContent = playerSum;
+    // Check the sum of player's cards to determine game outcome
+    if (playerSum > 21) { // Game lost
+        console.log('game over')
+        // Hides hit and stand buttons, displays bet button
+        document.getElementById('bet-btn').style.display ='unset';
+        document.getElementById('hit-btn').style.display ='none';
+        document.getElementById('stand-btn').style.display ='none';
+    } else if (playerSum === 21) { // Blackjack - player wins
+        console.log('Blackjack!')
+        // Hides hit and stand buttons, displays bet button
+        document.getElementById('bet-btn').style.display ='unset';
+        document.getElementById('hit-btn').style.display ='none';
+        document.getElementById('stand-btn').style.display ='none';
+    } else {
+    console.log(playerSum);
+    }
 }
 
 function determineAceValue() {
