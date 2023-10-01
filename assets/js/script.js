@@ -351,6 +351,7 @@ function dealHand() {
     selectInitialCards()
     displayInitialCards()
     displayCardValuesSum()
+    buttonSwap()
 }
 
 /** Randomises numbers to select cards from cards array
@@ -418,8 +419,20 @@ function displayCardValuesSum() {
     document.getElementById('players-count').textContent = playerSum;
 }
 
+/**
+ * DIsplay deal and reset buttons and players field section on repeat game
+ * Hide betting buttons and display play buttons
+ * Hide bet selection
+ */
 function buttonSwap() {
-
+    document.getElementById('players-field').style.display ='unset'; // Display players field uppon repeat game
+    // Display deal and reset buttons
+    document.getElementById('deal-btn').style.display ='none';
+    document.getElementById('reset-btn').style.display ='none';
+    // hide hit and stand buttons
+    document.getElementById('hit-btn').style.display ='unset';
+    document.getElementById('stand-btn').style.display ='unset';
+    document.getElementById('bet-section').style.visibility ='hidden'; // Hide chip selection section
 }
 
 function dealerBlackjackCheck() {
