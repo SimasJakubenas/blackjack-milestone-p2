@@ -608,10 +608,20 @@ function dealerDraw() {
     while (dealerSum < 17) {
         let dealerDrawnCard = Math.floor(Math.random() * 52); // Selects drawn card's number
         let dealerDrawsCard = document.createElement('img'); // Create drawn card variable
+        // Variables used to control the position of drawn cards
+        let moveDealerCardLeft = (2 - dealerCards.length)*2 - 3.5;
+        let moveDealerCardBottom = (dealerCards.length - 2)*0.2
+        let rotateDealerCard = (dealerCards.length - 2)*5;
 
         // Assign drawn card's attributes
         dealerDrawsCard.src = `assets/images/cards/${cards[dealerDrawnCard].image}`;
         dealerDrawsCard.alt = `${cards[dealerDrawnCard].name}`;
+        dealerDrawsCard.style.position = 'absolute';
+        dealerDrawsCard.style.right = `${moveDealerCardLeft}em`;
+        dealerDrawsCard.style.top = `${moveDealerCardBottom}em`;
+        dealerDrawsCard.style.transform = 'rotateX(15deg)';
+        dealerDrawsCard.style.transform = `rotateZ(${rotateDealerCard}deg)`;
+        dealerDrawsCard.style.transformOrigin = 'bottom left';
         // Adds drawn card to dealers cards container and dealerCards array
         document.getElementById('dealers-card-container').appendChild(dealerDrawsCard);
         dealerCards.push(cards[dealerDrawnCard]);
