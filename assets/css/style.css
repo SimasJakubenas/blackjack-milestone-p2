@@ -98,6 +98,18 @@ header i {
     transform: rotate3d(-2, -1, 1, -10deg);
 }
 
+/* Counter box styling */
+
+.count-box {
+    border: 0.15em solid var(--black);
+    border-radius: 0.3em;
+    padding: 0.3em;
+    width: 3em;
+    background-color: rgba(221,222,198,0.6);
+    text-align: center;
+    display: none;
+}
+
 /* ------------Betting field style */
 
 #bet-position-container {
