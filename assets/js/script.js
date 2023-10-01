@@ -318,6 +318,8 @@ let cards = [
 let playerCards = [];
 let dealerCards = [];
 
+let displayReverseCard = document.createElement('img'); // Dealers reverse card
+
 // Loads the page before adding event listeners to game buttons and chip selection
 window.onload = function() {
     //Control button calls function on click
@@ -344,6 +346,7 @@ window.onload = function() {
 
 function dealHand() {
     selectInitialCards()
+    displayInitialCards()
 }
 
 /** Randomises numbers to select cards from cards array
@@ -365,8 +368,34 @@ function selectInitialCards() {
     dealerCards.push(cards[secondDealerCard]);
 }
 
+/** Displays initial cards on the table by:
+ * Creating card variables and assigning img elements
+ * Adding cards attributes
+ * And inserting img elemens to corresponding card containers
+  */
 function displayInitialCards() {
+    // Create card variables 
+    let displayFirstCard = document.createElement('img');
+    let displaySecondCard = document.createElement('img');
+    let displayDealerCard = document.createElement('img');
 
+    // Assign first player card attributes
+    displayFirstCard.src = `assets/images/cards/${playerCards[0].image}`;
+    displayFirstCard.alt = `${playerCards[0].name}`;
+    // Assign second player card attributes
+    displaySecondCard.src = `assets/images/cards/${playerCards[1].image}`;
+    displaySecondCard.alt = `${playerCards[1].name}`;
+    // Assign first dealer card attributes
+    displayDealerCard.src = `assets/images/cards/${dealerCards[0].image}`;
+    displayDealerCard.alt = `${dealerCards[0].name}`;
+    // Assign reverse dealer card attributes
+    displayReverseCard.src = `assets/images/cards/reverse.png`;
+    displayReverseCard.alt = `reverse card`;
+    // Insert the created images to corresponding card containers
+    document.getElementById('players-card-container').appendChild(displayFirstCard);
+    document.getElementById('players-card-container').appendChild(displaySecondCard);
+    document.getElementById('dealers-card-container').appendChild(displayDealerCard);
+    document.getElementById('dealers-card-container').appendChild(displayReverseCard);
 }
 
 function displayCardValuesSum() {
