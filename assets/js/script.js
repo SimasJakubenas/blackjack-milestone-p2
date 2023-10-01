@@ -355,12 +355,12 @@ window.onload = function() {
 function dealHand() {
     // Checks if bet has been placed
     if (betAmount > 0) {
-        selectInitialCards()
-        displayInitialCards()
-        displayCardValuesSum()
-        buttonSwap()
-        dealerBlackjackCheck()
-        playerAceValue()
+        selectInitialCards();
+        displayInitialCards();
+        displayCardValuesSum();
+        buttonSwap();
+        dealerBlackjackCheck();
+        playerAceValue();
     } else { // If bet has not been placed displays a message
         console.log('select bet');
     }
