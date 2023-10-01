@@ -510,10 +510,19 @@ function selectBetSize() {
 function drawCard() {
     let drawnCard = Math.floor(Math.random() * 52); // Selects drawn card's number
     let drawOneCard = document.createElement('img'); // Create drawn card variable
-
+    // Variables used to control the position of drawn cards
+    let moveCardLeft = (2 - playerCards.length)*2 - 3.5;
+    let moveCardBottom = (playerCards.length - 2)*0.2
+    let rotateCard = (playerCards.length - 2)*5;
     // Assign drawn card's attributes
     drawOneCard.src = `assets/images/cards/${cards[drawnCard].image}`;
     drawOneCard.alt = `${cards[drawnCard].name}`;
+    drawOneCard.style.position = 'absolute';
+    drawOneCard.style.right = `${moveCardLeft}em`;
+    drawOneCard.style.top = `${moveCardBottom}em`;
+    drawOneCard.style.transform = 'rotateX(15deg)';
+    drawOneCard.style.transform = `rotateZ(${rotateCard}deg)`;
+    drawOneCard.style.transformOrigin = 'bottom left';
     
     document.getElementById('players-card-container').appendChild(drawOneCard); // Adds drawn card to player cards container
     playerCards.push(cards[drawnCard]); // Adds drawn card to playerCards array
