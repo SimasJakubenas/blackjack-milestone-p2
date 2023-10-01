@@ -463,8 +463,32 @@ function dealerBlackjackCheck() {
     }
 }
 
+/**
+ * Rearange the elements so player can select new bet when hand is over
+ * Display deal nad reset buttons
+ * Hides other buttons
+ * Hides player's field
+ * Clears card arrays
+ * Revers back to default reverse card's attributes
+ */
 function selectBetSize() {
-
+    // Displays betting section
+    document.getElementById('bet-section').style.visibility ='visible';
+    // Hides bet button and players field
+    document.getElementById('bet-btn').style.display ='none';
+    document.getElementById('players-field').style.display ='none';
+    // Displays deal and reset buttons 
+    document.getElementById('deal-btn').style.display ='unset';
+    document.getElementById('reset-btn').style.display ='unset';
+    // Clears card container for new game
+    document.getElementById('players-card-container').innerHTML = '';
+    document.getElementById('dealers-card-container').innerHTML = '';
+    // Clears card arrays for new game
+    playerCards = [];
+    dealerCards = [];
+    // Changes back the reverse cards attributes for new game
+    displayReverseCard.src = `assets/images/cards/reverse.png`;
+    displayReverseCard.alt = `reverse card`;
 }
 
 /**
