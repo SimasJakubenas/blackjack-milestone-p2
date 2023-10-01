@@ -318,6 +318,9 @@ let cards = [
 let playerCards = [];
 let dealerCards = [];
 
+let playerSum = 0;
+let dealerSum = 0;
+
 let displayReverseCard = document.createElement('img'); // Dealers reverse card
 
 // Loads the page before adding event listeners to game buttons and chip selection
@@ -347,6 +350,7 @@ window.onload = function() {
 function dealHand() {
     selectInitialCards()
     displayInitialCards()
+    displayCardValuesSum()
 }
 
 /** Randomises numbers to select cards from cards array
@@ -397,9 +401,21 @@ function displayInitialCards() {
     document.getElementById('dealers-card-container').appendChild(displayDealerCard);
     document.getElementById('dealers-card-container').appendChild(displayReverseCard);
 }
-
+/** 
+ * Calculates players cards value sum by looping through playersCards array and adding up card values
+ * Exctracts first dealers card value
+ * Display those values in corresponding count boxes
+ */
 function displayCardValuesSum() {
-
+    playerSum = 0;// Resets playerSum for a new game
+    // Calculates playerSum value
+    for (let playerCard of playerCards) {
+       playerSum += playerCard.value; 
+    }
+    dealerSum = dealerCards[0].value;// Gets dealerSum value
+    // Display new value in the corresponding count boxes
+    document.getElementById('dealers-count').textContent = dealerSum;
+    document.getElementById('players-count').textContent = playerSum;
 }
 
 function buttonSwap() {
