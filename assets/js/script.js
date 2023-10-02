@@ -443,7 +443,7 @@ function displayCardValuesSum() {
  * Hide bet selection
  */
 function buttonSwap() {
-    document.getElementById('players-field').style.display ='unset'; // Display players field uppon repeat game
+    document.getElementById('players-field').style.visibility ='visible'; // Reveal players field uppon repeat game
     // Display deal and reset buttons
     document.getElementById('deal-btn').style.display ='none';
     document.getElementById('reset-btn').style.display ='none';
@@ -492,7 +492,7 @@ function selectBetSize() {
     document.getElementById('bet-section').style.visibility ='visible';
     // Hides bet button and players field
     document.getElementById('bet-btn').style.display ='none';
-    document.getElementById('players-field').style.display ='none';
+    document.getElementById('players-field').style.visibility ='hidden';
     // Displays deal and reset buttons 
     document.getElementById('deal-btn').style.display ='unset';
     document.getElementById('reset-btn').style.display ='unset';
