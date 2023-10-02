@@ -14,7 +14,7 @@
         </a>
         <i class="fas fa-cog"></i>
     </header>
-    <main class="grid center-items">
+    <main class="grid center-items" class="relative-pstn">
         <!-- Section that displays table with players name and remaining balance -->
         <section id="display-info">
             <table>
@@ -31,7 +31,7 @@
         <!-- Dealers side of the field that displays dealers cards and card count -->
         <section id="dealers-field" class="relative-pstn">
             <div id="dealers-count" class="count-box"></div>
-            <div id="dealers-card-container"></div>
+            <div id="dealers-card-container" class="relative-pstn"></div>
         </section>
         <!-- Message field that lets the player know the outcome of the hand -->
         <section id="message-field">
@@ -40,7 +40,7 @@
         <!-- Dealers side of the field that displays players cards and card count -->
         <section id="players-field" class="relative-pstn">
             <div id="players-count" class="count-box"></div>
-            <div id="players-card-container"></div>
+            <div id="players-card-container" class="relative-pstn"></div>
         </section>
         <!-- Section that displays a current bet -->
         <section id="betting-field" class="relative-pstn">
@@ -80,7 +80,7 @@
             </div>
         </section>
         <!-- Buttons that controls the flow of the game -->
-        <section id="game-controls">
+        <section id="game-controls" class="relative-pstn">
             <button id="deal-btn" class="control-btn betting-btn">DEAL</button>
             <button id="reset-btn" class="control-btn betting-btn">RESET</button>
             <button id="hit-btn" class="control-btn play-btn">HIT</button>

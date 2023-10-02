@@ -25,6 +25,11 @@ body {
     font-family: 'Laila', sans-serif;
 }
 
+main {
+    height: 83vh;
+    position: relative;
+}
+
 .grid {
     display: grid;
 }
@@ -72,6 +77,12 @@ header i {
     right: 2vw;
 }
 
+/* ------------Info table section style */
+
+#display-info {
+    height: 10vh;
+}
+
 /* ------------Dealer and player cards field style*/
 
 #players-card-container img, #dealers-card-container img {
@@ -82,8 +93,7 @@ header i {
 }
 
 #players-card-container, #dealers-card-container {
-    position: relative;
-    height: 10em;
+    height: 18vh;
 }
 
 #players-card-container img:nth-child(1), #players-card-container img:nth-child(2),
@@ -100,6 +110,12 @@ header i {
 #players-card-container img:nth-child(2), #dealers-card-container img:nth-child(2) {
     right: -1.5em;
     transform: rotate3d(-2, -1, 1, -10deg);
+}
+
+/* Message field style */
+
+#message-field {
+    height: 8vh;
 }
 
 /* Counter box styling */
@@ -155,6 +171,7 @@ header i {
     border-top: 0.15em solid var(--black);
     border-bottom: 0.15em solid var(--black);
     box-shadow: 0 0 15px;
+    height: fit-content;
 }
 
 #bet-container {
@@ -185,6 +202,10 @@ header i {
 }
 
 /* ----------- Button style */
+
+#game-controls {
+    bottom: 0;
+}
 
 .control-btn {
     width: 6em;
