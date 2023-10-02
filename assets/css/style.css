@@ -128,7 +128,6 @@ header i {
     width: 3em;
     height: 1.7em;
     background-color: rgba(221, 222, 198, 0.5);
-    border-radius: 0.05 solid black;
     box-shadow: 0 0.15em 0.5em rgba(221, 222, 198, 1),
                 0 0.25em 0.6em black;
     border-radius: 50%;
