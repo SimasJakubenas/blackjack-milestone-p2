@@ -1,0 +1,335 @@
+[33mcommit e0d170d4455f1ccbacc8644e74b543369b3f019c[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: sjakubenas <sjakubenas@gmail.com>
+Date:   Sun Oct 1 19:02:02 2023 -0400
+
+    Fix count boxes styling and positioning
+
+[33mcommit 11db8e4ccd47a43c697286ce40107610f42a294c[m
+Author: sjakubenas <sjakubenas@gmail.com>
+Date:   Sun Oct 1 18:31:36 2023 -0400
+
+    Change display of count boxes based on game type
+
+[33mcommit 5792cd60170985e7c1f8c6857e6694fe6d242ddd[m
+Author: sjakubenas <sjakubenas@gmail.com>
+Date:   Sun Oct 1 18:07:57 2023 -0400
+
+    Add styling to count box class
+
+[33mcommit db72c249769319667e3f46bd3477490237cdab73[m
+Author: sjakubenas <sjakubenas@gmail.com>
+Date:   Sun Oct 1 17:47:57 2023 -0400
+
+     Change positioning of dealer drawn cards
+
+[33mcommit 71ebade7b80b1d7c2e23fbeecb17b7daacfb7442[m
+Author: sjakubenas <sjakubenas@gmail.com>
+Date:   Sun Oct 1 17:45:41 2023 -0400
+
+    Add styling to dealer card container
+
+[33mcommit 01eb374b61e7dd6e6173fda5209233e756cb9d77[m
+Author: sjakubenas <sjakubenas@gmail.com>
+Date:   Sun Oct 1 13:19:16 2023 -0400
+
+    Change positioning of drawn cards in drawCard function
+
+[33mcommit ba17f734ecdfc3e7495625f1b87b3b9926c62187[m
+Author: sjakubenas <sjakubenas@gmail.com>
+Date:   Sun Oct 1 13:13:54 2023 -0400
+
+    Add styling to cards field
+
+[33mcommit e36e7c1c61ad0b872726764348923ff3755f81c7[m
+Author: sjakubenas <sjakubenas@gmail.com>
+Date:   Sun Oct 1 09:51:59 2023 -0400
+
+    Add missing semicolons to dealHand function
+
+[33mcommit 53b1da84ba888f9873837f0243393adec9d23bbc[m
+Author: sjakubenas <sjakubenas@gmail.com>
+Date:   Sun Oct 1 09:51:08 2023 -0400
+
+    Add comments to dealHand function
+
+[33mcommit ae03b283a06cdffa31f9fc8ae36c09fc13fa7087[m
+Author: sjakubenas <sjakubenas@gmail.com>
+Date:   Sun Oct 1 09:47:37 2023 -0400
+
+    Check dealHand function if bet was placed
+
+[33mcommit b3cbd98f9cc6b1fed3d51dc0bee03d2b8a89c7e1[m
+Author: sjakubenas <sjakubenas@gmail.com>
+Date:   Sun Oct 1 09:38:57 2023 -0400
+
+    Have dealHand function call playerAceValue function
+
+[33mcommit cb4f280d012fdbc3d65494be0fde42cb71cc8899[m
+Author: sjakubenas <sjakubenas@gmail.com>
+Date:   Sun Oct 1 09:35:57 2023 -0400
+
+    Define bet1000 function
+
+[33mcommit 0d96be8d3c78a40cbcfa4a7e5e0d4cb9ccb68a70[m
+Author: sjakubenas <sjakubenas@gmail.com>
+Date:   Sun Oct 1 09:35:02 2023 -0400
+
+    Define bet 500 function
+
+[33mcommit 8c363408a2dcd13d3b43000e76ff9fc5397c3b08[m
+Author: sjakubenas <sjakubenas@gmail.com>
+Date:   Sun Oct 1 09:34:22 2023 -0400
+
+    Define bet200 function
+
+[33mcommit 43881fce94d311dbba51d626ac46a39d476bdc7a[m
+Author: sjakubenas <sjakubenas@gmail.com>
+Date:   Sun Oct 1 09:33:35 2023 -0400
+
+    Define bet100 function
+
+[33mcommit a5ff7c06c956e08e7a2d1905b58d846bb69e70e7[m
+Author: sjakubenas <sjakubenas@gmail.com>
+Date:   Sun Oct 1 09:31:59 2023 -0400
+
+    Add styling to chip images in betting field
+
+[33mcommit 67f39902e7efc11eaccf82a82828e07148514837[m
+Author: sjakubenas <sjakubenas@gmail.com>
+Date:   Sun Oct 1 09:26:59 2023 -0400
+
+    Define bet50 function
+
+[33mcommit a902ca8ca469f61cd45d4b73384e0f6e6d2b239e[m
+Author: sjakubenas <sjakubenas@gmail.com>
+Date:   Sun Oct 1 09:17:33 2023 -0400
+
+    Define selectBetSize function
+
+[33mcommit a9f8f9c6f7bc75c0db59e9847a1b6fc00c701600[m
+Author: sjakubenas <sjakubenas@gmail.com>
+Date:   Sun Oct 1 09:07:51 2023 -0400
+
+    Define dealerBlackJackCheck function
+
+[33mcommit fa89d59c9e59b9442e1f9f3a079d27f12f60d32c[m
+Author: sjakubenas <sjakubenas@gmail.com>
+Date:   Sun Oct 1 08:59:08 2023 -0400
+
+    Add image for 9 of hearts
+
+[33mcommit 8f809f810915240af936eb5204a3cb5a47e7cc18[m
+Author: sjakubenas <sjakubenas@gmail.com>
+Date:   Sun Oct 1 08:57:31 2023 -0400
+
+    Update dealerCards array after a card is drawn
+
+[33mcommit aa1749302b514edc7d24057727275cc845406e70[m
+Author: sjakubenas <sjakubenas@gmail.com>
+Date:   Sun Oct 1 08:54:41 2023 -0400
+
+    Add and define dealerAceValue function
+
+[33mcommit 8f1b3fc33fe4986342940402268c4626f7fdbd50[m
+Author: sjakubenas <sjakubenas@gmail.com>
+Date:   Sun Oct 1 07:55:02 2023 -0400
+
+    Add and define playerAceValue function
+
+[33mcommit e0c20fefaf13ed8cad84a2a21977973c43b59651[m
+Author: sjakubenas <sjakubenas@gmail.com>
+Date:   Sun Oct 1 07:36:10 2023 -0400
+
+    Define dealerDraw function
+
+[33mcommit 76eebb5c76f184035b513587ccbf78202e3e465a[m
+Author: sjakubenas <sjakubenas@gmail.com>
+Date:   Sun Oct 1 07:24:52 2023 -0400
+
+    Define drawCard function
+
+[33mcommit 21b824f6754f97abce1d5d053f3df888a5f7a852[m
+Author: sjakubenas <sjakubenas@gmail.com>
+Date:   Sun Oct 1 07:04:51 2023 -0400
+
+    Add bet button
+
+[33mcommit 5036336284ac01d63614ef922a0dc0f99a08527a[m
+Author: sjakubenas <sjakubenas@gmail.com>
+Date:   Sun Oct 1 07:04:02 2023 -0400
+
+    Define buttonSwap function
+
+[33mcommit a8f38f4ee2bc1ca32a220ebdb8f0193488de3226[m
+Author: sjakubenas <sjakubenas@gmail.com>
+Date:   Sun Oct 1 06:37:42 2023 -0400
+
+    Hide play buttons on loading the game
+
+[33mcommit df8e8a40af7b62e7d9af38f284bbc4c986818b56[m
+Author: sjakubenas <sjakubenas@gmail.com>
+Date:   Sun Oct 1 06:30:16 2023 -0400
+
+    Define displayCardValuesSum function
+
+[33mcommit 93ef00f0a2718cb8b709fa8fc3bf006658b421fd[m
+Author: sjakubenas <sjakubenas@gmail.com>
+Date:   Sun Oct 1 06:01:21 2023 -0400
+
+    Define displayInitialCards function
+
+[33mcommit 9c6a519d1cae6e77c5ba702d34b0fa84ddcf2dfa[m
+Author: sjakubenas <sjakubenas@gmail.com>
+Date:   Sun Oct 1 05:40:14 2023 -0400
+
+    Fixed typo at deal button event listener
+
+[33mcommit 260c870f397e3800a7cf58fa11725460e1a0450a[m
+Author: sjakubenas <sjakubenas@gmail.com>
+Date:   Sun Oct 1 05:39:04 2023 -0400
+
+    Define selectInitialCards function
+
+[33mcommit 5f93573362897eaa2387b03b9add1d80d53b435e[m
+Author: sjakubenas <sjakubenas@gmail.com>
+Date:   Sun Oct 1 05:20:16 2023 -0400
+
+    Add event listeners to buttons and chip bets
+
+[33mcommit 29ffc75318ccc1e01edcdc2b6426168ad2064e3f[m
+Author: sjakubenas <sjakubenas@gmail.com>
+Date:   Sat Sep 30 19:47:55 2023 -0400
+
+    Add requirement/feature sets to README scope plane
+
+[33mcommit 0939bf6ad13b12b762e03eef02a24f298a55c806[m
+Author: sjakubenas <sjakubenas@gmail.com>
+Date:   Sat Sep 30 14:38:47 2023 -0400
+
+    Add scope plane with user strories to README.md
+
+[33mcommit 540d6761699b1bfc2f70a7b9199e672a644e6473[m
+Author: sjakubenas <sjakubenas@gmail.com>
+Date:   Sat Sep 30 13:29:56 2023 -0400
+
+    Add strategy plane section to README.md
+
+[33mcommit 70f94107c5bb659c51d1b7244d7e8940aea46d15[m
+Author: sjakubenas <sjakubenas@gmail.com>
+Date:   Sat Sep 30 09:52:39 2023 -0400
+
+    Add structure to README.md
+
+[33mcommit 8482993f4b246ae2127259873b19c15f25b499ca[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: sjakubenas <sjakubenas@gmail.com>
+Date:   Wed Sep 27 19:04:17 2023 -0400
+
+    Add set up structure of game function
+
+[33mcommit dc43ef25596e6b49395b0aceece6fa21a61daf0c[m
+Author: sjakubenas <sjakubenas@gmail.com>
+Date:   Wed Sep 27 18:52:50 2023 -0400
+
+    Add styling to betting field section
+
+[33mcommit 690868cd6e79635f75b94fc12fb14f3090e62c56[m
+Author: sjakubenas <sjakubenas@gmail.com>
+Date:   Wed Sep 27 18:50:20 2023 -0400
+
+    Add structure to betting field
+
+[33mcommit 54f5c08ebd59adb47338b4ee8854d1eafa09eac1[m
+Author: sjakubenas <sjakubenas@gmail.com>
+Date:   Wed Sep 27 18:45:38 2023 -0400
+
+    Add styling to footer
+
+[33mcommit b476f6d1074f88b5bcba1ed975cc1e9c1deac54b[m
+Author: sjakubenas <sjakubenas@gmail.com>
+Date:   Wed Sep 27 18:36:26 2023 -0400
+
+    Add footer structure
+
+[33mcommit f32dc3d20142bebb0e810025f0bcf47861eb2e71[m
+Author: sjakubenas <sjakubenas@gmail.com>
+Date:   Wed Sep 27 18:34:36 2023 -0400
+
+    Add header styling
+
+[33mcommit ebdf18f754f3429421bba022f997cea730fdda43[m
+Author: sjakubenas <sjakubenas@gmail.com>
+Date:   Wed Sep 27 18:32:34 2023 -0400
+
+    Create header and add logo
+
+[33mcommit dedd343643cf5e801d16ba55660eadb715964e17[m
+Author: sjakubenas <sjakubenas@gmail.com>
+Date:   Wed Sep 27 18:30:00 2023 -0400
+
+    Add font awesome script tag
+
+[33mcommit 46e4239cee4576b4fd57c3d14397caa9c58b3144[m
+Author: sjakubenas <sjakubenas@gmail.com>
+Date:   Wed Sep 27 18:26:26 2023 -0400
+
+    Add class atributes to main element
+
+[33mcommit ebcb2cb93caf5d1a69eae27f1a7c01b4fd6c049f[m
+Author: sjakubenas <sjakubenas@gmail.com>
+Date:   Wed Sep 27 18:21:18 2023 -0400
+
+    Add betting section styling
+
+[33mcommit 44a18a5d5f01ba98f9d7a6369f9255585f0c5c5b[m
+Author: sjakubenas <sjakubenas@gmail.com>
+Date:   Wed Sep 27 18:19:16 2023 -0400
+
+    Add buttons to bet section
+
+[33mcommit 6b983ee7f4d0e88aa64a049a4273a1027872d9bf[m
+Author: sjakubenas <sjakubenas@gmail.com>
+Date:   Wed Sep 27 18:05:44 2023 -0400
+
+    Add chip images
+
+[33mcommit 11ac8b4f7e4fe2d9035fd77397969e04734aa848[m
+Author: sjakubenas <sjakubenas@gmail.com>
+Date:   Wed Sep 27 18:04:02 2023 -0400
+
+    Add buttons styling
+
+[33mcommit b0af87259ae1531500d582c78d4e3acd900a9a12[m
+Author: sjakubenas <sjakubenas@gmail.com>
+Date:   Wed Sep 27 17:58:18 2023 -0400
+
+    Add deck of cards array
+
+[33mcommit f86b559a6550db7ac24375a6f78d30dcfe83116b[m
+Author: sjakubenas <sjakubenas@gmail.com>
+Date:   Wed Sep 27 17:55:31 2023 -0400
+
+    Add deck of cards images
+
+[33mcommit 5b2fecc8dde46bd031115427586635fb167e5621[m
+Author: sjakubenas <sjakubenas@gmail.com>
+Date:   Wed Sep 27 16:38:21 2023 -0400
+
+    Add google fonts and global styling
+
+[33mcommit f3bf082381f7914cc4ac06bfe05eb954d087d96d[m
+Author: sjakubenas <sjakubenas@gmail.com>
+Date:   Wed Sep 27 16:30:27 2023 -0400
+
+    Add basic html structure
+
+[33mcommit 5ab540e2d8a7f1c43a5676c6cb673642bb1f2748[m
+Author: sjakubenas <sjakubenas@gmail.com>
+Date:   Wed Sep 27 16:15:12 2023 -0400
+
+    Initial commit
+
+[33mcommit ff0dd530ec48ed4cdaccb8b4805b2bec087f0e84[m
+Author: SimasJakubenas <sjakubenas@gmail.com>
+Date:   Wed Sep 27 20:05:50 2023 +0100
+
+    Initial commit

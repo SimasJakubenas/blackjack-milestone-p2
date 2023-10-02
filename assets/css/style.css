@@ -41,6 +41,10 @@ body {
     display: flex;
 }
 
+.relative-pstn {
+    position: relative;
+}
+
 /* Removes default anchor background */
 a {
     background-color: rgba(0, 0, 0, 0);
@@ -108,6 +112,14 @@ header i {
     background-color: rgba(221,222,198,0.6);
     text-align: center;
     display: none;
+    position: absolute;
+    left: -9.5em;
+    top: 2.5em;
+}
+
+#chip-count {
+    left: -5em;
+    top: 0.4em;
 }
 
 /* ------------Betting field style */
