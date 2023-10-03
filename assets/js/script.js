@@ -348,6 +348,9 @@ window.onload = function() {
     chip500.addEventListener('click', bet500);
     let chip1000 = document.getElementById('1000-chip')
     chip1000.addEventListener('click', bet1000);
+    //Menu icon calls function on click
+    let menuIcon = document.getElementById('menu-icon')
+    menuIcon.addEventListener('click', menuToggle);
 }
 
 /** Main game function was is called when 'deal' button is pressed
@@ -750,4 +753,8 @@ function bet1000() {
     // Changes chip count counter
     betAmount = 1000;
     document.getElementById('chip-count').textContent = '1000';
+}
+
+function openMenu() {
+    document.getElementById('menu').style.display = 'unset';
 }

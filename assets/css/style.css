@@ -89,6 +89,7 @@ header i {
     color: var(--light-grey);
     font-size: 1.5em;
     z-index: 5;
+    display: none;
 }
 
 #menu li {
