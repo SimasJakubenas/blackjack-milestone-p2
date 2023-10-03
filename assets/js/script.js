@@ -351,6 +351,8 @@ window.onload = function() {
     //Menu icon calls function on click
     let menuIcon = document.getElementById('menu-icon')
     menuIcon.addEventListener('click', openMenu);
+    let closeMenuX = document.getElementById('menu-close')
+    closeMenuX.addEventListener('click', closeMenu);
 }
 
 /** Main game function was is called when 'deal' button is pressed
@@ -769,4 +771,13 @@ function openMenu() {
     setTimeout(function() {
         menu.classList.add('enlarge-menu')
     });
+}
+
+/**
+ * Closes the menu by changind the display property 
+ * and removing a class
+ */
+function closeMenu(openMenu) {
+    menu.style.display = 'none';
+    menu.classList.remove('enlarge-menu');
 }
