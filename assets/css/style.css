@@ -116,7 +116,11 @@ header i {
 
 .closing-btn-container {
     text-align: right;
-    padding: 0.3em 0.6em;
+    padding: 0.3em;
+}
+
+.closing-btn-container i {
+    padding: 0.3em;
 }
 
 .closing-btn-container i:hover, .closing-btn-container i:focus {
