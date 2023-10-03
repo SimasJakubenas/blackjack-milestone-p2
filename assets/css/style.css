@@ -77,6 +77,54 @@ header i {
     right: 2vw;
 }
 
+/* ------------Menu style */
+
+#menu {
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0.87);
+    border-radius: 0.3em;
+    color: var(--light-grey);
+    font-size: 1.5em;
+    z-index: 5;
+}
+
+#menu li {
+    list-style: none;
+    padding: 0.3em 0.6em;
+}
+
+#menu li a {
+    color: var(--light-grey);
+    text-decoration: none;
+}
+
+#menu li:hover a, #menu li a:focus {
+    text-decoration: underline;
+}
+
+.closing-btn-container {
+    text-align: right;
+    padding: 0.3em 0.6em;
+}
+
+.closing-btn-container i:hover, .closing-btn-container i:focus {
+    color: var(--red);
+}
+
+.menu-logo-container img {
+    height: 3.5em;
+    padding: 0.5em;
+    left: 10%;
+}
+
+#menu li:nth-child(1), #menu li:nth-child(3) {
+    background-color: rgba(102, 102, 102, 0.5);
+    border-radius: 0.3em;
+}
+
 /* ------------Info table section style */
 
 #display-info {
