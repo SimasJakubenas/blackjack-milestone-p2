@@ -80,16 +80,24 @@ header i {
 /* ------------Menu style */
 
 #menu {
-    position: absolute;
-    top: 15%;
-    left: 5%;
+    position: fixed;
+    top: 5%;
+    right: 5%;
     width: 90%;
     background-color: rgba(0, 0, 0, 0.87);
     border-radius: 0.3em;
     color: var(--light-grey);
     font-size: 1.5em;
     z-index: 5;
+    scale: 0;
     display: none;
+    transition: 0.3s ease-in;
+    transform-origin: top right;
+}
+
+.enlarge-menu {
+    scale: 1 !important;
+    top: 15% !important;
 }
 
 #menu li {

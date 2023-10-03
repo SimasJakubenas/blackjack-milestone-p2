@@ -350,7 +350,7 @@ window.onload = function() {
     chip1000.addEventListener('click', bet1000);
     //Menu icon calls function on click
     let menuIcon = document.getElementById('menu-icon')
-    menuIcon.addEventListener('click', menuToggle);
+    menuIcon.addEventListener('click', openMenu);
 }
 
 /** Main game function was is called when 'deal' button is pressed
@@ -755,6 +755,18 @@ function bet1000() {
     document.getElementById('chip-count').textContent = '1000';
 }
 
+/** 
+ * Reveals a menu by changind display property
+ * Add a class to menu that gives scaling up effect
+ */
 function openMenu() {
-    document.getElementById('menu').style.display = 'unset';
+    // Create menu variable with value of menu element
+    let menu = document.getElementById('menu');
+
+    // Changes display property
+    menu.style.display = 'unset'
+    // Adds a class with timeout method otherwise the effect didnt work
+    setTimeout(function() {
+        menu.classList.add('enlarge-menu')
+    });
 }
