@@ -144,6 +144,27 @@ header i {
     height: 10vh;
 }
 
+table {
+    background-color: rgba(221, 222, 198, 0.8);
+    border-radius: 0.3em;
+    position: absolute;
+    left: 1em;
+    top: 1em;
+    border: 0.15em solid var(--black);
+    text-align: left;
+}
+
+table, th, td {
+    border-spacing: 0;
+}
+
+th, td {
+    padding: 0 0.6em;
+    border: 0.1em solid var(--dark-grey);
+}
+
+
+
 /* ------------Dealer and player cards field style*/
 
 #players-card-container img, #dealers-card-container img {
