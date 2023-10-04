@@ -650,14 +650,21 @@ function dealerDraw() {
         dealerAceValue();
     }
     // Checks for game outcomes depending on dealer sum
-    if (dealerSum === 21) {
-        outcomeMsg.textContent = 'You lost...';
-    } else if (dealerSum > 21){
-        outcomeMsg.textContent = 'You won!'; 
+    determineWinner();
+}
+
+/**
+ * Determines a winner when dealers value is between 17 and 21
+ * Displays corresponding message
+ */
+function determineWinner() {
+    if ((playerSum > dealerSum) || (dealerSum > 21)) {
+        outcomeMsg.textContent = 'You win!';
+    } else if (playerSum === dealerSum) {
+        outcomeMsg.textContent = 'It is a draw!';
     } else {
-        console.log('dealerSum');
+        outcomeMsg.textContent = 'You lost...';
     }
-    // Displays bet button
     document.getElementById('bet-btn').style.display ='unset';
 }
 
