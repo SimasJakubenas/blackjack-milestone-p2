@@ -362,6 +362,7 @@ window.onload = function() {
 function dealHand() {
     // Checks if bet has been placed
     if (betAmount > 0) {
+        outcomeMsg.textContent = '';
         selectInitialCards();
         displayInitialCards();
         displayCardValuesSum();
@@ -369,7 +370,7 @@ function dealHand() {
         dealerBlackjackCheck();
         playerAceValue();
     } else { // If bet has not been placed displays a message
-        console.log('select bet');
+        outcomeMsg.textContent = 'Place your bet!';
     }
 }
 
