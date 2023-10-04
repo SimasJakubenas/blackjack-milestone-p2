@@ -476,12 +476,12 @@ function dealerBlackjackCheck() {
             dealerSum += dealerCards[1].value;
             document.getElementById('dealers-count').textContent = dealerSum;
             if (dealerSum === 21) { // If dealer has Blackjack it's a draw
-                console.log('push') 
+            outcomeMsg.textContent = 'It is a draw!';
             } else { // Player wins if the second card does not have value of 10
-                console.log('you win') 
+                outcomeMsg.textContent = 'You have Blackjack!'; 
             }
         } else { // Player wins if dealer does not have an ace
-            console.log('you win')
+            outcomeMsg.textContent = 'You have Blackjack!'; 
         }
     }
 }
@@ -512,6 +512,8 @@ function selectBetSize() {
     // Changes back the reverse cards attributes for new game
     displayReverseCard.src = `assets/images/cards/reverse.png`;
     displayReverseCard.alt = `reverse card`;
+    // Clears the message fiel
+    outcomeMsg.textContent = '';
     // Iterates countBoxes variable to target all the list items
     for (let countBox of countBoxes) {
         countBox.style.display = 'none';
@@ -550,13 +552,13 @@ function drawCard() {
     playerAceValue()
     // Check the sum of player's cards to determine game outcome
     if (playerSum > 21) { // Game lost
-        console.log('game over')
+        outcomeMsg.textContent = 'You lost...'; 
         // Hides hit and stand buttons, displays bet button
         document.getElementById('bet-btn').style.display ='unset';
         document.getElementById('hit-btn').style.display ='none';
         document.getElementById('stand-btn').style.display ='none';
     } else if (playerSum === 21) { // Blackjack - player wins
-        console.log('Blackjack!')
+        outcomeMsg.textContent = 'You have 21!'; 
         // Hides hit and stand buttons, displays bet button
         document.getElementById('bet-btn').style.display ='unset';
         document.getElementById('hit-btn').style.display ='none';
@@ -649,9 +651,9 @@ function dealerDraw() {
     }
     // Checks for game outcomes depending on dealer sum
     if (dealerSum === 21) {
-        console.log('Dealer has Blackjack!');
+        outcomeMsg.textContent = 'You lost...';
     } else if (dealerSum > 21){
-        console.log('bust');
+        outcomeMsg.textContent = 'You won!'; 
     } else {
         console.log('dealerSum');
     }
