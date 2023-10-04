@@ -325,6 +325,7 @@ let betAmount = 0;
 let newAceValue = { name: "ace", value: 1}; // Changes ace value to 1
 let displayReverseCard = document.createElement('img'); // Dealers reverse card
 let countBoxes = document.getElementsByClassName('count-box'); // Assigns a variable to card sum counter boxes
+let outcomeMsg = document.getElementById('outcome-message'); // Displays all outcome messages
 
 // Loads the page before adding event listeners to game buttons and chip selection
 window.onload = function() {
