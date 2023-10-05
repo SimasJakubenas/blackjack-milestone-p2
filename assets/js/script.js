@@ -34,12 +34,21 @@ window.onload = function() {
 
 document.addEventListener('DOMContentLoaded', function() {
     let betButtons = document.getElementsByClassName('bet-chips');
+    let controlButtons = document.getElementsByClassName('control-btn');
 
     for (let betButton of betButtons) {
         betButton.addEventListener('click', function() {
             let betSize = this.getAttribute('data-type');
 
             placeBet(betSize);
+        })
+    }
+
+    for (let controlButton of controlButtons) {
+        controlButton.addEventListener('click', function() {
+            let buttonType = this.getAttribute('id');
+
+            startGame(buttonType);
         })
     }
 })
