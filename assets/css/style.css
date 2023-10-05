@@ -23,6 +23,8 @@ html {
 
 body {
     font-family: 'Laila', sans-serif;
+    background: url(../images/green-felt.jpg) no-repeat center center,
+                green;
 }
 
 main {
@@ -190,6 +192,7 @@ header i {
 
 #display-info {
     height: 10vh;
+    display: none;
 }
 
 table {
