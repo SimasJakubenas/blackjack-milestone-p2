@@ -367,10 +367,15 @@ window.onload = function() {
 function startGame() {
     let name = document.getElementById('input-name').value; // Gets inputs value
 
+    if(document.getElementById("input-name").value.length < 3){// Add min length for a typed name
+    alert("Name must be between 3 and 15 characters long.");
+    throw 'Name must be between 3 and 15 characters long.'
+    } else {
     document.getElementById('backdrop').style.display = 'none'; // Hides blurry effect
     document.getElementById('greeting-msg').style.display = 'none'; // Hides greeting message
     document.getElementById('display-info').style.display = 'unset'; // Reveals info box
     document.getElementById('player-name').textContent = name; // Transfer inputs value to table
+    }
 }
 
 /** Main game function was is called when 'deal' button is pressed
