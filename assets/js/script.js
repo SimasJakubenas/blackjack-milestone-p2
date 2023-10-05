@@ -11,19 +11,15 @@ let displayReverseCard = document.createElement('img'); // Dealers reverse card
 let countBoxes = document.getElementsByClassName('count-box'); // Assigns a variable to card sum counter boxes
 let outcomeMsg = document.getElementById('outcome-message'); // Displays all outcome messages
 
-// Loads the page before adding event listeners to game buttons and chip selection
-window.onload = function() {
-    //Menu icon calls function on click
-    let menuIcon = document.getElementById('menu-icon')
-    menuIcon.addEventListener('click', openMenu);
-    let closeMenuX = document.getElementById('menu-close')
-    closeMenuX.addEventListener('click', closeMenu);
-}
-
+// Loads the page before adding event listeners to menu, game buttons and chip selection
 document.addEventListener('DOMContentLoaded', function() {
     let betButtons = document.getElementsByClassName('bet-chips');
     let controlButtons = document.getElementsByClassName('control-btn');
+    let menuIcon = document.getElementById('menu-icon');
+    let closeMenuX = document.getElementById('menu-close')
 
+    menuIcon.addEventListener('click', openMenu);
+    closeMenuX.addEventListener('click', closeMenu);
     for (let betButton of betButtons) {
         betButton.addEventListener('click', function() {
             let betSize = this.getAttribute('data-type');
