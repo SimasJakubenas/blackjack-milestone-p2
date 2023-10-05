@@ -25,23 +25,24 @@ window.onload = function() {
     stand.addEventListener('click', dealerDraw);
     let bet = document.getElementById('bet-btn')
     bet.addEventListener('click', selectBetSize);
-    //Chip selecton calls function on click
-    let chip50 = document.getElementById('50-chip')
-    chip50.addEventListener('click', bet50);
-    let chip100 = document.getElementById('100-chip')
-    chip100.addEventListener('click', bet100);
-    let chip200 = document.getElementById('200-chip')
-    chip200.addEventListener('click', bet200);
-    let chip500 = document.getElementById('500-chip')
-    chip500.addEventListener('click', bet500);
-    let chip1000 = document.getElementById('1000-chip')
-    chip1000.addEventListener('click', bet1000);
     //Menu icon calls function on click
     let menuIcon = document.getElementById('menu-icon')
     menuIcon.addEventListener('click', openMenu);
     let closeMenuX = document.getElementById('menu-close')
     closeMenuX.addEventListener('click', closeMenu);
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    let betButtons = document.getElementsByClassName('bet-chips');
+
+    for (let betButton of betButtons) {
+        betButton.addEventListener('click', function() {
+            let betSize = this.getAttribute('data-type');
+
+            placeBet(betSize);
+        })
+    }
+})
 
 /**
  * Function called by pressing Start Play button
@@ -375,103 +376,22 @@ function determineWinner() {
 }
 
 /**
- * Clears current bet 
- * Bets 50$ chip
+ * Clears current bet
+ * Bets the amount determined by betSize variable
  * Change displayed bet amount
  */
-function bet50() {
-    // Creates variable and ssign it value of img
-    let bet50Chips = document.createElement('img');
-
-    // Add attributes to bet50Chips variable
-    bet50Chips.src = "assets/images/chips/50-slanted.png";
-    bet50Chips.alt = "50$ chip has been bet";
-    // Clears current bet and add an image of new bet
-    document.getElementById('bet-position').innerHTML = '';
-    document.getElementById('bet-position').appendChild(bet50Chips);
-    // Changes chip count counter
-    betAmount = 50;
-    document.getElementById('chip-count').textContent = '50';
-}
-
-/**
- * Clears current bet 
- * Bets 100$ chip
- * Change displayed bet amount
- */
-function bet100() {
-    // Creates variable and ssign it value of img
-    let bet100Chips = document.createElement('img');
-
-    // Add attributes to bet100Chips variable
-    bet100Chips.src = "assets/images/chips/100-slanted.png";
-    bet100Chips.alt = "100$ chip has been bet";
-    // Clears current bet and add an image of new bet
-    document.getElementById('bet-position').innerHTML = '';
-    document.getElementById('bet-position').appendChild(bet100Chips);
-    // Changes chip count counter
-    betAmount = 100;
-    document.getElementById('chip-count').textContent = '100';
-}
-
-/**
- * Clears current bet 
- * Bets 200$ chip
- * Change displayed bet amount
- */
-function bet200() {
-    // Creates variable and ssign it value of img
-    let bet200Chips = document.createElement('img');
-
-    // Add attributes to bet200Chips variable
-    bet200Chips.src = "assets/images/chips/200-slanted.png";
-    bet200Chips.alt = "200$ chip has been bet";
-    // Clears current bet and add an image of new bet
-    document.getElementById('bet-position').innerHTML = '';
-    document.getElementById('bet-position').appendChild(bet200Chips);
-    // Changes chip count counter
-    betAmount = 200;
-    document.getElementById('chip-count').textContent = '200';
-}
-
-/**
- * Clears current bet 
- * Bets 500$ chip
- * Change displayed bet amount
- */
-function bet500() {
-    // Creates variable and ssign it value of img
-    let bet500Chips = document.createElement('img');
-
-    // Add attributes to bet500Chips variable
-    bet500Chips.src = "assets/images/chips/500-slanted.png";
-    bet500Chips.alt = "500$ chip has been bet";
-    // Clears current bet and add an image of new bet
-    document.getElementById('bet-position').innerHTML = '';
-    document.getElementById('bet-position').appendChild(bet500Chips);
-    // Changes chip count counter
-    betAmount = 500;
-    document.getElementById('chip-count').textContent = '500';
-}
-
-/**
- * Clears current bet 
- * Bets 1000$ chip
- * Change displayed bet amount
- */
-function bet1000() {
-    // Creates variable and ssign it value of img
-    let bet1000Chips = document.createElement('img');
+function placeBet(betSize) {
+    let betChip = document.createElement('img');
 
     // Add attributes to bet1000Chips variable
-    bet1000Chips.src = "assets/images/chips/1000-slanted.png";
-    bet1000Chips.alt = "1000$ chip has been bet";
+    betChip.src = `assets/images/chips/${betSize}-slanted.png`;
+    betChip.alt = `${betSize} chip has been bet`;
     // Clears current bet and add an image of new bet
     document.getElementById('bet-position').innerHTML = '';
-    document.getElementById('bet-position').appendChild(bet1000Chips);
+    document.getElementById('bet-position').appendChild(betChip);
     // Changes chip count counter
-    betAmount = 1000;
-    document.getElementById('chip-count').textContent = '1000';
+    betAmount = `${betSize}`;
+    document.getElementById('chip-count').textContent = `${betSize}`;
 }
 
 /** 

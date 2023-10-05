@@ -23,8 +23,8 @@ html {
 
 body {
     font-family: 'Laila', sans-serif;
-    background: url(../images/green-felt.jpg) no-repeat center center,
-                green;
+    /* background: url(../images/green-felt.jpg) no-repeat center center,
+                green; */
 }
 
 main {
@@ -314,14 +314,14 @@ th, td {
     height: 4.3em;
 }
 
-.bet-chips button {
+.bet-chips {
     border-radius: 50%;
     border: none;
     outline: none;
     background-color: rgba(221, 222, 198, 0.7);
 }
 
-.bet-chips button:hover img, .bet-chips button:focus img {
+.bet-chips:hover img, .bet-chips:focus img {
     translate: 0 -0.4em;
     scale: 1.2;
     transform-origin: left;
