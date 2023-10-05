@@ -15,7 +15,7 @@ let outcomeMsg = document.getElementById('outcome-message'); // Displays all out
 window.onload = function() {
     // Lets play button that starts the game
     let letsPlay = document.getElementById('lets-play-btn');
-    letsPlay.addEventListener('click', startGame);
+    letsPlay.addEventListener('click', removeGreeting);
     //Control button calls function on click
     let deal = document.getElementById('deal-btn')
     deal.addEventListener('click', dealHand);
@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
  * Hides the greeting message and overlay
  * Reveals info box with players name
  */
-function startGame() {
+function removeGreeting() {
     let name = document.getElementById('input-name').value; // Gets inputs value
 
     if(document.getElementById("input-name").value.length < 3){// Add min length for a typed name
