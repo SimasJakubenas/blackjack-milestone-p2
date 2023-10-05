@@ -329,6 +329,9 @@ let outcomeMsg = document.getElementById('outcome-message'); // Displays all out
 
 // Loads the page before adding event listeners to game buttons and chip selection
 window.onload = function() {
+    // Lets play button that starts the game
+    let letsPlay = document.getElementById('lets-play-btn');
+    letsPlay.addEventListener('click', startGame);
     //Control button calls function on click
     let deal = document.getElementById('deal-btn')
     deal.addEventListener('click', dealHand);
@@ -354,6 +357,20 @@ window.onload = function() {
     menuIcon.addEventListener('click', openMenu);
     let closeMenuX = document.getElementById('menu-close')
     closeMenuX.addEventListener('click', closeMenu);
+}
+
+/**
+ * Function called by pressing Start Play button
+ * Hides the greeting message and overlay
+ * Reveals info box with players name
+ */
+function startGame() {
+    let name = document.getElementById('input-name').value; // Gets inputs value
+
+    document.getElementById('backdrop').style.display = 'none'; // Hides blurry effect
+    document.getElementById('greeting-msg').style.display = 'none'; // Hides greeting message
+    document.getElementById('display-info').style.display = 'unset'; // Reveals info box
+    document.getElementById('player-name').textContent = name; // Transfer inputs value to table
 }
 
 /** Main game function was is called when 'deal' button is pressed
