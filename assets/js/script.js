@@ -52,16 +52,16 @@ function gameControls(buttonType) {
     let bet = document.getElementById('bet-btn');
 
     if (buttonType === 'deal-btn') {
-        dealHand();
+        dealHand(deal, hit, stand, bet);
     }
     if (buttonType === 'hit-btn') {
-        drawCard();
+        drawCard(hit, stand, bet);
     }
     if (buttonType === 'stand-btn') {
-        dealerDraw();
+        dealerDraw(hit, stand, bet);
     }
     if (buttonType === 'bet-btn') {
-        selectBetSize();
+        selectBetSize(deal, bet);
     }
     if (buttonType === 'lets-play-btn') {
         removeGreeting();
@@ -90,15 +90,15 @@ function removeGreeting() {
 /** Main game function was is called when 'deal' button is pressed
  * Contains all the game logic functions 
  */
-function dealHand() {
+function dealHand(deal, hit, stand, bet) {
     // Checks if bet has been placed
     if (betAmount > 0) {
         outcomeMsg.textContent = '';
         selectInitialCards();
         displayInitialCards();
         displayCardValuesSum();
-        buttonSwap();
-        dealerBlackjackCheck();
+        buttonSwap(deal, hit, stand, bet);
+        dealerBlackjackCheck(hit, stand, bet);
         playerAceValue();
     } else { // If bet has not been placed displays a message
         outcomeMsg.textContent = 'Place your bet!';
@@ -180,14 +180,14 @@ function displayCardValuesSum() {
  * Hide betting buttons and display play buttons
  * Hide bet selection
  */
-function buttonSwap() {
+function buttonSwap(deal, hit, stand) {
     document.getElementById('players-field').style.visibility ='visible'; // Reveal players field uppon repeat game
     // Display deal and reset buttons
-    document.getElementById('deal-btn').style.display ='none';
+    deal.style.display ='none';
     document.getElementById('reset-btn').style.display ='none';
     // hide hit and stand buttons
-    document.getElementById('hit-btn').style.display ='unset';
-    document.getElementById('stand-btn').style.display ='unset';
+    hit.style.display ='unset';
+    stand.style.display ='unset';
     document.getElementById('bet-section').style.visibility ='hidden'; // Hide chip selection section
 }
 
@@ -195,12 +195,12 @@ function buttonSwap() {
  * When player hits Blackjack this checks if dealer has an ace, if so
  * it checks the second dealer cards incase dealer has Blackjack also
  */
-function dealerBlackjackCheck() {
+function dealerBlackjackCheck(hit, stand, bet) {
     if (playerSum === 21) { // If player has Blackjack
         // Hides hit and stand buttons, reveals bet button
-        document.getElementById('hit-btn').style.display ='none';
-        document.getElementById('stand-btn').style.display ='none';
-        document.getElementById('bet-btn').style.display ='unset';
+        hit.style.display ='none';
+        stand.style.display ='none';
+        bet.style.display ='unset';
         if (dealerSum === 11) { // If dealer has an ace the second card is checked
             displayReverseCard.src = `assets/images/cards/${dealerCards[1].image}`;
             // Calculates dealer sum
@@ -225,14 +225,14 @@ function dealerBlackjackCheck() {
  * Clears card arrays
  * Revers back to default reverse card's attributes
  */
-function selectBetSize() {
+function selectBetSize(deal, bet) {
     // Displays betting section
     document.getElementById('bet-section').style.visibility ='visible';
     // Hides bet button and players field
-    document.getElementById('bet-btn').style.display ='none';
+    bet.style.display ='none';
     document.getElementById('players-field').style.visibility ='hidden';
     // Displays deal and reset buttons 
-    document.getElementById('deal-btn').style.display ='unset';
+    deal.style.display ='unset';
     document.getElementById('reset-btn').style.display ='unset';
     // Clears card container for new game
     document.getElementById('players-card-container').innerHTML = '';
@@ -257,7 +257,7 @@ function selectBetSize() {
  * Updates the player's cards value sum figure
  * Looks for game outcomes depending on player's cards value sum
  */
-function drawCard() {
+function drawCard(hit, stand, bet) {
     let drawnCard = Math.floor(Math.random() * 52); // Selects drawn card's number
     let drawOneCard = document.createElement('img'); // Create drawn card variable
     // Variables used to control the position of drawn cards
@@ -285,15 +285,15 @@ function drawCard() {
     if (playerSum > 21) { // Game lost
         outcomeMsg.textContent = 'You lost...'; 
         // Hides hit and stand buttons, displays bet button
-        document.getElementById('bet-btn').style.display ='unset';
-        document.getElementById('hit-btn').style.display ='none';
-        document.getElementById('stand-btn').style.display ='none';
+        bet.style.display ='unset';
+        hit.style.display ='none';
+        stand.style.display ='none';
     } else if (playerSum === 21) { // Blackjack - player wins
         outcomeMsg.textContent = 'You have 21!'; 
         // Hides hit and stand buttons, displays bet button
-        document.getElementById('bet-btn').style.display ='unset';
-        document.getElementById('hit-btn').style.display ='none';
-        document.getElementById('stand-btn').style.display ='none';
+        bet.style.display ='unset';
+        hit.style.display ='none';
+        stand.style.display ='none';
     } else {
     console.log(playerSum);
     }
@@ -345,10 +345,10 @@ function dealerAceValue() {
  * Changes the value of sum of dealers cards
  * Checks if dealers card sum is less than 17 and draws new card if so
  */
-function dealerDraw() {
+function dealerDraw(hit, stand, bet) {
     // Hides hit and stand buttons
-    document.getElementById('hit-btn').style.display ='none';
-    document.getElementById('stand-btn').style.display ='none';
+    hit.style.display ='none';
+    stand.style.display ='none';
     //Displays second dealer card
     displayReverseCard.src = `assets/images/cards/${dealerCards[1].image}`;
     dealerSum += dealerCards[1].value;
@@ -381,14 +381,14 @@ function dealerDraw() {
         dealerAceValue();
     }
     // Checks for game outcomes depending on dealer sum
-    determineWinner();
+    determineWinner(bet);
 }
 
 /**
  * Determines a winner when dealers value is between 17 and 21
  * Displays corresponding message
  */
-function determineWinner() {
+function determineWinner(bet) {
     if ((playerSum > dealerSum) || (dealerSum > 21)) {
         outcomeMsg.textContent = 'You win!';
     } else if (playerSum === dealerSum) {
@@ -396,7 +396,7 @@ function determineWinner() {
     } else {
         outcomeMsg.textContent = 'You lost...';
     }
-    document.getElementById('bet-btn').style.display ='unset';
+    bet.style.display ='unset';
 }
 
 /**
