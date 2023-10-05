@@ -13,18 +13,6 @@ let outcomeMsg = document.getElementById('outcome-message'); // Displays all out
 
 // Loads the page before adding event listeners to game buttons and chip selection
 window.onload = function() {
-    // Lets play button that starts the game
-    let letsPlay = document.getElementById('lets-play-btn');
-    letsPlay.addEventListener('click', removeGreeting);
-    //Control button calls function on click
-    let deal = document.getElementById('deal-btn')
-    deal.addEventListener('click', dealHand);
-    let hit = document.getElementById('hit-btn')
-    hit.addEventListener('click', drawCard);
-    let stand = document.getElementById('stand-btn')
-    stand.addEventListener('click', dealerDraw);
-    let bet = document.getElementById('bet-btn')
-    bet.addEventListener('click', selectBetSize);
     //Menu icon calls function on click
     let menuIcon = document.getElementById('menu-icon')
     menuIcon.addEventListener('click', openMenu);
@@ -48,10 +36,37 @@ document.addEventListener('DOMContentLoaded', function() {
         controlButton.addEventListener('click', function() {
             let buttonType = this.getAttribute('id');
 
-            startGame(buttonType);
+            gameControls(buttonType);
         })
     }
 })
+
+/**
+ * Defines control buttons variables
+ * And pass it around all game logic 
+ */
+function gameControls(buttonType) {
+    let deal = document.getElementById('deal-btn');
+    let hit = document.getElementById('hit-btn');
+    let stand = document.getElementById('stand-btn');
+    let bet = document.getElementById('bet-btn');
+
+    if (buttonType === 'deal-btn') {
+        dealHand();
+    }
+    if (buttonType === 'hit-btn') {
+        drawCard();
+    }
+    if (buttonType === 'stand-btn') {
+        dealerDraw();
+    }
+    if (buttonType === 'bet-btn') {
+        selectBetSize();
+    }
+    if (buttonType === 'lets-play-btn') {
+        removeGreeting();
+    }
+}
 
 /**
  * Function called by pressing Start Play button
