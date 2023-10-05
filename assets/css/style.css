@@ -151,6 +151,7 @@ header i {
     top: 17%;
     left: 7%;
     z-index: 5;
+    backdrop-filter: none;
 }
 
 #greeting-msg img {
@@ -172,6 +173,16 @@ header i {
     font-size: 1.3em;
     width: 100%;
     text-align: center;
+}
+
+/* Blurry background effect */
+#backdrop {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(0.2em);
+    z-index: 3;
 }
 
 /* ------------Info table section style */
