@@ -173,6 +173,7 @@ header i {
     font-size: 1.3em;
     width: 100%;
     text-align: center;
+    text-transform: capitalize;
 }
 
 /* Blurry background effect */
@@ -199,6 +200,7 @@ table {
     top: 1em;
     border: 0.15em solid var(--black);
     text-align: left;
+    text-transform: capitalize;
 }
 
 table, th, td {
