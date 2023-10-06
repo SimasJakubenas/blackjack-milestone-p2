@@ -252,6 +252,18 @@ th, td {
     height: 8vh;
 }
 
+#table-mark {
+    position: absolute;
+    top: 0;
+    left: 28vw;
+}
+
+#table-mark img {
+    transform: rotateX(50deg);
+    width: 44vw;
+    opacity: 0.8;
+}
+
 /* Counter box styling */
 
 .count-box {
