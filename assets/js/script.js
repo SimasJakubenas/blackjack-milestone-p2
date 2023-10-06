@@ -6,7 +6,7 @@ let playerSum = 0;
 let dealerSum = 0;
 let betAmount = 0;
 
-const balance = document.getElementById('balance');
+let balance = document.getElementById('balance');
 const newAceValue = { name: "ace", value: 1}; // Changes ace value to 1
 const displayReverseCard = document.createElement('img'); // Dealers reverse card
 const countBoxes = document.getElementsByClassName('count-box'); // Assigns a variable to card sum counter boxes
@@ -93,10 +93,13 @@ function buttonSwap(deal, hit, stand) {
  */
 function dealerBlackjackCheck(hit, stand, bet) {
     if (playerSum === 21) { // If player has Blackjack
+        let getBetAmount = parseInt(document.getElementById('chip-count').textContent);//Get chip count
+
         // Hides hit and stand buttons, reveals bet button
         hit.style.display ='none';
         stand.style.display ='none';
         bet.style.display ='unset';
+        
         if (dealerSum === 11) { // If dealer has an ace the second card is checked
             displayReverseCard.src = `assets/images/cards/${dealerCards[1].image}`;
             // Calculates dealer sum
@@ -105,9 +108,11 @@ function dealerBlackjackCheck(hit, stand, bet) {
             if (dealerSum === 21) { // If dealer has Blackjack it's a draw
                 outcomeMsg.textContent = 'It is a draw!';
             } else { // Player wins if the second card does not have value of 10
+                balance.textContent = parseInt(balance.textContent) + (getBetAmount)*1.5; // Update chip count
                 outcomeMsg.textContent = 'You have Blackjack!'; 
             }
         } else { // Player wins if dealer does not have an ace
+            balance.textContent = parseInt(balance.textContent) + (getBetAmount)*1.5; // Update chip count
             outcomeMsg.textContent = 'You have Blackjack!'; 
         }
     }
