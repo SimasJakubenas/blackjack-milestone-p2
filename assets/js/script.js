@@ -6,6 +6,7 @@ let playerSum = 0;
 let dealerSum = 0;
 let betAmount = 0;
 
+const balance = document.getElementById('balance');
 const newAceValue = { name: "ace", value: 1}; // Changes ace value to 1
 const displayReverseCard = document.createElement('img'); // Dealers reverse card
 const countBoxes = document.getElementsByClassName('count-box'); // Assigns a variable to card sum counter boxes
@@ -137,6 +138,7 @@ function playerDraw(hit, stand, bet) {
         bet.style.display ='unset';
         hit.style.display ='none';
         stand.style.display ='none';
+        amendBalance();
     } else if (playerSum === 21) { // Blackjack - player wins
         outcomeMsg.textContent = 'You have 21!'; 
         // Hides hit and stand buttons, displays bet button and calls dealerDraw function
@@ -220,6 +222,7 @@ function dealerDraw(hit, stand, bet) {
     }
     // Checks for game outcomes depending on dealer sum
     determineWinner(bet);
+    amendBalance();
 }
 
 /**

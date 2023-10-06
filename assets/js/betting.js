@@ -50,3 +50,25 @@ function placeBet(betSize) {
     betAmount = `${betSize}`;
     document.getElementById('chip-count').textContent = `${betSize}`;
 }
+
+
+/**
+ * Calculate remaining balance based on game outcome
+ */
+function amendBalance() {
+    let getBetAmount = parseInt(document.getElementById('chip-count').textContent);
+    
+    if (playerSum > 21) {
+        balance.textContent = parseInt(balance.textContent) - getBetAmount;
+    } else {
+        if (dealerSum > 21 || (dealerSum < playerSum)) {
+            balance.textContent = parseInt( balance.textContent) + getBetAmount;
+            console.log(getBetAmount);
+        } else if (playerSum === dealerSum){
+            balance = `${balance}`;
+            console.log(getBetAmount);
+        } else  {
+            balance.textContent = parseInt(balance.textContent) - getBetAmount;
+        }
+    }
+}
