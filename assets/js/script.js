@@ -294,10 +294,11 @@ function playerDraw(hit, stand, bet) {
         stand.style.display ='none';
     } else if (playerSum === 21) { // Blackjack - player wins
         outcomeMsg.textContent = 'You have 21!'; 
-        // Hides hit and stand buttons, displays bet button
-        bet.style.display ='unset';
+        // Hides hit and stand buttons, displays bet button and calls dealerDraw function
         hit.style.display ='none';
         stand.style.display ='none';
+        dealerDraw(hit, stand, bet);
+        bet.style.display ='unset';
     } else {
     console.log(playerSum);
     }
