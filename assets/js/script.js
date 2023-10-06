@@ -251,11 +251,23 @@ function selectBetSize(deal, bet) {
 /**
  * Positions a drawn card in a fan like manner
  */
-function drawCard(drawnCard, drawOneCard) {
+function drawCard(drawnCard, drawOneCard, hit) {
     // Variables used to control the position of drawn cards
-    let moveCardLeft = (2 - playerCards.length)*2 - 3.5;
-    let moveCardBottom = (playerCards.length - 2)*0.2
-    let rotateCard = (playerCards.length - 2)*5;
+    let moveCardLeft = 0;
+    let moveCardBottom = 0;
+    let rotateCard = 0;
+
+    // Determines whether it's dealers turn or not and controls the position of the cards
+    if (document.getElementById('hit-btn').style.display === 'none') {
+    moveCardLeft = (2 - dealerCards.length)*2 - 3.5;
+    moveCardBottom = (dealerCards.length - 2)*0.2
+    rotateCard = (dealerCards.length - 2)*5;
+    } else {
+    moveCardLeft = (2 - playerCards.length)*2 - 3.5;
+    moveCardBottom = (playerCards.length - 2)*0.2
+    rotateCard = (playerCards.length - 2)*5;
+    }
+
     // Assign drawn card's attributes
     drawOneCard.src = `assets/images/cards/${cards[drawnCard].image}`;
     drawOneCard.alt = `${cards[drawnCard].name}`;
@@ -364,7 +376,7 @@ function dealerDraw(hit, stand, bet) {
         let drawnCard = Math.floor(Math.random() * 52); // Selects drawn card's number
         let drawOneCard = document.createElement('img'); // Create drawn card variable
 
-        drawCard(drawnCard, drawOneCard);
+        drawCard(drawnCard, drawOneCard, hit);
         // Adds drawn card to dealers cards container and dealerCards array
         document.getElementById('dealers-card-container').appendChild(drawOneCard);
         dealerCards.push(cards[drawnCard]);
