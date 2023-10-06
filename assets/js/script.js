@@ -248,10 +248,7 @@ function selectBetSize(deal, bet) {
 }
 
 /**
- * Generates a new card when HIT button is presset
- * Adds that card to the players card container
- * Updates the player's cards value sum figure
- * Looks for game outcomes depending on player's cards value sum
+ * Positions a drawn card in a fan like manner
  */
 function drawCard(drawnCard, drawOneCard) {
     // Variables used to control the position of drawn cards
@@ -269,6 +266,12 @@ function drawCard(drawnCard, drawOneCard) {
     drawOneCard.style.transformOrigin = 'bottom left';
 }
 
+/**
+ * Generates a new card when HIT button is presset
+ * Adds that card to the players card container
+ * Updates the player's cards value sum figure
+ * Looks for game outcomes depending on player's cards value sum
+ */
 function playerDraw(hit, stand, bet) {
     let drawnCard = Math.floor(Math.random() * 52); // Selects drawn card's number
     let drawOneCard = document.createElement('img'); // Create drawn card variable
@@ -356,27 +359,15 @@ function dealerDraw(hit, stand, bet) {
     document.getElementById('dealers-count').textContent = dealerSum;
     // Checks if dealer's sum is less than 17 and if so draws a new card
     while (dealerSum < 17) {
-        let dealerDrawnCard = Math.floor(Math.random() * 52); // Selects drawn card's number
-        let dealerDrawsCard = document.createElement('img'); // Create drawn card variable
-        // Variables used to control the position of drawn cards
-        let moveDealerCardLeft = (2 - dealerCards.length)*2 - 3.5;
-        let moveDealerCardBottom = (dealerCards.length - 2)*0.2
-        let rotateDealerCard = (dealerCards.length - 2)*5;
+        let drawnCard = Math.floor(Math.random() * 52); // Selects drawn card's number
+        let drawOneCard = document.createElement('img'); // Create drawn card variable
 
-        // Assign drawn card's attributes
-        dealerDrawsCard.src = `assets/images/cards/${cards[dealerDrawnCard].image}`;
-        dealerDrawsCard.alt = `${cards[dealerDrawnCard].name}`;
-        dealerDrawsCard.style.position = 'absolute';
-        dealerDrawsCard.style.right = `${moveDealerCardLeft}em`;
-        dealerDrawsCard.style.top = `${moveDealerCardBottom}em`;
-        dealerDrawsCard.style.transform = 'rotateX(15deg)';
-        dealerDrawsCard.style.transform = `rotateZ(${rotateDealerCard}deg)`;
-        dealerDrawsCard.style.transformOrigin = 'bottom left';
+        drawCard(drawnCard, drawOneCard);
         // Adds drawn card to dealers cards container and dealerCards array
-        document.getElementById('dealers-card-container').appendChild(dealerDrawsCard);
-        dealerCards.push(cards[dealerDrawnCard]);
+        document.getElementById('dealers-card-container').appendChild(drawOneCard);
+        dealerCards.push(cards[drawnCard]);
         // Updates dealer's card value sum
-        dealerSum += cards[dealerDrawnCard].value;
+        dealerSum += cards[drawnCard].value;
         document.getElementById('dealers-count').textContent = dealerSum;
         dealerAceValue();
     }
