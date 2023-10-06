@@ -18,8 +18,9 @@ document.addEventListener('DOMContentLoaded', function() {
     let menuIcon = document.getElementById('menu-icon');
     let closeMenuX = document.getElementById('menu-close')
 
-    menuIcon.addEventListener('click', openMenu);
-    closeMenuX.addEventListener('click', closeMenu);
+    menuIcon.addEventListener('click', openMenu); //Open menu
+    closeMenuX.addEventListener('click', closeMenu); //Close menu
+    // Iterates betting buttons and determines a bet size which gets passed on to placeBet function
     for (let betButton of betButtons) {
         betButton.addEventListener('click', function() {
             let betSize = this.getAttribute('data-type');
@@ -27,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
             placeBet(betSize);
         })
     }
-
+    // Iterates control buttons and determines their id and passes that on to gameControls function
     for (let controlButton of controlButtons) {
         controlButton.addEventListener('click', function() {
             let buttonType = this.getAttribute('id');
