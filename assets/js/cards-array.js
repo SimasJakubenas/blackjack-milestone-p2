@@ -1,5 +1,5 @@
 /* Deck of Cards array */
-let cards = [
+const cards = [
     {
         name: "ace",
         suit: "spades",

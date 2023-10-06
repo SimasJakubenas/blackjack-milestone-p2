@@ -4,7 +4,7 @@
  */
 function openMenu() {
     // Create menu variable with value of menu element
-    let menu = document.getElementById('menu');
+    const menu = document.getElementById('menu');
 
     // Changes display property
     menu.style.display = 'unset'

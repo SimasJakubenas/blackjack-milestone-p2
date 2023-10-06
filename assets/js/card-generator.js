@@ -3,11 +3,11 @@
  */
 function selectInitialCards() {
     // Selects player cards number
-    let firstPlayerCard = Math.floor(Math.random() * 52);
-    let secondPlayerCard = Math.floor(Math.random() * 52);
+    const firstPlayerCard = Math.floor(Math.random() * 52);
+    const secondPlayerCard = Math.floor(Math.random() * 52);
     // Selects dealers cards number
-    let firstDealerCard = Math.floor(Math.random() * 52);
-    let secondDealerCard = Math.floor(Math.random() * 52);
+    const firstDealerCard = Math.floor(Math.random() * 52);
+    const secondDealerCard = Math.floor(Math.random() * 52);
 
     // Adds selected cards to playerCards array
     playerCards.push(cards[firstPlayerCard]);

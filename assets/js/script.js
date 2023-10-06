@@ -6,10 +6,10 @@ let playerSum = 0;
 let dealerSum = 0;
 let betAmount = 0;
 
-let newAceValue = { name: "ace", value: 1}; // Changes ace value to 1
-let displayReverseCard = document.createElement('img'); // Dealers reverse card
-let countBoxes = document.getElementsByClassName('count-box'); // Assigns a variable to card sum counter boxes
-let outcomeMsg = document.getElementById('outcome-message'); // Displays all outcome messages
+const newAceValue = { name: "ace", value: 1}; // Changes ace value to 1
+const displayReverseCard = document.createElement('img'); // Dealers reverse card
+const countBoxes = document.getElementsByClassName('count-box'); // Assigns a variable to card sum counter boxes
+const outcomeMsg = document.getElementById('outcome-message'); // Displays all outcome messages
 
 /**
  * Function called by pressing Start Play button
@@ -17,7 +17,7 @@ let outcomeMsg = document.getElementById('outcome-message'); // Displays all out
  * Reveals info box with players name
  */
 function removeGreeting() {
-    let name = document.getElementById('input-name').value; // Gets inputs value
+    const name = document.getElementById('input-name').value; // Gets inputs value
 
     if(document.getElementById("input-name").value.length < 3){// Add min length for a typed name
         alert("Name must be between 3 and 15 characters long.");
@@ -119,8 +119,8 @@ function dealerBlackjackCheck(hit, stand, bet) {
  * Looks for game outcomes depending on player's cards value sum
  */
 function playerDraw(hit, stand, bet) {
-    let drawnCard = Math.floor(Math.random() * 52); // Selects drawn card's number
-    let drawOneCard = document.createElement('img'); // Create drawn card variable
+    const drawnCard = Math.floor(Math.random() * 52); // Selects drawn card's number
+    const drawOneCard = document.createElement('img'); // Create drawn card variable
 
     drawCard(drawnCard, drawOneCard);
     document.getElementById('players-card-container').appendChild(drawOneCard); // Adds drawn card to player cards container
@@ -206,8 +206,8 @@ function dealerDraw(hit, stand, bet) {
     document.getElementById('dealers-count').textContent = dealerSum;
     // Checks if dealer's sum is less than 17 and if so draws a new card
     while (dealerSum < 17) {
-        let drawnCard = Math.floor(Math.random() * 52); // Selects drawn card's number
-        let drawOneCard = document.createElement('img'); // Create drawn card variable
+        const drawnCard = Math.floor(Math.random() * 52); // Selects drawn card's number
+        const drawOneCard = document.createElement('img'); // Create drawn card variable
 
         drawCard(drawnCard, drawOneCard, hit);
         // Adds drawn card to dealers cards container and dealerCards array
