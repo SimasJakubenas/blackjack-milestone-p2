@@ -23,8 +23,8 @@ html {
 
 body {
     font-family: 'Laila', sans-serif;
-    /* background: url(../images/green-felt.jpg) no-repeat center center,
-                green; */
+    background: url(../images/green-felt.jpg) no-repeat center center,
+                green;
 }
 
 main {

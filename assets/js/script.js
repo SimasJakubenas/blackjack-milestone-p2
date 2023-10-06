@@ -20,13 +20,13 @@ function removeGreeting() {
     let name = document.getElementById('input-name').value; // Gets inputs value
 
     if(document.getElementById("input-name").value.length < 3){// Add min length for a typed name
-    alert("Name must be between 3 and 15 characters long.");
-    throw 'Name must be between 3 and 15 characters long.'
+        alert("Name must be between 3 and 15 characters long.");
+        throw 'Name must be between 3 and 15 characters long.'
     } else {
-    document.getElementById('backdrop').style.display = 'none'; // Hides blurry effect
-    document.getElementById('greeting-msg').style.display = 'none'; // Hides greeting message
-    document.getElementById('display-info').style.display = 'unset'; // Reveals info box
-    document.getElementById('player-name').textContent = name; // Transfer inputs value to table
+        document.getElementById('backdrop').style.display = 'none'; // Hides blurry effect
+        document.getElementById('greeting-msg').style.display = 'none'; // Hides greeting message
+        document.getElementById('display-info').style.display = 'unset'; // Reveals info box
+        document.getElementById('player-name').textContent = name; // Transfer inputs value to table
     }
 }
 
@@ -102,7 +102,7 @@ function dealerBlackjackCheck(hit, stand, bet) {
             dealerSum += dealerCards[1].value;
             document.getElementById('dealers-count').textContent = dealerSum;
             if (dealerSum === 21) { // If dealer has Blackjack it's a draw
-            outcomeMsg.textContent = 'It is a draw!';
+                outcomeMsg.textContent = 'It is a draw!';
             } else { // Player wins if the second card does not have value of 10
                 outcomeMsg.textContent = 'You have Blackjack!'; 
             }
@@ -145,7 +145,7 @@ function playerDraw(hit, stand, bet) {
         dealerDraw(hit, stand, bet);
         bet.style.display ='unset';
     } else {
-    console.log(playerSum);
+        console.log(playerSum);
     }
 }
 

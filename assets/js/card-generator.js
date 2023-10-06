@@ -58,13 +58,13 @@ function drawCard(drawnCard, drawOneCard, hit) {
 
     // Determines whether it's dealers turn or not and controls the position of the cards
     if (document.getElementById('hit-btn').style.display === 'none') {
-    moveCardLeft = (2 - dealerCards.length)*2 - 3.5;
-    moveCardBottom = (dealerCards.length - 2)*0.2
-    rotateCard = (dealerCards.length - 2)*5;
+        moveCardLeft = (2 - dealerCards.length)*2 - 3.5;
+        moveCardBottom = (dealerCards.length - 2)*0.2
+        rotateCard = (dealerCards.length - 2)*5;
     } else {
-    moveCardLeft = (2 - playerCards.length)*2 - 3.5;
-    moveCardBottom = (playerCards.length - 2)*0.2
-    rotateCard = (playerCards.length - 2)*5;
+        moveCardLeft = (2 - playerCards.length)*2 - 3.5;
+        moveCardBottom = (playerCards.length - 2)*0.2
+        rotateCard = (playerCards.length - 2)*5;
     }
 
     // Assign drawn card's attributes
