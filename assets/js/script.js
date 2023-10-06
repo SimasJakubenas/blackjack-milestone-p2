@@ -51,7 +51,7 @@ function gameControls(buttonType) {
         dealHand(deal, hit, stand, bet);
     }
     if (buttonType === 'hit-btn') {
-        drawCard(hit, stand, bet);
+        playerDraw(hit, stand, bet);
     }
     if (buttonType === 'stand-btn') {
         dealerDraw(hit, stand, bet);
@@ -253,9 +253,7 @@ function selectBetSize(deal, bet) {
  * Updates the player's cards value sum figure
  * Looks for game outcomes depending on player's cards value sum
  */
-function drawCard(hit, stand, bet) {
-    let drawnCard = Math.floor(Math.random() * 52); // Selects drawn card's number
-    let drawOneCard = document.createElement('img'); // Create drawn card variable
+function drawCard(drawnCard, drawOneCard) {
     // Variables used to control the position of drawn cards
     let moveCardLeft = (2 - playerCards.length)*2 - 3.5;
     let moveCardBottom = (playerCards.length - 2)*0.2
@@ -269,7 +267,13 @@ function drawCard(hit, stand, bet) {
     drawOneCard.style.transform = 'rotateX(15deg)';
     drawOneCard.style.transform = `rotateZ(${rotateCard}deg)`;
     drawOneCard.style.transformOrigin = 'bottom left';
-    
+}
+
+function playerDraw(hit, stand, bet) {
+    let drawnCard = Math.floor(Math.random() * 52); // Selects drawn card's number
+    let drawOneCard = document.createElement('img'); // Create drawn card variable
+
+    drawCard(drawnCard, drawOneCard);
     document.getElementById('players-card-container').appendChild(drawOneCard); // Adds drawn card to player cards container
     playerCards.push(cards[drawnCard]); // Adds drawn card to playerCards array
     // Update player card's value sum
