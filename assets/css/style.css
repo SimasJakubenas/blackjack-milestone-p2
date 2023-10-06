@@ -304,12 +304,12 @@ th, td {
     width: 100%;
     border-top: 0.15em solid var(--black);
     border-bottom: 0.15em solid var(--black);
-    box-shadow: 0 0 15px;
+    box-shadow: 0 0 1.5em;
     height: fit-content;
 }
 
 #bet-container {
-    background-color: rgba(221, 222, 198, 0.7);
+    background: linear-gradient(rgba(102, 102, 102, 0.7), rgba(221, 222, 198, 0.7), rgba(102, 102, 102, 0.7)); 
     padding-top: 0.5em;
     height: 4.3em;
 }
@@ -318,7 +318,9 @@ th, td {
     border-radius: 50%;
     border: none;
     outline: none;
-    background-color: rgba(221, 222, 198, 0.7);
+    background: linear-gradient(rgba(102, 102, 102, 0.7), rgba(221, 222, 198, 0.7), rgba(102, 102, 102, 0.7));
+    height: 4.1em;
+    margin: 0 0.3em;
 }
 
 .bet-chips:hover img, .bet-chips:focus img {
@@ -331,7 +333,7 @@ th, td {
 }
 
 .bet-chips img {
-    height: 3.8em;
+    height: 3.9em;
     margin: 0.1em 0.2em;
 }
 
