@@ -400,15 +400,19 @@ th, td {
 /* ----------- Footer style */
 
 footer {
-    height: 8vh;
     background-color: var(--black);
     color: var(--light-grey);
-    position: relative;
+    padding-left: 0.5em;
 }
 
 footer i {
     font-size: 6.3vh;
     margin: 1vh;
+    color: var(--light-grey);
+}
+
+footer i:hover, footer i:focus, footer i:active  {
+    color: var(--red);
 }
 
 footer span {
