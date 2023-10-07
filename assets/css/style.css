@@ -351,7 +351,7 @@ th, td {
 #bet-container {
     background: linear-gradient(rgba(102, 102, 102, 0.7), rgba(221, 222, 198, 0.7), rgba(102, 102, 102, 0.7)); 
     padding-top: 0.5em;
-    height: 4.3em;
+    height: 11vh;
 }
 
 .bet-chips {
@@ -359,7 +359,7 @@ th, td {
     border: none;
     outline: none;
     background: linear-gradient(rgba(102, 102, 102, 0.7), rgba(221, 222, 198, 0.7), rgba(102, 102, 102, 0.7));
-    height: 4.1em;
+    height: 9vh;
     margin: 0 0.3em;
 }
 
