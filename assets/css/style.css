@@ -249,8 +249,26 @@ th, td {
 /* Message field style */
 
 #message-field {
-    height: 8vh;
+    height: 5vh;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(221, 222, 198, 0.4), rgba(102, 102, 102, 0.9) 15%, rgba(102, 102, 102, 0.8) 85%, rgba(221, 222, 198, 0.4));
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    border-bottom: 0.15em solid var(--black);
+    border-top: 0.15em solid var(--black);
+    box-shadow: 0 0 1.5em;
 }
+
+#outcome-message {
+    color: var(--light-grey);
+}
+
+/* #outcome-message {
+    
+} */
 
 #table-mark {
     position: absolute;
