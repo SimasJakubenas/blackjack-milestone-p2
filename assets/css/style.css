@@ -272,13 +272,15 @@ th, td {
 
 #table-mark {
     position: absolute;
-    top: 0;
-    left: 28vw;
+    width: 100%;
+    overflow: hidden;
 }
 
 #table-mark img {
+    position: relative;
+    top: 5vh;
     transform: rotateX(50deg);
-    width: 44vw;
+    height: 55vh;
     opacity: 0.8;
 }
 
