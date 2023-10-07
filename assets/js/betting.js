@@ -65,7 +65,6 @@ function amendBalance() {
             balance.textContent = parseInt( balance.textContent) + getBetAmount;
             console.log(getBetAmount);
         } else if (playerSum === dealerSum){
-            balance = `${balance}`;
             console.log(getBetAmount);
         } else  {
             balance.textContent = parseInt(balance.textContent) - getBetAmount;
