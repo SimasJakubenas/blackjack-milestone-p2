@@ -35,6 +35,7 @@ function removeGreeting() {
  * Contains all the game logic functions 
  */
 function dealHand(deal, hit, stand, bet) {
+    document.getElementById('message-field').style.visibility = 'hidden'; // Hides outcome message
     // Checks if bet has been placed
     if (betAmount > 0) {
         outcomeMsg.textContent = '';
@@ -45,6 +46,7 @@ function dealHand(deal, hit, stand, bet) {
         dealerBlackjackCheck(hit, stand, bet);
         playerAceValue();
     } else { // If bet has not been placed displays a message
+        document.getElementById('message-field').style.visibility = 'visible'; // Reveals outcome message
         outcomeMsg.textContent = 'Place your bet!';
     }
 }
@@ -101,6 +103,7 @@ function dealerBlackjackCheck(hit, stand, bet) {
         bet.style.display ='unset';
         
         if (dealerSum === 11) { // If dealer has an ace the second card is checked
+            document.getElementById('message-field').style.visibility = 'visible'; // Reveals outcome message
             displayReverseCard.src = `assets/images/cards/${dealerCards[1].image}`;
             // Calculates dealer sum
             dealerSum += dealerCards[1].value;
@@ -138,6 +141,7 @@ function playerDraw(hit, stand, bet) {
     playerAceValue()
     // Check the sum of player's cards to determine game outcome
     if (playerSum > 21) { // Game lost
+        document.getElementById('message-field').style.visibility = 'visible'; // Reveals outcome message
         outcomeMsg.textContent = 'You lost...'; 
         // Hides hit and stand buttons, displays bet button
         bet.style.display ='unset';
@@ -145,6 +149,7 @@ function playerDraw(hit, stand, bet) {
         stand.style.display ='none';
         amendBalance();
     } else if (playerSum === 21) { // Blackjack - player wins
+        document.getElementById('message-field').style.visibility = 'visible'; // Reveals outcome message
         outcomeMsg.textContent = 'You have 21!'; 
         // Hides hit and stand buttons, displays bet button and calls dealerDraw function
         hit.style.display ='none';
@@ -235,6 +240,7 @@ function dealerDraw(hit, stand, bet) {
  * Displays corresponding message
  */
 function determineWinner(bet) {
+    document.getElementById('message-field').style.visibility = 'visible'; // Reveals outcome message
     if ((playerSum > dealerSum) || (dealerSum > 21)) {
         outcomeMsg.textContent = 'You win!';
     } else if (playerSum === dealerSum) {
