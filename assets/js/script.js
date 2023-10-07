@@ -116,6 +116,7 @@ function dealerBlackjackCheck(hit, stand, bet) {
             }
         } else { // Player wins if dealer does not have an ace
             balance.textContent = parseInt(balance.textContent) + (getBetAmount)*1.5; // Update chip count
+            document.getElementById('message-field').style.visibility = 'visible'; // Reveals outcome message
             outcomeMsg.textContent = 'You have Blackjack!'; 
         }
     }
