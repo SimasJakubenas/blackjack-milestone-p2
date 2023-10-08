@@ -42,6 +42,14 @@ main {
     justify-content: center;
 }
 
+.end-content {
+    justify-content: end;
+}
+
+.start-content {
+    justify-content: start;
+}
+
 .center-items {
     justify-items: center;
 }
@@ -366,6 +374,7 @@ th, td {
 }
 
 #bet-container {
+    flex-direction: row;
     position: relative;
     width: 200px;
     padding-top: 0.5em;

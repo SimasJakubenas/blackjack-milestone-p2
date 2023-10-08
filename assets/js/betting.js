@@ -72,3 +72,37 @@ function amendBalance() {
         }
     }
 }
+
+/**
+ * Moves the bet container left
+ * Hides the left arrow if container to the most left
+ * Unhides right arrow
+ */
+function shiftLeft() {
+    arrowRight.style.visibility = 'visible';
+    if (betContainer.classList == 'flex center-content') {
+        betContainer.classList.remove('center-content')
+        betContainer.classList.add('start-content')
+        arrowLeft.style.visibility = 'hidden';
+    } else {
+        betContainer.classList.remove('end-content');
+        betContainer.classList.add('center-content');
+    }
+}
+
+/**
+ * Moves the bet container right
+ * Hides the right arrow if container to the most right
+ * Unhides left arrow
+ */
+function shiftRight() {
+    arrowLeft.style.visibility = 'visible';
+    if (betContainer.classList == 'flex center-content') {
+        betContainer.classList.remove('center-content')
+        betContainer.classList.add('end-content')
+        arrowRight.style.visibility = 'hidden';
+    } else {
+        betContainer.classList.remove('start-content');
+        betContainer.classList.add('center-content');
+    }
+}

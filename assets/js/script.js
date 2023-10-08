@@ -6,6 +6,11 @@ let playerSum = 0;
 let dealerSum = 0;
 let betAmount = 0;
 
+// Arrows that move bet container left and right for small screens
+let arrowLeft = document.getElementById('arrow-left');
+let arrowRight = document.getElementById('arrow-right');
+let betContainer = document.getElementById('bet-container'); // Bet container
+
 let balance = document.getElementById('balance');
 const newAceValue = { name: "ace", value: 1}; // Changes ace value to 1
 const displayReverseCard = document.createElement('img'); // Dealers reverse card

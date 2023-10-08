@@ -4,7 +4,9 @@ document.addEventListener('DOMContentLoaded', function() {
     let controlButtons = document.getElementsByClassName('control-btn');
     let menuIcon = document.getElementById('menu-icon');
     let closeMenuX = document.getElementById('menu-close')
-
+    
+    arrowLeft.addEventListener('click', shiftLeft); // Moves chips to left
+    arrowRight.addEventListener('click', shiftRight); // Moves chips to right
     menuIcon.addEventListener('click', openMenu); //Open menu
     closeMenuX.addEventListener('click', closeMenu); //Close menu
     // Iterates betting buttons and determines a bet size which gets passed on to placeBet function
