@@ -3,10 +3,14 @@
  * Add a class to menu that gives scaling up effect
  */
 function openMenu() {
+    // looks if menu anchor is focused and changes icon colour if so
+    if (document.querySelector("#menu-anchor:focus")) {
+        document.getElementById('menu-icon').style.color = '#BB0000';
+    }
     // Create menu variable with value of menu element
     const menu = document.getElementById('menu');
 
-    // Changes display property
+    // Changes display property 
     menu.style.display = 'unset'
     // Adds a class with timeout method otherwise the effect didnt work
     setTimeout(function() {
@@ -21,4 +25,5 @@ function openMenu() {
 function closeMenu(openMenu) {
     menu.style.display = 'none';
     menu.classList.remove('enlarge-menu');
+    document.getElementById('menu-icon').style.color = '#DDDEC6'; // returns original icon colour
 }

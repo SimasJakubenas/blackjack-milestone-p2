@@ -75,9 +75,14 @@ header img {
 header i {
     color: var(--light-grey);
     font-size: 6vh;
-    position: relative;
+    position: absolute;
     top: 2.2vh;
     right: 2vw;
+}
+
+header i:hover {
+    color: var(--red);
+    cursor: pointer;
 }
 
 /* ------------Menu style */
