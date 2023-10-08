@@ -41,8 +41,12 @@ function removeGreeting() {
  */
 function dealHand(deal, hit, stand, bet) {
     document.getElementById('message-field').style.visibility = 'hidden'; // Hides outcome message
+    
     // Checks if bet has been placed
     if (betAmount > 0) {
+        document.getElementById('arrow-left').style.display = 'none'; // Hides left arrow
+        document.getElementById('arrow-right').style.display = 'none'; // Hides right arrow
+
         outcomeMsg.textContent = '';
         selectInitialCards();
         displayInitialCards();

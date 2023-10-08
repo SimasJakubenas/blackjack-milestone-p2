@@ -8,6 +8,8 @@
  */
 function selectBetSize(deal, bet) {
     document.getElementById('message-field').style.visibility = 'hidden'; // Hides outcome message
+    document.getElementById('arrow-left').style.display = 'unset'; // Reveals left arrow
+    document.getElementById('arrow-right').style.display = 'unset'; // Hides right arrow
     // Displays betting section
     document.getElementById('bet-section').style.visibility ='visible';
     // Hides bet button and players field
