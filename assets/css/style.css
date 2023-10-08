@@ -426,7 +426,7 @@ footer i:hover, footer i:focus, footer i:active  {
 }
 
 footer span {
-    font-size: 0.7em;
+    font-size: 1.5vh;
     position: absolute;
     bottom: 0;
     right: 1em;
@@ -455,6 +455,10 @@ footer span {
         height: 75vh;
         top: -5vh;
     }
+
+    footer span {
+        font-size: 1.8vh;
+    }
 }
 
 /* Media query for screens > 950px */
@@ -474,5 +478,10 @@ footer span {
     #greeting-msg {
         width: 46vw;
         left: 27%;
+    }
+
+    footer span {
+        font-size: 2.5vh;
+        max-width: 65%
     }
 }
