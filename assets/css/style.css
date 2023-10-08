@@ -347,17 +347,22 @@ th, td {
 /* ------------Betting section style */
 
 #bet-section {
+    background: linear-gradient(rgba(102, 102, 102, 0.7), rgba(221, 222, 198, 0.7), rgba(102, 102, 102, 0.7));
     width: 100%;
     border-top: 0.15em solid var(--black);
     border-bottom: 0.15em solid var(--black);
     box-shadow: 0 0 1.5em;
     height: fit-content;
+    overflow: hidden;
 }
 
 #bet-container {
-    background: linear-gradient(rgba(102, 102, 102, 0.7), rgba(221, 222, 198, 0.7), rgba(102, 102, 102, 0.7)); 
+    position: relative;
+    left: 13%;
+    width: 74%;
     padding-top: 0.5em;
     height: 11vh;
+    overflow: hidden;
 }
 
 .bet-chips {
@@ -389,7 +394,7 @@ th, td {
 }
 
 .control-btn {
-    width: 6em;
+    width: 5.9em;
     height: 6vh;
     background-color:var(--red);
     color: var(--light-grey);
