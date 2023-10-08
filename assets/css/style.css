@@ -376,7 +376,7 @@ th, td {
 #bet-container {
     flex-direction: row;
     position: relative;
-    width: 200px;
+    width:  30.5vh;
     padding-top: 0.5em;
     height: 11vh;
     overflow: hidden;
@@ -461,6 +461,17 @@ footer span {
 }
 
 /* ---------------- Media querries */
+
+/* Media query for screens > 350px */
+@media screen and (min-width: 350px) {
+    #bet-container {
+        overflow: visible;
+    }
+
+    #arrow-left, #arrow-right {
+        visibility: none;
+    }
+}
 
 /* Media query for screens > 650px */
 @media screen and (min-width: 650px) {
