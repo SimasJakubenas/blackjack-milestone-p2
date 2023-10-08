@@ -357,15 +357,14 @@ th, td {
 .bet-chips {
     border-radius: 50%;
     border: none;
-    outline: none;
     background: linear-gradient(rgba(102, 102, 102, 0.7), rgba(221, 222, 198, 0.7), rgba(102, 102, 102, 0.7));
     height: 9vh;
-    margin: 0 0.3em;
+    margin: 0 0.6vh;
 }
 
 .bet-chips:hover img, .bet-chips:focus img {
     translate: 0 -0.4em;
-    scale: 1.2;
+    scale: 1.1;
     transform-origin: left;
     border-radius: 50%;
     border: 0.2em solid yellow;
