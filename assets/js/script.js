@@ -31,7 +31,7 @@ function removeGreeting() {
     } else {
         document.getElementById('backdrop').style.display = 'none'; // Hides blurry effect
         document.getElementById('greeting-msg').style.display = 'none'; // Hides greeting message
-        document.getElementById('display-info').style.display = 'unset'; // Reveals info box
+        document.getElementById('display-info').style.visibility = 'visible'; // Reveals info box
         document.getElementById('player-name').textContent = name; // Transfer inputs value to table
     }
 }

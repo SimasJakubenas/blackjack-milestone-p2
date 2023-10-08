@@ -208,7 +208,7 @@ header i:hover {
 
 #display-info {
     height: 10vh;
-    display: none;
+    visibility: hidden;
 }
 
 table {
@@ -220,6 +220,7 @@ table {
     border: 0.15em solid var(--black);
     text-align: left;
     text-transform: capitalize;
+    overflow: hidden;
 }
 
 table, th, td {
