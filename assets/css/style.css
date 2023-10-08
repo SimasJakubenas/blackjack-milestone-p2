@@ -432,3 +432,25 @@ footer span {
     right: 1em;
     max-width: 55%;
 }
+
+/* ---------------- Media querries */
+
+/* Media query for screens > 950px */
+@media screen and (min-width: 950px) {
+    #dealers-field, #players-field {
+        position: relative;
+    }
+
+    #dealers-field {
+        left: -20vw;
+    }
+
+    #players-field {
+        left: 20vw;
+    }
+
+    #greeting-msg {
+        width: 46vw;
+        left: 27%;
+    }
+}
