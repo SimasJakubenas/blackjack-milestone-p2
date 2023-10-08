@@ -360,8 +360,9 @@ th, td {
 
 #bet-section i {
     color: yellow;
-    margin-top: 3.5vh;
-    font-size: 4.5vh;
+    padding-top: 3.2vh;
+    font-size: 5vh;
+    margin: 0 1.7vh;
 }
 
 #bet-container {
