@@ -354,12 +354,19 @@ th, td {
     box-shadow: 0 0 1.5em;
     height: fit-content;
     overflow: hidden;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#bet-section i {
+    color: yellow;
+    margin-top: 3.5vh;
+    font-size: 4.5vh;
 }
 
 #bet-container {
     position: relative;
-    left: 13%;
-    width: 74%;
+    width: 200px;
     padding-top: 0.5em;
     height: 11vh;
     overflow: hidden;
