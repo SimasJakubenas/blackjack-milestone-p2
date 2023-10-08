@@ -23,13 +23,14 @@ html {
 
 body {
     font-family: 'Laila', sans-serif;
-    background: url(../images/green-felt.jpg) no-repeat center center,
+    background: url(../images/green-felt.jpg) center center,
                 green;
     font-size: 2.5vh;
+    background-size: cover;
 }
 
 main {
-    height: 83vh;
+    height: 82vh;
     position: relative;
 }
 
