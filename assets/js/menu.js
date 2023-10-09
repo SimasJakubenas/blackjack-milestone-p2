@@ -48,3 +48,13 @@ function showPlayTable() {
     document.getElementById('menu-list').style.display = 'none';
     document.getElementById('menu-content-container').style.display = 'unset';
 }
+
+/**
+ * Hides menu items and closing icon
+ * Displays advanced strategy
+ */
+function showStrategy() {
+    document.getElementById('close-btn-container').style.display = 'none';
+    document.getElementById('menu-list').style.display = 'none';
+    document.getElementById('menu-content-container').style.display = 'unset';
+}

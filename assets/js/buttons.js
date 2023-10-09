@@ -8,6 +8,8 @@ document.addEventListener('DOMContentLoaded', function() {
     let closeMenuX = document.getElementById('menu-close');
     const menuGameRules = document.getElementById('game-rules');
     const menuOptimalPlayTable = document.getElementById('optimal-play-table');
+    const menuAdvancedStrategy = document.getElementById('advanced stratergy');
+    
 
     arrowLeft.addEventListener('click', shiftLeft); // Moves chips to left
     arrowRight.addEventListener('click', shiftRight); // Moves chips to right
@@ -16,6 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
     closeMenuX.addEventListener('click', closeMenu); //Close menu
     menuGameRules.addEventListener('click', showGameRules); // game rules
     menuOptimalPlayTable.addEventListener('click', showPlayTable); // Optimal play table
+    menuAdvancedStrategy.addEventListener('click', showStrategy); // Advanced strategy
     
     // Iterates betting buttons and determines a bet size which gets passed on to placeBet function
     for (let betButton of betButtons) {
