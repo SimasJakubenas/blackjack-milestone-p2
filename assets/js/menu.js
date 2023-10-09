@@ -28,6 +28,11 @@ function closeMenu(openMenu) {
     document.getElementById('menu-icon').style.color = '#DDDEC6'; // returns original icon colour
 }
 
+
+/**
+ * Hides menu items and closing icon
+ * Displays game rules content
+ */
 function showGameRules() {
     document.getElementById('close-btn-container').style.display = 'none';
     document.getElementById('menu-list').style.display = 'none';
