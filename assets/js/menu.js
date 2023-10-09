@@ -48,9 +48,12 @@ function showGameRules() {
  * Displays optimal play table
  */
 function showPlayTable() {
+    let menuContentWrapper = document.getElementById('menu-content-wrapper');
+
     document.getElementById('close-btn-container').style.display = 'none';
     document.getElementById('menu-list').style.display = 'none';
     document.getElementById('menu-content-container').style.display = 'unset';
+    menuContentWrapper.innerHTML = '<img src="assets/images/optimal-play-table.png">';
 }
 
 /**
