@@ -34,13 +34,12 @@ function closeMenu(openMenu) {
  * Displays game rules content
  */
 function showGameRules() {
-    let gameRulesWindow = document.getElementById('menu-content');
+    let gameRulesWindow = document.getElementById('menu-content-wrapper');
 
+    gameRulesWindow.innerHTML = '<iframe src="game-rules.html" frameborder="0" id="menu-content"></iframe>'
     document.getElementById('close-btn-container').style.display = 'none';
     document.getElementById('menu-list').style.display = 'none';
     document.getElementById('menu-content-container').style.display = 'unset';
-    gameRulesWindow.src = 'game-rules.html';
-    
 }
 
 /**
@@ -50,10 +49,11 @@ function showGameRules() {
 function showPlayTable() {
     let menuContentWrapper = document.getElementById('menu-content-wrapper');
 
+    menuContentWrapper.innerHTML = '<img src="assets/images/optimal-play-table.png">';
     document.getElementById('close-btn-container').style.display = 'none';
     document.getElementById('menu-list').style.display = 'none';
     document.getElementById('menu-content-container').style.display = 'unset';
-    menuContentWrapper.innerHTML = '<img src="assets/images/optimal-play-table.png">';
+    
 }
 
 /**
@@ -61,12 +61,12 @@ function showPlayTable() {
  * Displays advanced strategy
  */
 function showStrategy() {
-    let advancedStrategyWindow = document.getElementById('menu-content');
+    let advancedStrategyWindow = document.getElementById('menu-content-wrapper');
 
+    advancedStrategyWindow.innerHTML = '<iframe src="advanced-strategy.html" frameborder="0" id="menu-content"></iframe>'
     document.getElementById('close-btn-container').style.display = 'none';
     document.getElementById('menu-list').style.display = 'none';
     document.getElementById('menu-content-container').style.display = 'unset';
-    advancedStrategyWindow.src = 'advanced-strategy.html';
 }
 
 /**
