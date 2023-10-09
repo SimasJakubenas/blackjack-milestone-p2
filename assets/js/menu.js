@@ -34,9 +34,13 @@ function closeMenu(openMenu) {
  * Displays game rules content
  */
 function showGameRules() {
+    let gameRulesWindow = document.getElementById('menu-content');
+
     document.getElementById('close-btn-container').style.display = 'none';
     document.getElementById('menu-list').style.display = 'none';
     document.getElementById('menu-content-container').style.display = 'unset';
+    gameRulesWindow.src = 'game-rules.html';
+    
 }
 
 /**
