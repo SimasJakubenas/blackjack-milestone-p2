@@ -167,13 +167,20 @@ header i:hover {
     background-color: var(--black);
     font-size: 5vh;
     color: var(--light-grey);
-    padding: 3vh;
+    padding: 7vh;
     border: 0.1em solid var(--light-grey);
     border-radius: 0.3em;
 }
 
+#game-rules-content h1 {
+    font-family: 'Lalezar', cursive;
+    font-size: 15vh !important;
+    font-weight: 400;
+}
+
 #game-rules-content p {
     font-size: 10vh;
+    margin: 2vh 0 4vh;
 }
 
 #menu-content {
