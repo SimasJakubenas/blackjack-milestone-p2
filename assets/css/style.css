@@ -175,6 +175,14 @@ header i:hover {
     font-weight: 400;
 }
 
+#game-rules-content h2, #advanced-strategy-content h2 {
+    font-size: 12vh !important;
+}
+
+#advanced-strategy-content ul {
+    font-size: 10vh;
+} 
+
 #game-rules-content p, #advanced-strategy-content p {
     font-size: 10vh;
     margin: 2vh 0 4vh;
