@@ -21,7 +21,7 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
+#game-page {
     font-family: 'Laila', sans-serif;
     background: url(../images/green-felt.jpg) center center,
                 green;
@@ -65,6 +65,10 @@ main {
 /* Removes default anchor background */
 a {
     background-color: rgba(0, 0, 0, 0);
+}
+
+#game-rules, #advanced-strategy {
+    background-color: var(--dark-grey);
 }
 
 /* ------------Header style */
