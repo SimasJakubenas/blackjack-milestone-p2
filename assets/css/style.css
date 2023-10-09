@@ -165,25 +165,17 @@ header i:hover {
 /* Menu content style */
 #game-rules-content, #advanced-strategy-content {
     background-color: var(--black);
+    font-size: 7vh;
     color: var(--light-grey);
 }
 
 #game-rules-content h1, #advanced-strategy-content h1 {
     font-family: 'Lalezar', cursive;
-    font-size: 8vh !important;
     font-weight: 400;
 }
 
-#game-rules-content h2, #advanced-strategy-content h2 {
-    font-size: 6.5vh !important;
-}
-
-#advanced-strategy-content ul {
-    font-size: 5vh;
-} 
 
 #game-rules-content p, #advanced-strategy-content p {
-    font-size: 5vh;
     margin: 2vh 0 4vh;
 }
 
@@ -587,21 +579,5 @@ footer span {
     footer span {
         font-size: 2.5vh;
         max-width: 65%
-    }
-
-    #game-rules-content h1, #advanced-strategy-content h1 {
-        font-size: 15vh;
-    }
-    
-    #game-rules-content h2, #advanced-strategy-content h2 {
-        font-size: 12vh;
-    }
-    
-    #advanced-strategy-content ul {
-        font-size: 10vh;
-    } 
-    
-    #game-rules-content p, #advanced-strategy-content p {
-        font-size: 10vh;
     }
 }
