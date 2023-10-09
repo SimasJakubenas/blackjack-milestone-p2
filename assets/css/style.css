@@ -167,9 +167,6 @@ header i:hover {
     background-color: var(--black);
     font-size: 5vh;
     color: var(--light-grey);
-    padding: 7vh;
-    border: 0.1em solid var(--light-grey);
-    border-radius: 0.3em;
 }
 
 #game-rules-content h1 {
@@ -183,12 +180,15 @@ header i:hover {
     margin: 2vh 0 4vh;
 }
 
-#menu-content {
-    height: 22.7vh;
+#menu-content-wrapper {
+    border: 0.1em solid var(--light-grey);
+    border-radius: 0.3em;
+    padding: 3vw;
+    margin: 0 3vw;
 }
 
 #menu-content {
-    padding: 0 5vw;
+    height: 22.7vh;
     width: 100%;
     color: var(--light-grey);
 
