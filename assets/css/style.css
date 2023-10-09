@@ -521,7 +521,7 @@ footer span {
 /* ---------------- Media querries */
 
 /* Media query for screens > 350px */
-@media screen and (min-width: 350px) {
+@media screen and (min-width: 420px) {
     #bet-container {
         overflow: visible;
     }
