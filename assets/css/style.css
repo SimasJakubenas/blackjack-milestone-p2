@@ -165,39 +165,39 @@ header i:hover {
 /* Menu content style */
 #game-rules-content, #advanced-strategy-content {
     background-color: var(--black);
-    font-size: 5vh;
     color: var(--light-grey);
 }
 
 #game-rules-content h1, #advanced-strategy-content h1 {
     font-family: 'Lalezar', cursive;
-    font-size: 15vh !important;
+    font-size: 8vh !important;
     font-weight: 400;
 }
 
 #game-rules-content h2, #advanced-strategy-content h2 {
-    font-size: 12vh !important;
+    font-size: 6.5vh !important;
 }
 
 #advanced-strategy-content ul {
-    font-size: 10vh;
+    font-size: 5vh;
 } 
 
 #game-rules-content p, #advanced-strategy-content p {
-    font-size: 10vh;
+    font-size: 5vh;
     margin: 2vh 0 4vh;
 }
 
 #menu-content-wrapper {
     border: 0.1em solid var(--light-grey);
     border-radius: 0.3em;
-    padding: 3vw;
     margin: 0 3vw;
+    contain: content;
 }
 
 #menu-content-wrapper img {
-    max-height: 40vh;
+    max-height: 50vh;
     border-radius: 0.3em;
+    padding: 3vh 0;
 }
 
 #menu-content-wrapper img:hover {
@@ -205,8 +205,9 @@ header i:hover {
 }
 
 #menu-content {
-    height: 22.7vh;
+    height: 50vh;
     width: 100%;
+    padding: 3vw;
     color: var(--light-grey);
 
 }
@@ -558,6 +559,10 @@ footer span {
     footer span {
         font-size: 1.8vh;
     }
+
+    #menu-content-wrapper {
+        contain: none;
+    }
 }
 
 /* Media query for screens > 950px */
@@ -582,5 +587,21 @@ footer span {
     footer span {
         font-size: 2.5vh;
         max-width: 65%
+    }
+
+    #game-rules-content h1, #advanced-strategy-content h1 {
+        font-size: 15vh;
+    }
+    
+    #game-rules-content h2, #advanced-strategy-content h2 {
+        font-size: 12vh;
+    }
+    
+    #advanced-strategy-content ul {
+        font-size: 10vh;
+    } 
+    
+    #game-rules-content p, #advanced-strategy-content p {
+        font-size: 10vh;
     }
 }
