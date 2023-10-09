@@ -58,3 +58,12 @@ function showStrategy() {
     document.getElementById('menu-list').style.display = 'none';
     document.getElementById('menu-content-container').style.display = 'unset';
 }
+
+/**
+ * Returns back to menu list by hiding menu content and displaying menu list
+ */
+function returnToMenu() {
+    document.getElementById('menu-content-container').style.display = 'none';
+    document.getElementById('close-btn-container').style.display = 'block';
+    document.getElementById('menu-list').style.display = 'unset';
+}
