@@ -38,3 +38,13 @@ function showGameRules() {
     document.getElementById('menu-list').style.display = 'none';
     document.getElementById('menu-content-container').style.display = 'unset';
 }
+
+/**
+ * Hides menu items and closing icon
+ * Displays optimal play table
+ */
+function showPlayTable() {
+    document.getElementById('close-btn-container').style.display = 'none';
+    document.getElementById('menu-list').style.display = 'none';
+    document.getElementById('menu-content-container').style.display = 'unset';
+}
