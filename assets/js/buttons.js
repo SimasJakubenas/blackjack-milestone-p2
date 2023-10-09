@@ -2,13 +2,25 @@
 document.addEventListener('DOMContentLoaded', function() {
     let betButtons = document.getElementsByClassName('bet-chips');
     let controlButtons = document.getElementsByClassName('control-btn');
+
+    // Menu controls
     let menuIcon = document.getElementById('menu-icon');
-    let closeMenuX = document.getElementById('menu-close')
-    
+    let closeMenuX = document.getElementById('menu-close');
+    const menuGameRules = document.getElementById('game-rules');
+    const menuOptimalPlayTable = document.getElementById('optimal-play-table');
+    const menuAdvancedStrategy = document.getElementById('advanced stratergy');
+    const backToMenu = document.getElementById('menu-content-close');
+
     arrowLeft.addEventListener('click', shiftLeft); // Moves chips to left
     arrowRight.addEventListener('click', shiftRight); // Moves chips to right
+    // Menu control event listeners
     menuIcon.addEventListener('click', openMenu); //Open menu
     closeMenuX.addEventListener('click', closeMenu); //Close menu
+    menuGameRules.addEventListener('click', showGameRules); // game rules
+    menuOptimalPlayTable.addEventListener('click', showPlayTable); // Optimal play table
+    menuAdvancedStrategy.addEventListener('click', showStrategy); // Advanced strategy
+    backToMenu.addEventListener('click', returnToMenu); // Returns to menu screen
+    
     // Iterates betting buttons and determines a bet size which gets passed on to placeBet function
     for (let betButton of betButtons) {
         betButton.addEventListener('click', function() {
