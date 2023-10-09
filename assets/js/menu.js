@@ -61,9 +61,12 @@ function showPlayTable() {
  * Displays advanced strategy
  */
 function showStrategy() {
+    let advancedStrategyWindow = document.getElementById('menu-content');
+
     document.getElementById('close-btn-container').style.display = 'none';
     document.getElementById('menu-list').style.display = 'none';
     document.getElementById('menu-content-container').style.display = 'unset';
+    advancedStrategyWindow.src = 'advanced-strategy.html';
 }
 
 /**
