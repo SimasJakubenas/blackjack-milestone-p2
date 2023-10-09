@@ -70,10 +70,6 @@ a {
     background-color: rgba(0, 0, 0, 0);
 }
 
-#game-rules, #advanced-strategy {
-    background-color: var(--dark-grey);
-}
-
 /* ------------Header style */
 
 header {
@@ -164,6 +160,24 @@ header i:hover {
 #menu li:nth-child(1), #menu li:nth-child(3) {
     background-color: rgba(102, 102, 102, 0.5);
     border-radius: 0.3em;
+}
+
+/* Menu content style */
+#game-rules-content, #advanced-strategy {
+    background-color: var(--black);
+    font-size: 5vh;
+    color: var(--light-grey);
+    padding: 3vh;
+    border: 0.1em solid var(--light-grey);
+    border-radius: 0.3em;
+}
+
+#game-rules-content p {
+    font-size: 10vh;
+}
+
+#menu-content {
+    height: 22.7vh;
 }
 
 #menu-content {
