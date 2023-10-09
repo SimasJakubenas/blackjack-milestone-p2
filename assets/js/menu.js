@@ -27,3 +27,9 @@ function closeMenu(openMenu) {
     menu.classList.remove('enlarge-menu');
     document.getElementById('menu-icon').style.color = '#DDDEC6'; // returns original icon colour
 }
+
+function showGameRules() {
+    document.getElementById('close-btn-container').style.display = 'none';
+    document.getElementById('menu-list').style.display = 'none';
+    document.getElementById('menu-content-container').style.display = 'unset';
+}
