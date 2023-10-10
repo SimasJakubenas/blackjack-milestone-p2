@@ -4,7 +4,7 @@ let dealerCards = [];
 
 let playerSum = 0;
 let dealerSum = 0;
-let betAmount = 0;
+ betAmount = 0;
 
 // Arrows that move bet container left and right for small screens
 let arrowLeft = document.getElementById('arrow-left');
@@ -39,7 +39,7 @@ function removeGreeting() {
 /** Main game function was is called when 'deal' button is pressed
  * Contains all the game logic functions 
  */
-function dealHand(deal, hit, stand, bet) {
+function dealHand(deal, hit, stand, bet, reset) {
     document.getElementById('message-field').style.visibility = 'hidden'; // Hides outcome message
     
     // Checks if bet has been placed
@@ -51,7 +51,7 @@ function dealHand(deal, hit, stand, bet) {
         selectInitialCards();
         displayInitialCards();
         displayCardValuesSum();
-        buttonSwap(deal, hit, stand, bet);
+        buttonSwap(deal, hit, stand, reset);
         dealerBlackjackCheck(hit, stand, bet);
         playerAceValue();
     } else { // If bet has not been placed displays a message
@@ -87,11 +87,11 @@ function displayCardValuesSum() {
  * Hide betting buttons and display play buttons
  * Hide bet selection
  */
-function buttonSwap(deal, hit, stand) {
+function buttonSwap(deal, hit, stand, reset) {
     document.getElementById('players-field').style.visibility ='visible'; // Reveal players field uppon repeat game
     // Display deal and reset buttons
     deal.style.display ='none';
-    document.getElementById('reset-btn').style.display ='none';
+    reset.style.display ='none';
     // hide hit and stand buttons
     hit.style.display ='unset';
     stand.style.display ='unset';

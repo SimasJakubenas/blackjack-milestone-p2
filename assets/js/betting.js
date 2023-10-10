@@ -6,7 +6,7 @@
  * Clears card arrays
  * Revers back to default reverse card's attributes
  */
-function selectBetSize(deal, bet) {
+function selectBetSize(deal, bet, reset) {
     document.getElementById('message-field').style.visibility = 'hidden'; // Hides outcome message
     document.getElementById('arrow-left').style.display = 'unset'; // Reveals left arrow
     document.getElementById('arrow-right').style.display = 'unset'; // Hides right arrow
@@ -17,7 +17,7 @@ function selectBetSize(deal, bet) {
     document.getElementById('players-field').style.visibility ='hidden';
     // Displays deal and reset buttons 
     deal.style.display ='unset';
-    document.getElementById('reset-btn').style.display ='unset';
+    reset.style.display ='unset';
     // Clears card container for new game
     document.getElementById('players-card-container').innerHTML = '';
     document.getElementById('dealers-card-container').innerHTML = '';

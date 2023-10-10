@@ -49,9 +49,10 @@ function gameControls(buttonType) {
     let hit = document.getElementById('hit-btn');
     let stand = document.getElementById('stand-btn');
     let bet = document.getElementById('bet-btn');
+    let reset = document.getElementById('reset-btn');
 
     if (buttonType === 'deal-btn') {
-        dealHand(deal, hit, stand, bet);
+        dealHand(deal, hit, stand, bet, reset);
     }
     if (buttonType === 'hit-btn') {
         playerDraw(hit, stand, bet);
@@ -60,9 +61,13 @@ function gameControls(buttonType) {
         dealerDraw(hit, stand, bet);
     }
     if (buttonType === 'bet-btn') {
-        selectBetSize(deal, bet);
+        selectBetSize(deal, bet, reset);
     }
     if (buttonType === 'lets-play-btn') {
         removeGreeting();
+    }
+    if (buttonType === 'reset-btn') {
+        betAmount = 0;
+        document.getElementById('bet-position').innerHTML = '';
     }
 }
