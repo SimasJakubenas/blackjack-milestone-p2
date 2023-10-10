@@ -377,13 +377,16 @@ th, td {
 
 #hand-counter-container {
     flex-direction: row;
-    font: 3vh;
     align-items: center;
     padding-top: 3vh;
+    position: absolute;
+    right: 2vw;
 }
 
 #hand-counter-container p {
     color: var(--light-grey);
+    margin-right: 0.5em;
+    font-size: 3.5vh;
 }
 
 /* Counter box styling */
@@ -396,10 +399,13 @@ th, td {
     background-color: rgba(221,222,198,0.6);
     text-align: center;
     display: none;
+    font-weight: 600;
+}
+
+.card-count {
     position: absolute;
     left: -18vh;
     top: 7vh;
-    font-weight: 600;
 }
 
 #chip-count {
