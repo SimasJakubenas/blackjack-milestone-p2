@@ -69,6 +69,7 @@ main {
 /* Removes default anchor background */
 a {
     background-color: rgba(0, 0, 0, 0);
+    color: rgba(0, 0, 0, 0);
 }
 
 /* ------------Header style */
