@@ -349,11 +349,9 @@ th, td {
 
 #outcome-message {
     color: var(--light-grey);
+    font-size: 4vh;
+    font-weight: bold;
 }
-
-/* #outcome-message {
-    
-} */
 
 #table-mark {
     position: absolute;
