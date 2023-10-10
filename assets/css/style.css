@@ -375,6 +375,17 @@ th, td {
     opacity: 0.8;
 }
 
+#hand-counter-container {
+    flex-direction: row;
+    font: 3vh;
+    align-items: center;
+    padding-top: 3vh;
+}
+
+#hand-counter-container p {
+    color: var(--light-grey);
+}
+
 /* Counter box styling */
 
 .count-box {
