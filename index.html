@@ -9,36 +9,36 @@
 </head>
 <body id="game-page">
     <header class="flex">
-        <a href="index.html">
+        <a href="index.html" aria-label="click site logo to refresh the page">
             <img src="assets/images/logo/simos-blackjack-logo.png" alt="simos blackjack logo depicts 2 playing cards and a pile of chips">
         </a>
         <i class="fas fa-cog" id="menu-icon">
-            <a href="#" id="menu-anchor"></a><!-- Menu icon -->
+            <a href="#" id="menu-anchor" aria-label="open menu"></a><!-- Menu icon -->
         </i> 
     </header>
     <!-- Website's menu -->
     <section id="menu">
         <div class="closing-btn-container" id="close-btn-container">
             <i class="fas fa-times" id="menu-close">
-                <a href="#"></a>
+                <a href="#" aria-label="close menu"></a>
             </i>
         </div>
         <ul id="menu-list">
             <li id="game-rules">
-                <a href="#">Game rules</a>
+                <a href="#" aria-label="go to game rules">Game rules</a>
             </li>
             <li id="optimal-play-table">
-                <a href="#">Optimal Play Table</a>
+                <a href="#" aria-label="check optimal play table">Optimal Play Table</a>
             </li>
             <li id="advanced stratergy">
-                <a href="#">Advanced Strategy</a>
+                <a href="#" aria-label="go to advanced strategy">Advanced Strategy</a>
             </li>
         </ul>
         <!-- Menu content container -->
         <div id="menu-content-container">
             <div class="closing-btn-container" id="back-btn-container">
                 <i class="fas fa-caret-left" id="menu-content-close"> 
-                    <a href="#"></a>
+                    <a href="#" aria-label="go back to menu"></a>
                 </i>
             </div>
             <div id="menu-content-wrapper" class="flex center-content"></div> <!-- Element used to display menu content -->
@@ -56,7 +56,7 @@
         <input type="text" id="input-name" maxlength="15" required>
         <p>You will get 10000 chips... Make it count!</p>
         <div class="flex center-content">
-            <button id="lets-play-btn" class="control-btn">LET'S PLAY</button>
+            <button id="lets-play-btn" class="control-btn" aria-label="let's play button will bring up the betting phase of the game">LET'S PLAY</button>
         </div>
     </section>
     <!-- Blurry backdrop effect element -->
@@ -138,11 +138,11 @@
         </section>
         <!-- Buttons that controls the flow of the game -->
         <section id="game-controls" class="relative-pstn">
-            <button id="deal-btn" class="control-btn betting-btn">DEAL</button>
-            <button id="reset-btn" class="control-btn betting-btn">RESET</button>
-            <button id="hit-btn" class="control-btn play-btn">HIT</button>
-            <button id="stand-btn" class="control-btn play-btn">STAND</button>
-            <button id="bet-btn" class="control-btn play-btn">BET</button>
+            <button id="deal-btn" class="control-btn betting-btn" aria-label="deal button will start the hand">DEAL</button>
+            <button id="reset-btn" class="control-btn betting-btn" aria-label="reset button will clear the bet">RESET</button>
+            <button id="hit-btn" class="control-btn play-btn" aria-label="hit button will draw one card">HIT</button>
+            <button id="stand-btn" class="control-btn play-btn" aria-label="stand button will pass the turn to dealer">STAND</button>
+            <button id="bet-btn" class="control-btn play-btn" aria-label="bet button will start a new betting round">BET</button>
         </section>
     </main>
     <footer class="relative-pstn">
