@@ -93,14 +93,14 @@ In the table bellow i tried to extract requirements for the site from user and d
 
 | Requirement | Feature | sprint |
 | -- | -- | -- |
-| Free and fun to play game of blackjack | A functional classic casino –style game of blackjack | 1 |
+| Free and fun to play game of blackjack | A functional classic casino–style game of blackjack | 1 |
 | | Player and a dealer gets 2 cards. One of dealers cards is hidden | 1 |
 | | The total value of players cards is displayed on the screen | 1 |
 | | The total value of dealers cards is displayed on the screen | 1 |
 | Player is able to make choices of actions they want to take | The game is contolled via play buttons | 1 |
 | | Deal button starts the game | 1 |
 | | Hit button draws a new card | 1 | 
-| | Stand button passes the d=turn to dealer | 1 | 
+| | Stand button passes the turn to dealer | 1 | 
 | | Split button beraks up the hand in to two separate games | 3 |
 | | Double button doubles the size of the bet and draws one card ony | 2 |
 | | Bet button brings the player back to the betting stage | 1 | 
@@ -120,3 +120,31 @@ In the table bellow i tried to extract requirements for the site from user and d
 | | Play buttons change depending on the game mode you‘re on | 1 | 
 | | Menu is classic ‘gear‘ icon in the top right corner exactly where one would expect it | 1 |
 | A way to reach out to the developer of the site | Foooter icons with links to my GitHub and LinkedIn in the footer | 1 |
+
+### The Structure Plane
+
+Simo's Blackjack consists three pages - the main game page and two information based pages (game rules and advanced strategy) accessibe from the menu.
+
+Uppon loading the page user is presented with a pop up introducing the purpose of the website and prompting them to enter their name.
+
+Uppon pressing 'LET'S PLAY' button the game starts. All the elements on the screen are arranged in such order to unsure a smooth transition of continuos gameplay and to provide the best user experience.
+
+#### Site Architecture
+
+Header containing site logo and menu.
+
+Menu:
+- Game Rules (opens a new page in a frame)
+- Optimal Play Table
+- Advanced Strategy (opens a new page in a frame)
+
+Main Game Page:
+- Info table displaying player name and balance
+- Dealer cards 
+- Player cards
+- Outcome message (only appears when a hand is over)
+- A placed bet size
+- A selection of betting chips
+- Game control buttons
+
+Footer contains links to developers GitHub and LinkedIn profiles.
