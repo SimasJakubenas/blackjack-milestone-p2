@@ -98,7 +98,7 @@ header i {
     right: 2vw;
 }
 
-header i:hover, header a:focus i, header a:active i {
+header i:hover, header button:focus i, header button:active i {
     color: var(--red);
     cursor: pointer;
 }
@@ -131,12 +131,12 @@ header i:hover, header a:focus i, header a:active i {
     padding: 0.3em 0.6em;
 }
 
-#menu li a {
+#menu li button {
     color: var(--light-grey);
     text-decoration: none;
 }
 
-#menu li:hover a, #menu li a:focus {
+#menu li:hover button, #menu li button:focus {
     text-decoration: underline;
 }
 
@@ -150,12 +150,19 @@ header i:hover, header a:focus i, header a:active i {
     color: var(--light-grey);
 }
 
-.closing-btn-container i:hover, .closing-btn-container a:focus i, .closing-btn-container a:active i {
+.closing-btn-container i:hover, .closing-btn-container button:focus i, .closing-btn-container button:active i {
     color: var(--red);
 }
 
 #menu-content-container {
     display: none;
+}
+
+#menu button {
+    background: none;
+    border: none;
+    font-size: 4vh;
+    font-family: 'Laila', sans-serif;
 }
 
 #menu-content-close i:hover, #menu-content-close:focus i, #menu-content-close:active i {
