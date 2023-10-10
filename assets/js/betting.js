@@ -26,7 +26,7 @@ function selectBetSize(deal, bet) {
     dealerCards = [];
     // Changes back the reverse cards attributes for new game
     displayReverseCard.src = `assets/images/cards/reverse.png`;
-    displayReverseCard.alt = `reverse card`;
+    displayReverseCard.alt = `upside down deales card`;
     // Clears the message fiel
     outcomeMsg.textContent = '';
     // Iterates countBoxes variable to target all the list items
@@ -45,7 +45,7 @@ function placeBet(betSize) {
 
     // Add attributes to bet1000Chips variable
     betChip.src = `assets/images/chips/${betSize}-slanted.png`;
-    betChip.alt = `${betSize} chip has been bet`;
+    betChip.alt = `${betSize} chip has been bet on the table`;
     // Clears current bet and add an image of new bet
     document.getElementById('bet-position').innerHTML = '';
     document.getElementById('bet-position').appendChild(betChip);

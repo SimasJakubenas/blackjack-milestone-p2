@@ -39,7 +39,7 @@ function displayInitialCards() {
     displayDealerCard.alt = `${dealerCards[0].name}`;
     // Assign reverse dealer card attributes
     displayReverseCard.src = `assets/images/cards/reverse.png`;
-    displayReverseCard.alt = `reverse card`;
+    displayReverseCard.alt = `upside down deales card`;
     // Insert the created images to corresponding card containers
     document.getElementById('players-card-container').appendChild(displayFirstCard);
     document.getElementById('players-card-container').appendChild(displaySecondCard);
