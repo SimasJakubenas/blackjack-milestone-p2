@@ -243,11 +243,12 @@ header i:hover, header button:focus i, header button:active i {
     height: 4em;
 }
 
-#greeting-msg p {
+#greeting-msg p, #greeting-msg h1 {
     color: var(--light-grey);
     font-size: 1.5em;
     padding: 0.8em 0;
     text-align: center;
+    font-weight: normal;
 }
 
 label {
