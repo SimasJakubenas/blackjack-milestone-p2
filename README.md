@@ -198,3 +198,32 @@ To highlight buttons I used more bulky [Lalezar](https://fonts.google.com/specim
 ![image](https://github.com/SimasJakubenas/blackjack-milestone-p2/assets/138577499/f1566e20-5938-4b64-a7ae-5237fd55c786) 
 
 ![image](https://github.com/SimasJakubenas/blackjack-milestone-p2/assets/138577499/11e0c834-fad9-4fc4-8a3a-88f4e84c1102)
+
+## Technologies Used
+
+### Languages Used 
+
+HTML, CSS, Javascript
+
+### Frameworks, Libraries & Programs Used
+
+- [Figma](https://figma.com/) - used to create wireframes
+
+- [Git](https://git-scm.com/) - for version control.
+- [GitHub](https://github.com/) - to save and store the files for the website
+- [Color](https://color.adobe.com/create/color-wheel) - to create the colour palette for the site
+- [Google Fonts](https://fonts.google.com/) - to import the fonts used on the website
+- [Font Awesome](https://fontawesome.com/) - for the icons used on the website
+- [Google Developer Tools](https://developers.google.com/web/tools) - to test progress, troubleshoot, identify responsiveness and styling issues
+- [IloveIMG](https://www.iloveimg.com/) - to compress and crop images
+- [Favicon.io](https://favicon.io/) - to create favicon
+- [Am I Responsive?](http://ami.responsivedesign.is/) - to show the website image on a range of devices
+- [Readme.so](https://readme.so/) - to help me write README.md
+- [W3 Validator](https://validator.w3.org/) - to validate HTML
+- [Jshint](https://jshint.com/) - to test the Javascript code
+- [W3 Validator for CSS](https://jigsaw.w3.org/css-validator/) - to validate CSS
+- [Developer Mozilla](https://developer.mozilla.org/) - to create linear-gradient colours
+- [W3Schools](https://www.w3schools.com/) - for variaus JavaScript functionality querries
+- [Wave web accessibility evaluation tool](https://wave.webaim.org/) - to test accessibility
+- [WebAim contrast checker](https://webaim.org/resources/contrastchecker/) - to test contrast between text and background
+- [Canva](https://www.canva.com/) - to create logos, card and chip images.
