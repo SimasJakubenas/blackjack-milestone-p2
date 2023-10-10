@@ -7,6 +7,10 @@
  * Revers back to default reverse card's attributes
  */
 function selectBetSize(deal, bet, reset) {
+    let handCounter = parseInt(document.getElementById('hand-counter').innerHTML);
+    
+    handCounter += 1;
+    document.getElementById('hand-counter').innerHTML = handCounter; // Counts the number og hands played
     document.getElementById('message-field').style.visibility = 'hidden'; // Hides outcome message
     document.getElementById('arrow-left').style.display = 'unset'; // Reveals left arrow
     document.getElementById('arrow-right').style.display = 'unset'; // Hides right arrow
