@@ -35,7 +35,6 @@ body {
 
 main {
     height: 82vh;
-    position: relative;
 }
 
 .grid {
@@ -368,7 +367,6 @@ th, td {
 }
 
 #table-mark img {
-    position: relative;
     top: 5vh;
     transform: rotateX(50deg);
     height: 55vh;
@@ -462,7 +460,6 @@ th, td {
 
 #bet-container {
     flex-direction: row;
-    position: relative;
     width:  30.5vh;
     padding-top: 0.5em;
     height: 11vh;
