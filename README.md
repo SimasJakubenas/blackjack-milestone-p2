@@ -28,7 +28,7 @@
 ### The Strategy Plane
 
 For this project I've decided to delve into forbidden  waters of the gambling world. It's a massive industry
-netting $450B a year globaly and is on a trajectory to hit $1T befor 2030. My focus is to replicate a live casino-style blackjack game, while incorporating all the befenitial features of an online game. The value I wish to provide to the user is a platform where one can learn the game without investing any money, witness potential win/loss rates and hopefully reduce, minimise or completely eliminate one's loses. Idealy this website will educate one on the ins and outs of the game and discourage them from playing and losing their hard earned money.
+netting $450B a year globaly and is on a trajectory to hit $1T before 2030. My focus is to replicate a live casino-style blackjack game, while incorporating all the befenitial features of an online game. The value I wish to provide to the user is a platform where one can learn the game without investing any money, witness potential win/loss rates and hopefully reduce, minimise or completely eliminate one's loses. Idealy this website will educate one on the ins and outs of the game and discourage them from playing and losing their hard earned money.
 
 #### Problem Statement
 
@@ -57,7 +57,7 @@ I've done an analysis of existing competitors. Me being a user of a number of on
 
 #### Target Audience 
 
-Simos-Blackjack is for anyone looking to learn the game of blackjack or expand their knowledge and improve their strategy. From a compleat novice to a pro who's on a quest to take the casinos for all they got, everyone will find something of benefit on this website.
+Simos-Blackjack is for anyone looking to learn the game of blackjack or expand their knowledge and improve their strategy. From a complete novice to a pro who's on a quest to take the casinos for all they got, everyone will find something of benefit on this website.
 
 ### The Scope Plane
 
@@ -123,7 +123,7 @@ In the table bellow i tried to extract requirements for the site from user and d
 
 ### The Structure Plane
 
-Simo's Blackjack consists three pages - the main game page and two information based pages (game rules and advanced strategy) accessibe from the menu.
+Simo's Blackjack consists of three pages - the main game page and two information based pages (game rules and advanced strategy) accessibe from the menu.
 
 Uppon loading the page user is presented with a pop up introducing the purpose of the website and prompting them to enter their name.
 
