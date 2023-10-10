@@ -28,7 +28,7 @@ body {
 }
 
 #game-page {
-    background: url(../images/green-felt.jpg) center center,
+    background: url(../images/green-felt.webp) center center,
                 green;
     background-size: cover;
 }
