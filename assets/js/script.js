@@ -4,7 +4,7 @@ let dealerCards = [];
 
 let playerSum = 0;
 let dealerSum = 0;
- betAmount = 0;
+let betAmount = 0;
 
 // Arrows that move bet container left and right for small screens
 let arrowLeft = document.getElementById('arrow-left');
@@ -44,16 +44,21 @@ function dealHand(deal, hit, stand, bet, reset) {
     
     // Checks if bet has been placed
     if (betAmount > 0) {
-        document.getElementById('arrow-left').style.display = 'none'; // Hides left arrow
-        document.getElementById('arrow-right').style.display = 'none'; // Hides right arrow
+        if (balance.textContent > 0) {
+            document.getElementById('arrow-left').style.display = 'none'; // Hides left arrow
+            document.getElementById('arrow-right').style.display = 'none'; // Hides right arrow
 
-        outcomeMsg.textContent = '';
-        selectInitialCards();
-        displayInitialCards();
-        displayCardValuesSum();
-        buttonSwap(deal, hit, stand, reset);
-        dealerBlackjackCheck(hit, stand, bet);
-        playerAceValue();
+            outcomeMsg.textContent = '';
+            selectInitialCards();
+            displayInitialCards();
+            displayCardValuesSum();
+            buttonSwap(deal, hit, stand, reset);
+            dealerBlackjackCheck(hit, stand, bet);
+            playerAceValue();
+        } else {
+            alert("You lost all your chip! Better luck next time...");
+            throw 'You lost all your chip! Better luck next time...'
+        }
     } else { // If bet has not been placed displays a message
         document.getElementById('message-field').style.visibility = 'visible'; // Reveals outcome message
         outcomeMsg.textContent = 'Place your bet!';
