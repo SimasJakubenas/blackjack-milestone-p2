@@ -293,6 +293,10 @@ All code was written by the developer with exception of:
 
 [Greener Today project](https://github.com/stef-cruz/power-up-point) - some inspiration for README.md was  taken from Greener Today project that I was taking part in.
 
+Content for [Advanced Strategy](https://www.cloudbet.com/en/blog/posts/the-tricky-science-of-advanced-blackjack-strategy#:~:text=Advanced%20blackjack%20strategy%20involves%20keeping,might%20be%20enough%20for%20you.) page was taken from a post on www.cloudbet.com.
+
+[Optiamal Play Table](https://www.techopedia.com/wp-content/uploads/2023/04/TECHOPEDIA-DEALERS-CARD-TABLE-768x788.png) was taken from www.techopedia.com
+
 ### Media 
 
 [Background Image](https://www.istockphoto.com/photo/green-poker-background-gm453187915-25699262) by fotograv.
