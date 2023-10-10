@@ -15,6 +15,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    outline: none;
 }
 
 html {
@@ -84,6 +85,10 @@ header img {
     margin-left: 2vw;
 }
 
+header a:hover img, header a:focus img {
+    outline: 0.15em solid var(--red);
+}
+
 header i {
     color: var(--light-grey);
     font-size: 6vh;
@@ -92,7 +97,7 @@ header i {
     right: 2vw;
 }
 
-header i:hover {
+header i:hover, header a:focus i, header a:active i {
     color: var(--red);
     cursor: pointer;
 }
@@ -480,7 +485,6 @@ th, td {
 .control-btn:hover, .control-btn:focus{
     scale: 1.05;
     box-shadow: 0.1em 0.1em 0.5em var(--black);
-    outline: none;
 }
 
 /* hides play buttons on loading the game */
@@ -502,7 +506,7 @@ footer i {
     color: var(--light-grey);
 }
 
-footer i:hover, footer i:focus, footer i:active  {
+footer i:hover, footer a:focus i, footer i:active  {
     color: var(--red);
 }
 
