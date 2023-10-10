@@ -146,9 +146,10 @@ header i:hover, header a:focus i, header a:active i {
 
 .closing-btn-container i {
     padding: 0.3em;
+    color: var(--light-grey);
 }
 
-.closing-btn-container i:hover, .closing-btn-container i:focus {
+.closing-btn-container i:hover, .closing-btn-container a:focus i, .closing-btn-container a:active i {
     color: var(--red);
 }
 

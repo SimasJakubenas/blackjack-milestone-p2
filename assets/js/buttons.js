@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let controlButtons = document.getElementsByClassName('control-btn');
 
     // Menu controls
-    let menuIcon = document.getElementById('menu-icon');
+    let menuIcon = document.getElementById('menu-anchor');
     let closeMenuX = document.getElementById('menu-close');
     const menuGameRules = document.getElementById('game-rules');
     const menuOptimalPlayTable = document.getElementById('optimal-play-table');
