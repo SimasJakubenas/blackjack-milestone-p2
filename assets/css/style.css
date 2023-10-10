@@ -243,6 +243,11 @@ header i:hover, header a:focus i, header a:active i {
     text-align: center;
 }
 
+label {
+    color: var(--light-grey);
+    font-size: 1.5em;
+}
+
 #greeting-msg input {
     border-radius: 0.3em;
     background-color: var(--light-grey);
