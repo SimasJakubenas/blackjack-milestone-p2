@@ -278,3 +278,33 @@ To clone the repository:
 
 4. Change the current working directory in the terminal of your code editor to the location you want to use for the cloned directory.
 5. Type 'git clone' into the terminal and then paste the link you copied in step 3. Press enter.
+
+## Credits
+
+### Code used 
+
+All code was written by the developer with exception of:
+- [Developer Mozilla](https://developer.mozilla.org/) - to create linear-gradient colours
+- [W3Schools](https://www.w3schools.com/) - for variaus JavaScript functionality querries
+
+### Content 
+
+[Georgina Carliste project](https://github.com/GeorginaCarlisle/wild-sliding-puzzles-p2) - some inspiration for project's README.md was taken from Georgina's project.
+
+[Greener Today project](https://github.com/stef-cruz/power-up-point) - some inspiration for README.md was  taken from Greener Today project that I was taking part in.
+
+### Media 
+
+[Background Image](https://www.istockphoto.com/photo/green-poker-background-gm453187915-25699262) by fotograv.
+
+[Canva](https://www.canva.com/) was used to create all other images.
+
+### Acknowledgments
+
+I would like to acknowledge the following people:
+
+* My family and friends for being understanding while I was absent from their lives whilst I was working on this project.
+
+* My mentor Medale Oluwafemi for giving me advice and guidance. Thank you for taking me towards the boundary of limitations of my current skill level and pursuading me to overcome it by acquiring new knowledge.
+
+* Code Institute for providing me with an amazing platform to learn and grow.
