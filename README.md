@@ -148,3 +148,23 @@ Main Game Page:
 - Game control buttons
 
 Footer contains links to developers GitHub and LinkedIn profiles.
+
+### The Skeleton Plane
+
+The wireframes bellow display the intended design for the site. Great deal of thought and time was put in into making these. However, it payed off in the long run as having more defined design has drasticly dimished the need for experimenting. Only a few minor changes were made for large screen element positioning.
+
+#### Greeting Message
+
+![image](https://github.com/SimasJakubenas/blackjack-milestone-p2/assets/138577499/679f255e-82ea-4c29-ace6-67c2f8b9f49c)
+
+Main Game Page (betting phase)
+
+![image](https://github.com/SimasJakubenas/blackjack-milestone-p2/assets/138577499/360983e2-1100-4782-9bce-3e0692bc0ffd)
+
+Main Game Page (card deal phase)
+
+![image](https://github.com/SimasJakubenas/blackjack-milestone-p2/assets/138577499/c1748758-a221-4d4e-8dbf-d8c42e703557)
+
+Menu (opened)
+
+![image](https://github.com/SimasJakubenas/blackjack-milestone-p2/assets/138577499/af65273e-505e-41ee-8c14-12d97c3bf587)
