@@ -168,3 +168,33 @@ Main Game Page (card deal phase)
 Menu (opened)
 
 ![image](https://github.com/SimasJakubenas/blackjack-milestone-p2/assets/138577499/af65273e-505e-41ee-8c14-12d97c3bf587)
+
+### The Surface Plane
+
+#### Colour Scheme
+
+The idea behind the colour scheme I have put together is driven by simplicity and comfort of the eye. For someone looking to learn the game in depth they will spend quite some time playing the game, hence the colour scheme is dominated by greys and blacks. Brighter colours used only on accents and buttons.
+
+![image](https://github.com/SimasJakubenas/blackjack-milestone-p2/assets/138577499/5f132e4f-3640-4840-979f-961c97a5700f)
+
+**Red:** buttons and icon hover effects.
+
+**Black:** header, footer and menu background. Also info table text.
+
+**Dark Grey:** other backgrounds.
+
+**Light Grey:** all text exept for info table.
+
+**Yellow:** accents - chip hover border and chip selection slide arrow (small screens only).
+
+#### Typography
+
+The font [Laila](https://fonts.google.com/specimen/Laila?preview.size=22&query=Laila) is used for all text. It's a playful font that adds to the gaming spirit of the site. One would find similar fonts in official gaming sites of this kind.
+
+![image](https://github.com/SimasJakubenas/blackjack-milestone-p2/assets/138577499/99eb6c04-5d49-4687-9f8b-59ab59442db0)
+
+To highlight buttons I used more bulky [Lalezar](https://fonts.google.com/specimen/Lalezar?preview.size=22&query=lal&category=Sans+Serif) font. To enhance site's design flow the logo also uses this font.
+
+![image](https://github.com/SimasJakubenas/blackjack-milestone-p2/assets/138577499/f1566e20-5938-4b64-a7ae-5237fd55c786) 
+
+![image](https://github.com/SimasJakubenas/blackjack-milestone-p2/assets/138577499/11e0c834-fad9-4fc4-8a3a-88f4e84c1102)
