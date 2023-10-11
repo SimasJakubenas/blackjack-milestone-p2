@@ -160,7 +160,7 @@ header i:hover, header button:focus i, header button:active i {
     display: none;
 }
 
-#menu button {
+#menu button, #menu-anchor {
     background: none;
     border: none;
     font-size: 4vh;
