@@ -63,7 +63,7 @@ function gameControls(buttonType) {
         dealerDraw(hit, stand, bet, double);
     }
     if (buttonType === 'bet-btn') {
-        selectBetSize(deal, bet, reset,double);
+        selectBetSize(deal, bet, reset, double);
     }
     if (buttonType === 'lets-play-btn') {
         removeGreeting();
@@ -77,10 +77,12 @@ function gameControls(buttonType) {
         betChipDouble.alt = `${betAmount} second chip has been bet on the table`;
         betChipDouble.style.top = '-4.3em';
         document.getElementById('bet-position').appendChild(betChipDouble);
-        playerDraw(hit, stand, bet, double);
-        dealerDraw(hit, stand, bet, double); 
         betAmount *= 2;
         document.getElementById('chip-count').textContent = betAmount;
+        playerDraw(hit, stand, bet, double);
+        if (playerSum < 21) {
+            dealerDraw(hit, stand, bet, double);
+        }
         double.style.display = 'none';
     }
 }
