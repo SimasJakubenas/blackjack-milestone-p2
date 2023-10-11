@@ -305,7 +305,16 @@ th, td {
     border: 0.1em solid var(--dark-grey);
 }
 
+/* Cards field style */
 
+#cards-field {
+    overflow-x: scroll;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+}
 
 /* ------------Dealer and player cards field style*/
 
