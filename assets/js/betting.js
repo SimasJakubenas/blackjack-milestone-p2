@@ -8,8 +8,16 @@
  */
 function selectBetSize(deal, bet, reset) {
     let handCounter = parseInt(document.getElementById('hand-counter').innerHTML);
+    let betPosition = document.getElementById('bet-position');
     
     handCounter += 1;
+    // Checks if a double bet been placed and removes one chip for the next hand
+    if (betPosition.childElementCount > 1) {
+    betPosition.removeChild(betPosition.lastChild);
+    betAmount /= 2;
+    document.getElementById('chip-count').textContent = betAmount;
+    }
+    
     document.getElementById('hand-counter').innerHTML = handCounter; // Counts the number og hands played
     document.getElementById('message-field').style.visibility = 'hidden'; // Hides outcome message
     document.getElementById('arrow-left').style.display = 'unset'; // Reveals left arrow

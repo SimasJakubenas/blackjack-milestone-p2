@@ -53,7 +53,7 @@ function dealHand(deal, hit, stand, bet, reset, double) {
             displayInitialCards();
             displayCardValuesSum();
             buttonSwap(deal, hit, stand, reset, double);
-            dealerBlackjackCheck(hit, stand, bet);
+            dealerBlackjackCheck(hit, stand, bet, double);
             playerAceValue();
         } else {
             alert("You lost all your chip! Better luck next time...");
@@ -108,7 +108,7 @@ function buttonSwap(deal, hit, stand, reset, double) {
  * When player hits Blackjack this checks if dealer has an ace, if so
  * it checks the second dealer cards incase dealer has Blackjack also
  */
-function dealerBlackjackCheck(hit, stand, bet) {
+function dealerBlackjackCheck(hit, stand, bet, double) {
     if (playerSum === 21) { // If player has Blackjack
         let getBetAmount = parseInt(document.getElementById('chip-count').textContent);//Get chip count
 
@@ -144,10 +144,11 @@ function dealerBlackjackCheck(hit, stand, bet) {
  * Updates the player's cards value sum figure
  * Looks for game outcomes depending on player's cards value sum
  */
-function playerDraw(hit, stand, bet) {
+function playerDraw(hit, stand, bet, double) {
     const drawnCard = Math.floor(Math.random() * 52); // Selects drawn card's number
     const drawOneCard = document.createElement('img'); // Create drawn card variable
 
+    double.style.display = 'none';
     drawCard(drawnCard, drawOneCard);
     document.getElementById('players-card-container').appendChild(drawOneCard); // Adds drawn card to player cards container
     playerCards.push(cards[drawnCard]); // Adds drawn card to playerCards array

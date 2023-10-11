@@ -51,18 +51,19 @@ function gameControls(buttonType) {
     let bet = document.getElementById('bet-btn');
     let reset = document.getElementById('reset-btn');
     let double = document.getElementById('double-btn');
+    let betChipDouble = document.createElement('img');
 
     if (buttonType === 'deal-btn') {
         dealHand(deal, hit, stand, bet, reset, double);
     }
     if (buttonType === 'hit-btn') {
-        playerDraw(hit, stand, bet);
+        playerDraw(hit, stand, bet, double);
     }
     if (buttonType === 'stand-btn') {
         dealerDraw(hit, stand, bet);
     }
     if (buttonType === 'bet-btn') {
-        selectBetSize(deal, bet, reset);
+        selectBetSize(deal, bet, reset,double);
     }
     if (buttonType === 'lets-play-btn') {
         removeGreeting();
@@ -72,8 +73,12 @@ function gameControls(buttonType) {
         document.getElementById('bet-position').innerHTML = '';
     }
     if (buttonType === 'double-btn') {
-        playerDraw(hit, stand, bet);
-        dealerDraw(hit, stand, bet);
+        betChipDouble.src = `assets/images/chips/${betAmount}-slanted.png`;
+        betChipDouble.alt = `${betAmount} second chip has been bet on the table`;
+        betChipDouble.style.top = '-4.3em';
+        document.getElementById('bet-position').appendChild(betChipDouble);
+        playerDraw(hit, stand, bet, double);
+        dealerDraw(hit, stand, bet, double); 
         betAmount *= 2;
         document.getElementById('chip-count').textContent = betAmount;
         document.getElementById('double-btn').style.display = 'none';
