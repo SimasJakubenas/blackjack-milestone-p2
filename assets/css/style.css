@@ -383,16 +383,20 @@ th, td {
 }
 
 #hand-counter-container {
-    flex-direction: row;
+    flex-direction: row-reverse;
     align-items: center;
     padding-top: 3vh;
-    right: 2vw;
+    right: 4vw;
 }
 
 #hand-counter-container p {
     color: var(--light-grey);
-    margin-right: 0.5em;
+    margin-left: 0.5em;
     font-size: 3.5vh;
+}
+
+#hand-counter {
+    display: block !important;
 }
 
 /* Counter box styling */
@@ -565,6 +569,12 @@ footer span {
 
     #arrow-left, #arrow-right {
         visibility: none;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #hand-counter-container {
+        flex-direction: column-reverse;
     }
 }
 
