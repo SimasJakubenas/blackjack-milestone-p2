@@ -172,7 +172,7 @@ function playerDraw(hit, stand, bet, double) {
         // Hides hit and stand buttons, displays bet button and calls dealerDraw function
         hit.style.display ='none';
         stand.style.display ='none';
-        dealerDraw(hit, stand, bet);
+        dealerDraw(hit, stand, bet, double);
         bet.style.display ='unset';
     } else {
         console.log(playerSum);
@@ -225,11 +225,11 @@ function dealerAceValue() {
  * Changes the value of sum of dealers cards
  * Checks if dealers card sum is less than 17 and draws new card if so
  */
-function dealerDraw(hit, stand, bet) {
+function dealerDraw(hit, stand, bet, double) {
     // Hides hit and stand buttons
     hit.style.display ='none';
     stand.style.display ='none';
-    stand.style.display ='none';
+    double.style.display ='none';
     //Displays second dealer card
     displayReverseCard.src = `assets/images/cards/${dealerCards[1].image}`;
     dealerSum += dealerCards[1].value;

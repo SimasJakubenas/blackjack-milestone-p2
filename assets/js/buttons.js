@@ -60,7 +60,7 @@ function gameControls(buttonType) {
         playerDraw(hit, stand, bet, double);
     }
     if (buttonType === 'stand-btn') {
-        dealerDraw(hit, stand, bet);
+        dealerDraw(hit, stand, bet, double);
     }
     if (buttonType === 'bet-btn') {
         selectBetSize(deal, bet, reset,double);
@@ -81,6 +81,6 @@ function gameControls(buttonType) {
         dealerDraw(hit, stand, bet, double); 
         betAmount *= 2;
         document.getElementById('chip-count').textContent = betAmount;
-        document.getElementById('double-btn').style.display = 'none';
+        double.style.display = 'none';
     }
 }
