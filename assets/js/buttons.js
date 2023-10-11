@@ -50,9 +50,10 @@ function gameControls(buttonType) {
     let stand = document.getElementById('stand-btn');
     let bet = document.getElementById('bet-btn');
     let reset = document.getElementById('reset-btn');
+    let double = document.getElementById('double-btn');
 
     if (buttonType === 'deal-btn') {
-        dealHand(deal, hit, stand, bet, reset);
+        dealHand(deal, hit, stand, bet, reset, double);
     }
     if (buttonType === 'hit-btn') {
         playerDraw(hit, stand, bet);
@@ -69,5 +70,12 @@ function gameControls(buttonType) {
     if (buttonType === 'reset-btn') {
         betAmount = 0;
         document.getElementById('bet-position').innerHTML = '';
+    }
+    if (buttonType === 'double-btn') {
+        playerDraw(hit, stand, bet);
+        dealerDraw(hit, stand, bet);
+        betAmount *= 2;
+        document.getElementById('chip-count').textContent = betAmount;
+        document.getElementById('double-btn').style.display = 'none';
     }
 }

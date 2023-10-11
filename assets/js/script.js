@@ -39,7 +39,7 @@ function removeGreeting() {
 /** Main game function was is called when 'deal' button is pressed
  * Contains all the game logic functions 
  */
-function dealHand(deal, hit, stand, bet, reset) {
+function dealHand(deal, hit, stand, bet, reset, double) {
     document.getElementById('message-field').style.visibility = 'hidden'; // Hides outcome message
     
     // Checks if bet has been placed
@@ -52,7 +52,7 @@ function dealHand(deal, hit, stand, bet, reset) {
             selectInitialCards();
             displayInitialCards();
             displayCardValuesSum();
-            buttonSwap(deal, hit, stand, reset);
+            buttonSwap(deal, hit, stand, reset, double);
             dealerBlackjackCheck(hit, stand, bet);
             playerAceValue();
         } else {
@@ -92,7 +92,7 @@ function displayCardValuesSum() {
  * Hide betting buttons and display play buttons
  * Hide bet selection
  */
-function buttonSwap(deal, hit, stand, reset) {
+function buttonSwap(deal, hit, stand, reset, double) {
     document.getElementById('players-field').style.visibility ='visible'; // Reveal players field uppon repeat game
     // Display deal and reset buttons
     deal.style.display ='none';
@@ -100,6 +100,7 @@ function buttonSwap(deal, hit, stand, reset) {
     // hide hit and stand buttons
     hit.style.display ='unset';
     stand.style.display ='unset';
+    double.style.display ='unset';
     document.getElementById('bet-section').style.visibility ='hidden'; // Hide chip selection section
 }
 
@@ -114,6 +115,7 @@ function dealerBlackjackCheck(hit, stand, bet) {
         // Hides hit and stand buttons, reveals bet button
         hit.style.display ='none';
         stand.style.display ='none';
+        double.style.display ='none';
         bet.style.display ='unset';
         
         if (dealerSum === 11) { // If dealer has an ace the second card is checked
@@ -226,6 +228,7 @@ function dealerDraw(hit, stand, bet) {
     // Hides hit and stand buttons
     hit.style.display ='none';
     stand.style.display ='none';
+    stand.style.display ='none';
     //Displays second dealer card
     displayReverseCard.src = `assets/images/cards/${dealerCards[1].image}`;
     dealerSum += dealerCards[1].value;
@@ -256,7 +259,7 @@ function dealerDraw(hit, stand, bet) {
  */
 function determineWinner(bet) {
     document.getElementById('message-field').style.visibility = 'visible'; // Reveals outcome message
-    if ((playerSum > dealerSum) || (dealerSum > 21)) {
+    if ((playerSum > dealerSum && playerSum < 22) || (dealerSum > 21)) {
         outcomeMsg.textContent = 'You win!';
     } else if (playerSum === dealerSum) {
         outcomeMsg.textContent = 'It is a draw!';
