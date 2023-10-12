@@ -111,7 +111,7 @@ In the table bellow i tried to extract requirements for the site from user and d
 | | 15. A game‘s number counter  might provide a way for the user to challenge themselves | 2 |
 | | 16. Game outcome is displayed in the middle of the screen | 1 | 
 | The website provides extensive informatikon about the game (FTU_04, FTU_06, RU_01, SD_02, SD_03, RU_05) | 17. Game rules are provided in the menu | 1 |
-| | 18.Optimal game strategy is provided in the menu | 1 | 
+| | 18. Optimal game strategy is provided in the menu | 1 | 
 | | 19. Advanced concepts of the game and expected outcomes are provided in the menu | 1 | 
 | | 20. Game win rate counter displayed on the screen | 3 |
 | Engaging sound effects (FTU_06) | 21. Sound of placing a bet | 3 |
@@ -159,15 +159,15 @@ The wireframes bellow display the intended design for the site. Great deal of th
 
 ![image](https://github.com/SimasJakubenas/blackjack-milestone-p2/assets/138577499/679f255e-82ea-4c29-ace6-67c2f8b9f49c)
 
-Main Game Page (betting phase)
+#### Main Game Page (betting phase)
 
 ![image](https://github.com/SimasJakubenas/blackjack-milestone-p2/assets/138577499/360983e2-1100-4782-9bce-3e0692bc0ffd)
 
-Main Game Page (card deal phase)
+#### Main Game Page (card deal phase)
 
 ![image](https://github.com/SimasJakubenas/blackjack-milestone-p2/assets/138577499/c1748758-a221-4d4e-8dbf-d8c42e703557)
 
-Menu (opened)
+#### Menu (opened)
 
 ![image](https://github.com/SimasJakubenas/blackjack-milestone-p2/assets/138577499/af65273e-505e-41ee-8c14-12d97c3bf587)
 
@@ -305,7 +305,7 @@ Footer contains links to developers GitHub and LinkedIn profiles
 the features bellow were planned to be implemented in the future releases :
 
 A 'Split' button that breaks the playes hand into two when 2 of the same value cards are dealt. **(9)**
-Using more than one chip for a bet. **13)**
+Using more than one chip for a bet. **(13)**
 Players win rate counter. **(20)**
 
 Sound effects:
