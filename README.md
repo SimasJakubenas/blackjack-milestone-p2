@@ -93,33 +93,34 @@ In the table bellow i tried to extract requirements for the site from user and d
 
 | Requirement | Feature | sprint |
 | -- | -- | -- |
-| Free and fun to play game of blackjack | A functional classic casino–style game of blackjack | 1 |
-| | Player and a dealer gets 2 cards. One of dealers cards is hidden | 1 |
-| | The total value of players cards is displayed on the screen | 1 |
-| | The total value of dealers cards is displayed on the screen | 1 |
-| Player is able to make choices of actions they want to take | The game is contolled via play buttons | 1 |
-| | Deal button starts the game | 1 |
-| | Hit button draws a new card | 1 | 
-| | Stand button passes the turn to dealer | 1 | 
-| | Split button beraks up the hand in to two separate games | 3 |
-| | Double button doubles the size of the bet and draws one card ony | 2 |
-| | Bet button brings the player back to the betting stage | 1 | 
-| Game elicits some kind of excitement and positive response | Player is able to select the sie of the bet | 1 |
-| | Player is able to place a bet by mix and maching chips | 3 |
-| | A game‘s outcome will result in player gaining/losing chips | 2 | 
-| | A game‘s number counter  might provide a way for the user to challenge themselves | 2 |
-| | Game outcome is displayed in the middle of the screen | 1 | 
-| The website provides extensive informatikon about the game | Game rules are provided in the menu | 1 |
-| | Optimal game strategy is provided in the menu | 1 | 
-| | Advanced concepts of the game and expected outcomes are provided in the menu | 1 | 
-| Engaging sound effects | Sound of placing a bet | 3 |
-| | Soud of drawing a card | 3 | 
-| | Mute all sound | 3 | 
-| Clear purpose of the website | User is greeted with a welcome message containing website logo and short description | 1 | 
-| Ease of navigating the website | Home page overlay that lets user to imput their name which brings them directly to the game | 1 | 
-| | Play buttons change depending on the game mode you‘re on | 1 | 
-| | Menu is classic ‘gear‘ icon in the top right corner exactly where one would expect it | 1 |
-| A way to reach out to the developer of the site | Foooter icons with links to my GitHub and LinkedIn in the footer | 1 |
+| Free and fun to play game of blackjack (FTU_03, FTU_04, RU_01, SD_01)| 1. A functional classic casino–style game of blackjack | 1 |
+| | 2. Player and a dealer gets 2 cards. One of dealers cards is hidden | 1 |
+| | 3. The total value of players cards is displayed on the screen | 1 |
+| | 4. The total value of dealers cards is displayed on the screen | 1 |
+| Player is able to make choices of actions they want to take (FTU_03, FTU_04, RU_01) | 5. The game is contolled via play buttons | 1 |
+| | 6. Deal button starts the game | 1 |
+| | 7. Hit button draws a new card | 1 | 
+| | 8. Stand button passes the turn to dealer | 1 | 
+| | 9. Split button beraks up the hand in to two separate games | 3 |
+| | 10. Double button doubles the size of the bet and draws one card ony | 2 |
+| | 11. Bet button brings the player back to the betting stage | 1 | 
+| Game elicits some kind of excitement and positive response (FTU_03, FTU_04), FTU_05, FTU_07, FTU_08, RU_03) | 12. Player is able to select the size of the bet | 1 |
+| | 13. Player is able to place a bet by mix and maching chips | 3 |
+| | 14. A game‘s outcome will result in player gaining/losing chips | 2 | 
+| | 15. A game‘s number counter  might provide a way for the user to challenge themselves | 2 |
+| | 16. Game outcome is displayed in the middle of the screen | 1 | 
+| The website provides extensive informatikon about the game (FTU_04, FTU_06, RU_01, SD_02, SD_03, RU_05) | 17. Game rules are provided in the menu | 1 |
+| | 18.Optimal game strategy is provided in the menu | 1 | 
+| | 19. Advanced concepts of the game and expected outcomes are provided in the menu | 1 | 
+| | 20. Game win rate counter displayed on the screen | 3 |
+| Engaging sound effects (FTU_06) | 21. Sound of placing a bet | 3 |
+| | 22. Soud of drawing a card | 3 | 
+| | 23. Mute all sound | 3 | 
+| Clear purpose of the website (FTU_01)| 24. User is greeted with a welcome message containing website logo and short description | 1 | 
+| Ease of navigating the website (FTU_02)| 25. Home page overlay that lets user to imput their name which brings them directly to the game | 1 | 
+| | 26. Play buttons change depending on the game mode you‘re on | 1 | 
+| | 27. Menu is classic ‘gear‘ icon in the top right corner exactly where one would expect it | 1 |
+| A way to reach out to the developer of the site (RU_04)| 28. Foooter icons with links to my GitHub and LinkedIn in the footer | 1 |
 
 ### The Structure Plane
 
