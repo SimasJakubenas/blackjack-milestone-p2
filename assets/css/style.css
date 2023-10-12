@@ -571,6 +571,7 @@ footer i:hover, footer a:focus i, footer i:active  {
 }
 
 footer span {
+    position: absolute;
     font-size: 1.5vh;
     bottom: 0;
     right: 1em;
@@ -592,6 +593,22 @@ footer span {
 
 /* Media query for screens < 450px */
 @media screen and (max-width: 450px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer span {
+        position: unset;
+        font-size: 2vh;
+        max-width: 100%;
+    }
+
+    footer i {
+        margin: 1vh 1vh 0;
+    }
+
     #hand-counter-container {
         flex-direction: column-reverse;
     }
