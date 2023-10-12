@@ -573,9 +573,18 @@ footer span {
     }
 }
 
+/* Media query for screens < 450px */
 @media screen and (max-width: 450px) {
     #hand-counter-container {
         flex-direction: column-reverse;
+    }
+
+    #menu {
+        font-size: 3vh;
+    }
+
+    #game-rules-content, #advanced-strategy-content {
+        font-size: 6vh;
     }
 }
 
