@@ -77,6 +77,7 @@ Simos-Blackjack is for anyone looking to learn the game of blackjack or expand t
 - RU_01 As a returning user, I want to be able to be able to play continuosly, so that I can inprove my game
 - RU_02 As a returning user, I want to be able to check the optimal strategy chart, so I can reduce my losses
 - RU_03 As a returning user, I want to be able to track my win/loss rate, so that I can understand a possible game outcome better
+- RU_04 As a returning user, I want to be able to contact site developer to report bugs or suggest new features
 
 ##### Site Developer Goals:
 - SD_01 As a site developer, I want to provide a place for users to learn the game of blackjack for free, so that they can get to know this popular game.
@@ -85,7 +86,7 @@ Simos-Blackjack is for anyone looking to learn the game of blackjack or expand t
 
 ##### Future Development
 - FTU_06 As a first-time user, I want to hear the sounds of the game, so that I can be more engaged
-- RU_04 As a returning user, I want to find out what kind of conditions would make this game profitable, so that I can use it to my advantage
+- RU_05 As a returning user, I want to find out what kind of conditions would make this game profitable, so that I can use it to my advantage
 
 #### Content Requirements and Feature Sets
 
