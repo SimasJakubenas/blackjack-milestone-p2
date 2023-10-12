@@ -306,6 +306,23 @@ th, td {
     border: 0.1em solid var(--dark-grey);
 }
 
+/* info table border fix */
+.border-top-none {
+    border-top: none;
+}
+
+.border-bottom-none {
+    border-bottom: none;
+}
+
+.border-left-none {
+    border-left: none;
+}
+
+.border-right-none {
+    border-right: none;
+}
+
 /* Cards field style */
 
 #cards-field {
