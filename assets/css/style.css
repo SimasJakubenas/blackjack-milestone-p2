@@ -35,6 +35,7 @@ body {
 
 main {
     height: 82vh;
+    overflow: hidden;
 }
 
 .grid {
@@ -308,7 +309,6 @@ th, td {
 /* Cards field style */
 
 #cards-field {
-    overflow-x: scroll;
     flex-direction: column;
     width: 100%;
     position: relative;
@@ -639,5 +639,12 @@ footer span {
     footer span {
         font-size: 2.5vh;
         max-width: 65%
+    }
+}
+
+/* Media query for screens < 950px */
+@media screen and (max-width: 950px) {
+    #cards-field {
+        overflow-x: scroll;
     }
 }
