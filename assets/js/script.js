@@ -7,11 +7,11 @@ let dealerSum = 0;
 let betAmount = 0;
 
 // Arrows that move bet container left and right for small screens
-let arrowLeft = document.getElementById('arrow-left');
-let arrowRight = document.getElementById('arrow-right');
-let betContainer = document.getElementById('bet-container'); // Bet container
+const arrowLeft = document.getElementById('arrow-left');
+const arrowRight = document.getElementById('arrow-right');
+const betContainer = document.getElementById('bet-container'); // Bet container
 
-let balance = document.getElementById('balance');
+const balance = document.getElementById('balance');
 const newAceValue = { name: "ace", value: 1}; // Changes ace value to 1
 const displayReverseCard = document.createElement('img'); // Dealers reverse card
 const countBoxes = document.getElementsByClassName('count-box'); // Assigns a variable to card sum counter boxes

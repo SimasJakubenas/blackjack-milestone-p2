@@ -8,7 +8,7 @@
  */
 function selectBetSize(deal, bet, reset) {
     let handCounter = parseInt(document.getElementById('hand-counter').innerHTML);
-    let betPosition = document.getElementById('bet-position');
+    const betPosition = document.getElementById('bet-position');
     
     handCounter += 1;
     // Checks if a double bet been placed and removes one chip for the next hand
@@ -53,7 +53,7 @@ function selectBetSize(deal, bet, reset) {
  * Change displayed bet amount
  */
 function placeBet(betSize) {
-    let betChip = document.createElement('img');
+    const betChip = document.createElement('img');
 
     // Add attributes to bet1000Chips variable
     betChip.src = `assets/images/chips/${betSize}-slanted.png`;

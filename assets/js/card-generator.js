@@ -24,9 +24,9 @@ function selectInitialCards() {
   */
 function displayInitialCards() {
     // Create card variables 
-    let displayFirstCard = document.createElement('img');
-    let displaySecondCard = document.createElement('img');
-    let displayDealerCard = document.createElement('img');
+    const displayFirstCard = document.createElement('img');
+    const displaySecondCard = document.createElement('img');
+    const displayDealerCard = document.createElement('img');
 
     // Assign first player card attributes
     displayFirstCard.src = `assets/images/cards/${playerCards[0].image}`;

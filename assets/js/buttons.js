@@ -1,11 +1,11 @@
 // Loads the page before adding event listeners to menu, game buttons and chip selection
 document.addEventListener('DOMContentLoaded', function() {
-    let betButtons = document.getElementsByClassName('bet-chips');
-    let controlButtons = document.getElementsByClassName('control-btn');
+    const betButtons = document.getElementsByClassName('bet-chips');
+    const controlButtons = document.getElementsByClassName('control-btn');
 
     // Menu controls
-    let menuIcon = document.getElementById('menu-anchor');
-    let closeMenuX = document.getElementById('menu-close');
+    const menuIcon = document.getElementById('menu-anchor');
+    const closeMenuX = document.getElementById('menu-close');
     const menuGameRules = document.getElementById('game-rules');
     const menuOptimalPlayTable = document.getElementById('optimal-play-table');
     const menuAdvancedStrategy = document.getElementById('advanced stratergy');
@@ -45,13 +45,13 @@ document.addEventListener('DOMContentLoaded', function() {
  * And pass it around all game logic 
  */
 function gameControls(buttonType) {
-    let deal = document.getElementById('deal-btn');
-    let hit = document.getElementById('hit-btn');
-    let stand = document.getElementById('stand-btn');
-    let bet = document.getElementById('bet-btn');
-    let reset = document.getElementById('reset-btn');
-    let double = document.getElementById('double-btn');
-    let betChipDouble = document.createElement('img');
+    const deal = document.getElementById('deal-btn');
+    const hit = document.getElementById('hit-btn');
+    const stand = document.getElementById('stand-btn');
+    const bet = document.getElementById('bet-btn');
+    const reset = document.getElementById('reset-btn');
+    const double = document.getElementById('double-btn');
+    const betChipDouble = document.createElement('img');
 
     if (buttonType === 'deal-btn') {
         dealHand(deal, hit, stand, bet, reset, double);
