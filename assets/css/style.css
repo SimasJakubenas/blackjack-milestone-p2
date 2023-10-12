@@ -613,6 +613,10 @@ footer span {
         flex-direction: column-reverse;
     }
 
+    #hand-counter-container p {
+        margin: 0;
+    }
+
     #menu {
         font-size: 3vh;
     }
