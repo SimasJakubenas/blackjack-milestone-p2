@@ -201,6 +201,121 @@ To highlight buttons I used more bulky [Lalezar](https://fonts.google.com/specim
 
 ![image](https://github.com/SimasJakubenas/blackjack-milestone-p2/assets/138577499/11e0c834-fad9-4fc4-8a3a-88f4e84c1102)
 
+## Features
+
+All featured have numbers assigned to them which are linked to the requirement table in the scope plane above.
+
+### Current Features
+
+#### Greeting Message (24, 25)
+
+The user is greeted with a message that sheds light on the purpose **(24)** of this  website and is prompted to enter their name. Uppon pressing 'Lets Play' button the game begins **(25)** and the greeting message is removed from display.
+
+![image](https://github.com/SimasJakubenas/blackjack-milestone-p2/assets/138577499/27e54119-e42c-41c6-8063-be213972fe88)
+
+The following alert is displayed when a player tries to enter a name thats too long or too short:
+
+![image](https://github.com/SimasJakubenas/blackjack-milestone-p2/assets/138577499/ab5f3a62-7368-4c6a-be9b-d6e80d5428f1)
+
+#### Header (17, 18, 19, 27)
+
+Website's logo and a 'gear' **(27)** icon are contained in the header. Uppon clicking the logo the website is reloaded.
+
+![image](https://github.com/SimasJakubenas/blackjack-milestone-p2/assets/138577499/3099bc5d-33f4-422b-a769-68f14d50cdc7)
+
+When the 'gear' icon is clicked it brings up the website's menu that contains the rules the game **(17)** optimal play table **(18)** and andvanced strategy guide **(19)** all of which the user can consult during the game.
+
+![image](https://github.com/SimasJakubenas/blackjack-milestone-p2/assets/138577499/784f7563-8c36-48f5-948a-262ecc5b7268)
+
+#### Main Game Area (1)
+
+Contains a functioning Blackjack game **(1)**.
+
+![image](https://github.com/SimasJakubenas/blackjack-milestone-p2/assets/138577499/8b26d227-4189-4fab-901f-24136716444a)
+
+##### Player Info Table (14)
+
+In the top left corner a table is displayed with a players name which one would have entered on the greeting window and a remaining chip count **(14)**. The balance will change depending on the outcomes of the hands played.
+
+![image](https://github.com/SimasJakubenas/blackjack-milestone-p2/assets/138577499/4f8160f0-d1a1-4770-9a6b-b10c36c6763d)
+
+##### Hand Counter (15)
+
+A number of hands (term commonly used to descripe one instance of play) a player has played already **(15)** is displayed is the top right corner. This a way for the player to challenge themselves to see how long they can last in the game. This feature will become more usefull in the future releases when it's ging to be used to calculate the players win rate.
+
+#### Betting Chips (12)
+
+A player is presented with a selection of chips one can chose **(12)** which will determine the size of the bet. The yellow arrows are used to navigate the chip selection as not all the chips are in sight (only mobile devices).
+
+![image](https://github.com/SimasJakubenas/blackjack-milestone-p2/assets/138577499/e6916114-2f62-4ddb-87cb-f1dd5f39cd36)
+
+Once a bet is selected it is displayed on the table (this also shows the chip selection as it appears on larger devices).
+
+![image](https://github.com/SimasJakubenas/blackjack-milestone-p2/assets/138577499/9ada2702-904e-4e8e-8d81-d45c1238cd20)
+
+#### Betting Buttons (6)
+
+Betting buttons are used to control the betting stage. 'Deal' button **(6)** locks in the bet and starts the hand. 'Reset' button resets the current bet. This button will be more usefull in future releases when a player is able to bet more than one chip. Currently selecting a different chip has the same effect as 'Reset' button.
+
+![image](https://github.com/SimasJakubenas/blackjack-milestone-p2/assets/138577499/f33ef8b8-6cce-40b4-b835-bf4720317678)
+
+#### Card Field (2, 3 ,4)
+
+The cards are dealt after pressing the 'Deal' button. The player and the dealer gets two cards each however one of the deales cards are covered **(2)**. The combined value of playes cards are displayed to the left **(3)**. The same is true for the dealer **(4)**.
+
+![image](https://github.com/SimasJakubenas/blackjack-milestone-p2/assets/138577499/188d6301-94f1-4550-a060-4e1d6812c37b)
+
+#### Play Buttons (5, 7, 8, 10, 26)
+
+New set of buttons **(26)** is displayed to control the flow of the hand **(5)**.
+
+'Hit' button **(7)** draws one more card for the player.
+'Stand' **(8)** button passes the turn to the dealer.
+
+![image](https://github.com/SimasJakubenas/blackjack-milestone-p2/assets/138577499/5669b4b8-3945-48ff-a60b-ec30813f62c8)
+
+When 'Double' button **(10)** is pressed the players doubles the bet (which is then displayed on the table) and draws one card. The turn is passed to the dealer.
+
+![image](https://github.com/SimasJakubenas/blackjack-milestone-p2/assets/138577499/3a5fdfe7-866f-4418-9838-3a69a536e632)  
+
+#### Game outcome (16)
+
+The game outcome is displayed **(16)** once the hand is over and the players balance is updated accordingly.
+
+![image](https://github.com/SimasJakubenas/blackjack-milestone-p2/assets/138577499/e038e6f4-f62a-4747-b092-7e84b273de9b)
+
+#### Bet Button (11)
+
+By pressing 'Bet' button **(11)** players is returned to the betting stage
+
+![image](https://github.com/SimasJakubenas/blackjack-milestone-p2/assets/138577499/ddb1d0c5-7faa-49b4-b525-85779f020a7e)
+
+The following alert is displayed when player loses all of their chips:
+
+![image](https://github.com/SimasJakubenas/blackjack-milestone-p2/assets/138577499/a09e2daf-336e-4cad-b659-1b014b4f7f20)
+
+#### Footer
+
+Footer contains links to developers GitHub and LinkedIn profiles
+
+![image](https://github.com/SimasJakubenas/blackjack-milestone-p2/assets/138577499/6af5ef12-aafa-4430-afc6-ad6bbc9ccacf)
+
+### Future Features (9, 13, 20, 21, 22, 23)
+
+the features bellow were planned to be implemented in the future releases :
+
+A 'Split' button that breaks the playes hand into two when 2 of the same value cards are dealt. **(9)**
+Using more than one chip for a bet. **13)**
+Players win rate counter. **(20)**
+
+Sound effects:
+
+Sound of placing a bet. **(21)**
+
+Sound of drawing a card. **(22)**
+
+option to mute all sound. **(23)**
+
 ## Technologies Used
 
 ### Languages Used 
