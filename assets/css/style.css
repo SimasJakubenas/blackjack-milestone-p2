@@ -472,6 +472,7 @@ th, td {
 }
 
 #bet-container {
+    position: relative;
     flex-direction: row;
     width:  30.5vh;
     padding-top: 0.5em;
