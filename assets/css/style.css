@@ -506,7 +506,8 @@ th, td {
 }
 
 .bet-chips:hover img, .bet-chips:focus img {
-    transform: scale(1.1) translate(0 -0.4em);
+    
+    transform: scale(1.2) translateY(-0.4em);
     transform-origin: left;
     border-radius: 50%;
     border: 0.2em solid var(--yellow);
