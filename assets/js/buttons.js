@@ -73,16 +73,31 @@ function gameControls(buttonType) {
         document.getElementById('bet-position').innerHTML = '';
     }
     if (buttonType === 'double-btn') {
-        betChipDouble.src = `assets/images/chips/${betAmount}-slanted.png`;
-        betChipDouble.alt = `${betAmount} second chip has been bet on the table`;
-        betChipDouble.style.top = '-4.3em';
-        document.getElementById('bet-position').appendChild(betChipDouble);
-        betAmount *= 2;
-        document.getElementById('chip-count').textContent = betAmount;
-        playerDraw(hit, stand, bet, double);
-        if (playerSum < 21) {
-            dealerDraw(hit, stand, bet, double);
-        }
-        double.style.display = 'none';
+        doubleButton(hit, stand, bet, double, betChipDouble)
     }
+};
+
+
+/**
+ * Creates a second chip on the table
+ * Increases the bet size by *2
+ * Draws one card
+ * Passes turn to dealer
+ */
+function doubleButton(hit, stand, bet, double, betChipDouble) {
+    // Creates a second chip
+    betChipDouble.src = `assets/images/chips/${betAmount}-slanted.png`;
+    betChipDouble.alt = `${betAmount} second chip has been bet on the table`;
+    betChipDouble.style.top = '-4.3em';
+    document.getElementById('bet-position').appendChild(betChipDouble);
+    // Doubles the bet
+    betAmount *= 2;
+    document.getElementById('chip-count').textContent = betAmount;
+    // Draws one card
+    playerDraw(hit, stand, bet, double);
+    // Passes turn to dealer only if player is still alive
+    if (playerSum < 21) {
+        dealerDraw(hit, stand, bet, double);
+    }
+    double.style.display = 'none';
 }
