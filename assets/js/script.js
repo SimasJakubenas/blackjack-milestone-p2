@@ -1,10 +1,10 @@
 // Global variables that has to be accessed by multiple functions
-let playerCards = [];
-let dealerCards = [];
+let playerCards = []; // Player cards array
+let dealerCards = []; // Dealer cards array
 
-let playerSum = 0;
-let dealerSum = 0;
-let betAmount = 0;
+let playerSum = 0; // sum value players cards
+let dealerSum = 0; // sum value of dealer cards
+let betAmount = 0; // The displayed bet amount
 
 // Arrows that move bet container left and right for small screens
 const arrowLeft = document.getElementById('arrow-left');
@@ -26,6 +26,7 @@ function removeGreeting() {
     const name = document.getElementById('input-name').value; // Gets inputs value
 
     if(document.getElementById("input-name").value.length < 3){// Add min length for a typed name
+        // Throws alert when player tries to enter a name thats too short 
         alert("Name must be between 3 and 15 characters long.");
         throw 'Name must be between 3 and 15 characters long.';
     } else {
@@ -48,14 +49,14 @@ function dealHand(deal, hit, stand, bet, reset, double) {
             document.getElementById('arrow-left').style.display = 'none'; // Hides left arrow
             document.getElementById('arrow-right').style.display = 'none'; // Hides right arrow
 
-            outcomeMsg.textContent = '';
+            outcomeMsg.textContent = ''; // Clears the previous message
             selectInitialCards();
             displayInitialCards();
             displayCardValuesSum();
             buttonSwap(deal, hit, stand, reset, double);
             dealerBlackjackCheck(hit, stand, bet, double);
             playerAceValue();
-        } else {
+        } else { // Alert is thrown when player is out of chips
             alert("You lost all your chips! Better luck next time...");
             throw 'You lost all your chips! Better luck next time...';
         }
@@ -260,12 +261,12 @@ function dealerDraw(hit, stand, bet, double) {
  */
 function determineWinner(bet) {
     document.getElementById('message-field').style.visibility = 'visible'; // Reveals outcome message
-    if ((playerSum > dealerSum && playerSum < 22) || (dealerSum > 21)) {
+    if ((playerSum > dealerSum && playerSum < 22) || (dealerSum > 21)) { // Checks if player wins
         outcomeMsg.textContent = 'You win!';
-    } else if (playerSum === dealerSum) {
+    } else if (playerSum === dealerSum) { // Checks if its a draw
         outcomeMsg.textContent = 'It is a draw!';
     } else {
-        outcomeMsg.textContent = 'You lost...';
+        outcomeMsg.textContent = 'You lost...'; // Checks if player lost
     }
-    bet.style.display ='unset';
+    bet.style.display ='unset'; // reveals 'bet' button
 }
