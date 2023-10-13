@@ -1,27 +1,41 @@
 ## Contents
 [UX Design](#ux-design)
-- [The Strategy Plane](#the-strategy-plane)
-- [The Scope Plane](#the-scope-plane)
-- [The Structure Plane](#the-structure-plane)
-- [The Skeleton Plane](#the-skeleton-plane)
-- [The Surface Plane](#the-surface-plane)
+* [The Strategy Plane](#the-strategy-plane)
+* [The Scope Plane](#the-scope-plane)
+* [The Structure Plane](#the-structure-plane)
+* [The Skeleton Plane](#the-skeleton-plane)
+* [The Surface Plane](#the-surface-plane)
 [Features](#features)
+* [Current Features](#current-features)
+  * [Greeting Message](#greeting-message-24-25)
+  * [Header](#header-17-18-19-27)
+  * [Main Game Area](@main-game-area-1)
+  * [Player Info Table][#player-info-table-14]
+  * [Hand Counter](#hand-counter-15)
+  * [Betting Chips](betting-chips-12)
+  * [Betting Buttons](#betting-buttons-6)
+  * [Card Field](#card-field-2-3-4)
+  * [Play Buttons](#play-buttons-5-7-8-10-26)
+  * [Game outcome](#game-0utcome-16)
+  * [Bet Button](#bet-button-11)
+  * [Footer](#footer-28)
+* [future Features](#future-features)
 [Technologies Used](#technologies-used)
-- [Languages used](#languages-used)
-- [Frameworks, Libraries & Programs Used](#frameworks-libraries--programs-used)
+* [Languages used](#languages-used)
+* [Frameworks, Libraries & Programs Used](#frameworks-libraries--programs-used)
 [Deployment & Local Development](#deployment--local-development)
-- [To deploy using GitHub pages](#to-deploy-using-github-pages)
-- [Local Development](#local-development)
-  - [How to Fork](#how-to-fork)
-  - [How to Clone](#how-to-clone)
+* [To deploy using GitHub pages](#to-deploy-using-github-pages)
+* [Local Development](#local-development)
+  * [How to Fork](#how-to-fork)
+  * [How to Clone](#how-to-clone)
 [Testing](#testing)
-- [Solved Bugs](#solved-bugs)
-- [Known Bugs](#known-bugs)
+* [Solved Bugs](#solved-bugs)
+* [Known Bugs](#known-bugs)
 [Credits](#credits)
-- [Code used](#code-used)
-- [Content](#content)
-- [Media](#media)
-- [Acknowledgments](#acknowledgments)
+* [Code used](#code-used)
+* [Content](#content)
+* [Media](#media)
+* [Acknowledgments](#acknowledgments)
   
 ## UX Design
 
@@ -294,9 +308,9 @@ The following alert is displayed when player loses all of their chips:
 
 ![image](https://github.com/SimasJakubenas/blackjack-milestone-p2/assets/138577499/a09e2daf-336e-4cad-b659-1b014b4f7f20)
 
-#### Footer
+#### Footer (28)
 
-Footer contains links to developers GitHub and LinkedIn profiles
+Footer contains links to developers GitHub and LinkedIn profiles (28).
 
 ![image](https://github.com/SimasJakubenas/blackjack-milestone-p2/assets/138577499/6af5ef12-aafa-4430-afc6-ad6bbc9ccacf)
 
