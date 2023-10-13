@@ -73,13 +73,13 @@ function placeBet(betSize) {
 function amendBalance() {
     let getBetAmount = parseInt(document.getElementById('chip-count').textContent);
     
-    if (playerSum > 21) {
+    if (playerSum > 21) { // if player loses
         balance.textContent = parseInt(balance.textContent) - getBetAmount;
     } else {
-        if (dealerSum > 21 || (dealerSum < playerSum)) {
+        if (dealerSum > 21 || (dealerSum < playerSum)) { // if player wins
             balance.textContent = parseInt( balance.textContent) + getBetAmount;
             console.log(getBetAmount);
-        } else if (playerSum === dealerSum){
+        } else if (playerSum === dealerSum){ // if it's a draw
             console.log(getBetAmount);
         } else  {
             balance.textContent = parseInt(balance.textContent) - getBetAmount;
@@ -93,7 +93,8 @@ function amendBalance() {
  * Unhides right arrow
  */
 function shiftLeft() {
-    arrowRight.style.visibility = 'visible';
+    arrowRight.style.visibility = 'visible'; // Withouth this right arrow would stay hidden after it was pressed first
+    // Assigns diffent justify content properties to bet container to move it around
     if (betContainer.classList == 'flex center-content') {
         betContainer.classList.remove('center-content');
         betContainer.classList.add('start-content');
@@ -110,7 +111,8 @@ function shiftLeft() {
  * Unhides left arrow
  */
 function shiftRight() {
-    arrowLeft.style.visibility = 'visible';
+    arrowLeft.style.visibility = 'visible'; // Withouth this left arrow would stay hidden after it was pressed first
+    // Assigns diffent justify content properties to bet container to move it around
     if (betContainer.classList == 'flex center-content') {
         betContainer.classList.remove('center-content');
         betContainer.classList.add('end-content');
