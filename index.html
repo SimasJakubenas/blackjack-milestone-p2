@@ -21,7 +21,7 @@
         </button>
     </header>
     <!-- Website's menu -->
-    <section id="menu">
+    <div id="menu">
         <div class="closing-btn-container" id="close-btn-container">
             <button aria-label="close menu" id="menu-close">
                 <i class="fas fa-times" ></i>
@@ -34,7 +34,7 @@
             <li id="optimal-play-table">
                 <button aria-label="check optimal play table">Optimal Play Table</button>
             </li>
-            <li id="advanced stratergy">
+            <li id="advanced-stratergy">
                 <button aria-label="go to advanced strategy">Advanced Strategy</button>
             </li>
         </ul>
@@ -50,9 +50,9 @@
         <div class="menu-logo-container flex center-content">
             <img src="assets/images/logo/simos-blackjack-logo.png" alt="simos blackjack logo depicts 2 playing cards and a pile of chips">
         </div>
-    </section>
+    </div>
     <!-- Pop up greeting window -->
-    <section id="greeting-msg" class="grid center-items absolute-pstn">
+    <div id="greeting-msg" class="grid center-items absolute-pstn">
         <div>
             <img src="assets/images/logo/simos-blackjack-logo.png" alt="simos blackjack logo depicts 2 playing cards and a pile of chips">
         </div>
@@ -63,7 +63,7 @@
         <div class="flex center-content">
             <button id="lets-play-btn" class="control-btn" aria-label="let's play button will bring up the betting phase of the game">LET'S PLAY</button>
         </div>
-    </section>
+    </div>
     <!-- Blurry backdrop effect element -->
     <div id="backdrop"></div>
     <!-- Table logo -->
@@ -72,7 +72,7 @@
     </div>
     <main class="grid center-items relative-pstn">
         <!-- Section that displays table with players name and remaining balance -->
-        <section id="display-info">
+        <div id="display-info">
             <table class="absolute-pstn">
                 <tr>
                     <th class="border-top-none border-left-none">Player</th>
@@ -87,32 +87,32 @@
                 <p>Hand</p>
                 <div id="hand-counter" class="count-box ">0</div>
             </div>
-        </section>
+        </div>
         <div id="cards-field" class="flex">
         <!-- Dealers side of the field that displays dealers cards and card count -->
-        <section id="dealers-field" class="relative-pstn">
+        <div id="dealers-field" class="relative-pstn">
             <div id="dealers-count" class="count-box card-count absolute-pstn"></div>
             <div id="dealers-card-container" class="relative-pstn"></div>
-        </section>
+        </div>
         <!-- Message field that lets the player know the outcome of the hand -->
-        <section id="message-field" class="flex center-content">
+        <div id="message-field" class="flex center-content">
             <p id="outcome-message"></p>
-        </section>
+        </div>
         <!-- Dealers side of the field that displays players cards and card count -->
-        <section id="players-field" class="relative-pstn">
+        <div id="players-field" class="relative-pstn">
             <div id="players-count" class="count-box card-count absolute-pstn"></div>
             <div id="players-card-container" class="relative-pstn"></div>
-        </section>
+        </div>
         <!-- Section that displays a current bet -->
-        <section id="betting-field" class="relative-pstn">
+        <div id="betting-field" class="relative-pstn">
             <div id="chip-count" class="count-box absolute-pstn"></div>
             <div id="bet-position-container">
                 <div id="bet-position" class="relative-pstn"></div>
             </div>
-        </section>
+        </div>
         </div>
         <!-- Displays the selection of bet sizes -->
-        <section id="bet-section" class="flex">
+        <div id="bet-div" class="flex">
             <div id="arrow-left">
                 <i class="fas fa-caret-left"></i> <!-- Arrow pointing left -->
             </div>
@@ -146,9 +146,9 @@
             <div id="arrow-right">
                 <i class="fas fa-caret-right"></i> <!-- Arrow pointing left -->
             </div>
-        </section>
+        </div>
         <!-- Buttons that controls the flow of the game -->
-        <section id="game-controls" class="relative-pstn">
+        <div id="game-controls" class="relative-pstn">
             <button id="deal-btn" class="control-btn betting-btn" aria-label="deal button will start the hand">DEAL</button>
             <button id="reset-btn" class="control-btn betting-btn" aria-label="reset button will clear the bet">RESET</button>
             <button id="hit-btn" class="control-btn play-btn" aria-label="hit button will draw one card">HIT</button>
@@ -157,7 +157,7 @@
             <div class="relative-pstn">
                 <button id="double-btn" class="control-btn play-btn absolute-pstn" aria-label="double the bet and draw one card">DOUBLE</button>
             </div>
-        </section>
+        </div>
     </main>
     <footer class="relative-pstn">
         <div id="icon-container">
