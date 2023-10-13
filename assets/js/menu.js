@@ -7,10 +7,10 @@ function openMenu() {
     const menu = document.getElementById('menu');
 
     // Changes display property 
-    menu.style.display = 'unset'
+    menu.style.display = 'unset';
     // Adds a class with timeout method otherwise the effect didnt work
     setTimeout(function() {
-        menu.classList.add('enlarge-menu')
+        menu.classList.add('enlarge-menu');
     });
 }
 
@@ -31,7 +31,7 @@ function closeMenu() {
 function showGameRules() {
     const gameRulesWindow = document.getElementById('menu-content-wrapper');
 
-    gameRulesWindow.innerHTML = '<iframe src="game-rules.html" frameborder="0" id="menu-content"></iframe>'
+    gameRulesWindow.innerHTML = '<iframe src="game-rules.html" frameborder="0" id="menu-content"></iframe>';
     document.getElementById('close-btn-container').style.display = 'none';
     document.getElementById('menu-list').style.display = 'none';
     document.getElementById('menu-content-container').style.display = 'unset';
@@ -58,7 +58,7 @@ function showPlayTable() {
 function showStrategy() {
     const advancedStrategyWindow = document.getElementById('menu-content-wrapper');
 
-    advancedStrategyWindow.innerHTML = '<iframe src="advanced-strategy.html" frameborder="0" id="menu-content"></iframe>'
+    advancedStrategyWindow.innerHTML = '<iframe src="advanced-strategy.html" frameborder="0" id="menu-content"></iframe>';
     document.getElementById('close-btn-container').style.display = 'none';
     document.getElementById('menu-list').style.display = 'none';
     document.getElementById('menu-content-container').style.display = 'unset';

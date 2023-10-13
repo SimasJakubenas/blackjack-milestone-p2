@@ -312,4 +312,4 @@ const cards = [
         value: 2,
         image: "2diamonds.png"
     },
-]
+];

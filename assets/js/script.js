@@ -27,7 +27,7 @@ function removeGreeting() {
 
     if(document.getElementById("input-name").value.length < 3){// Add min length for a typed name
         alert("Name must be between 3 and 15 characters long.");
-        throw 'Name must be between 3 and 15 characters long.'
+        throw 'Name must be between 3 and 15 characters long.';
     } else {
         document.getElementById('backdrop').style.display = 'none'; // Hides blurry effect
         document.getElementById('greeting-msg').style.display = 'none'; // Hides greeting message
@@ -56,8 +56,8 @@ function dealHand(deal, hit, stand, bet, reset, double) {
             dealerBlackjackCheck(hit, stand, bet, double);
             playerAceValue();
         } else {
-            alert("You lost all your chip! Better luck next time...");
-            throw 'You lost all your chip! Better luck next time...'
+            alert("You lost all your chips! Better luck next time...");
+            throw 'You lost all your chips! Better luck next time...';
         }
     } else { // If bet has not been placed displays a message
         document.getElementById('message-field').style.visibility = 'visible'; // Reveals outcome message

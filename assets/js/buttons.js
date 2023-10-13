@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
             let betSize = this.getAttribute('data-type');
 
             placeBet(betSize);
-        })
+        });
     }
     // Iterates control buttons and determines their id and passes that on to gameControls function
     for (let controlButton of controlButtons) {
@@ -36,9 +36,9 @@ document.addEventListener('DOMContentLoaded', function() {
             let buttonType = this.getAttribute('id');
 
             gameControls(buttonType);
-        })
+        });
     }
-})
+});
 
 /**
  * Defines control buttons variables

@@ -95,8 +95,8 @@ function amendBalance() {
 function shiftLeft() {
     arrowRight.style.visibility = 'visible';
     if (betContainer.classList == 'flex center-content') {
-        betContainer.classList.remove('center-content')
-        betContainer.classList.add('start-content')
+        betContainer.classList.remove('center-content');
+        betContainer.classList.add('start-content');
         arrowLeft.style.visibility = 'hidden';
     } else {
         betContainer.classList.remove('end-content');
@@ -112,8 +112,8 @@ function shiftLeft() {
 function shiftRight() {
     arrowLeft.style.visibility = 'visible';
     if (betContainer.classList == 'flex center-content') {
-        betContainer.classList.remove('center-content')
-        betContainer.classList.add('end-content')
+        betContainer.classList.remove('center-content');
+        betContainer.classList.add('end-content');
         arrowRight.style.visibility = 'hidden';
     } else {
         betContainer.classList.remove('start-content');
