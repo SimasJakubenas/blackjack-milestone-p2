@@ -118,14 +118,14 @@ header i:hover, header button:focus i, header button:active i {
     color: var(--light-grey);
     font-size: 1.5em;
     z-index: 15;
-    scale: 0;
+    transform: scale(0);
     display: none;
     transition: 0.3s ease-in;
     transform-origin: top right;
 }
 
 .enlarge-menu {
-    scale: 1 !important;
+    transform: scale(1) !important;
     top: 15% !important;
 }
 
@@ -506,8 +506,7 @@ th, td {
 }
 
 .bet-chips:hover img, .bet-chips:focus img {
-    translate: 0 -0.4em;
-    scale: 1.1;
+    transform: scale(1.1) translate(0 -0.4em);
     transform-origin: left;
     border-radius: 50%;
     border: 0.2em solid var(--yellow);
@@ -539,7 +538,7 @@ th, td {
 }
 
 .control-btn:hover, .control-btn:focus{
-    scale: 1.05;
+    transform: scale(1.05);
     box-shadow: 0.1em 0.1em 0.5em var(--black);
 }
 
@@ -587,7 +586,7 @@ footer span {
     }
 
     #arrow-left, #arrow-right {
-        visibility: none;
+        visibility: hidden;
     }
 }
 
@@ -680,7 +679,7 @@ footer span {
     }
 
     #menu-content-wrapper img:hover {
-        scale: 2;
+        transform: scale(2);
     }
 
     footer span {
