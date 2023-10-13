@@ -425,6 +425,23 @@ To clone the repository:
 4. Change the current working directory in the terminal of your code editor to the location you want to use for the cloned directory.
 5. Type 'git clone' into the terminal and then paste the link you copied in step 3. Press enter.
 
+## Testing
+
+Please refer to [TESTING.md](TESTING.md) for all testing carried out.
+
+### Solved Bugs
+
+| No | Bug | How I solved the issue |
+| :--- | :--- | :--- |
+| 1 | Ace value 11 or 1 | Ace value is either 11 or 1 and it depends on the sum of total cars value. I tried changing the value of the object in cards aray but that would change the value of the next card if that card is the same card. I had to assign the ace to a new variable with different value to get this to work || 2 | Cards going off screen | when drawing more than 6 cards (which is very rare) cards are going off screen. i fixed it by wrapping player and dealer cards in a div and setting overflow-x to scroll (not forlarge screens as this is not needed) |
+| 3 | when player goes over 21 a double size bet was taken away from the ballance | This was due to determineWinner function running twice in this instance. I fixed it by adding an if statement |
+
+### Known Bugs
+
+| No | Bug | How I solved the issue |
+| :--- | :--- | :--- |
+| 1 | Cards are being are not always revealed in order | This is due to data cache. the cards that already been drawn will load quicker. I was toying with an idea to put some sort of delay but that would go againts what I'm trying to atcheve with this project. This does not affect the gameplay in any way it's only a visual thing |
+
 ## Credits
 
 ### Code used 
