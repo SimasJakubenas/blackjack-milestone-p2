@@ -19,6 +19,9 @@ function openMenu() {
  * and removing a class
  */
 function closeMenu() {
+    // Create menu variable with value of menu element
+    const menu = document.getElementById('menu');
+    
     menu.style.display = 'none';
     menu.classList.remove('enlarge-menu');
 }
