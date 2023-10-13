@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const closeMenuX = document.getElementById('menu-close');
     const menuGameRules = document.getElementById('game-rules');
     const menuOptimalPlayTable = document.getElementById('optimal-play-table');
-    const menuAdvancedStrategy = document.getElementById('advanced stratergy');
+    const menuAdvancedStrategy = document.getElementById('advanced-strategy');
     const backToMenu = document.getElementById('menu-content-close');
     
 
