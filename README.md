@@ -30,19 +30,19 @@ Play a fun game of Blackjack! Learn the rules and more about the game. This is q
   * [Typography](#typography)
 [Features](#features)
 * [Current Features](#current-features)
-  * [Greeting Message](#greeting-message-24-25)
-  * [Header](#header-17-18-19-27)
-  * [Main Game Area](@main-game-area-1)
-  * [Player Info Table](#player-info-table-14)
-  * [Hand Counter](#hand-counter-15)
-  * [Betting Chips](betting-chips-12)
-  * [Betting Buttons](#betting-buttons-6)
-  * [Card Field](#card-field-2-3-4)
-  * [Play Buttons](#play-buttons-5-7-8-10-26)
-  * [Game outcome](#game-0utcome-16)
-  * [Bet Button](#bet-button-11)
-  * [Footer](#footer-28)
-* [future Features](#future-features-9-13-20-21-22-23)
+  * [Greeting Message](#greeting-message)
+  * [Header](#header)
+  * [Main Game Area](@main-game-area)
+  * [Player Info Table](#player-info-table)
+  * [Hand Counter](#hand-counter)
+  * [Betting Chips](betting-chips)
+  * [Betting Buttons](#betting-buttons)
+  * [Card Field](#card-field)
+  * [Play Buttons](#play-buttons)
+  * [Game outcome](#game-0utcome)
+  * [Bet Button](#bet-button)
+  * [Footer](#footer8)
+* [future Features](#future-features)
 [Technologies Used](#technologies-used)
 * [Languages used](#languages-used)
 * [Frameworks, Libraries & Programs Used](#frameworks-libraries--programs-used)
@@ -255,7 +255,8 @@ The following alert is displayed when a player tries to enter a name thats too l
 
 ![image](https://github.com/SimasJakubenas/blackjack-milestone-p2/assets/138577499/ab5f3a62-7368-4c6a-be9b-d6e80d5428f1)
 
-#### Header (17, 18, 19, 27)
+#### Header
+17, 18, 19, 27
 
 Website's logo and a 'gear' **(27)** icon are contained in the header. Uppon clicking the logo the website is reloaded.
 
@@ -295,21 +296,21 @@ Once a bet is selected it is displayed on the table (this also shows the chip se
 
 ![image](https://github.com/SimasJakubenas/blackjack-milestone-p2/assets/138577499/9ada2702-904e-4e8e-8d81-d45c1238cd20)
 
-#### Betting Buttons 
+#### Betting Buttons
 6
 
 Betting buttons are used to control the betting stage. 'Deal' button **(6)** locks in the bet and starts the hand. 'Reset' button resets the current bet. This button will be more usefull in future releases when a player is able to bet more than one chip. Currently selecting a different chip has the same effect as 'Reset' button.
 
 ![image](https://github.com/SimasJakubenas/blackjack-milestone-p2/assets/138577499/f33ef8b8-6cce-40b4-b835-bf4720317678)
 
-#### Card Field 
+#### Card Field
 2, 3 ,4
 
 The cards are dealt after pressing the 'Deal' button. The player and the dealer gets two cards each however one of the deales cards are covered **(2)**. The combined value of playes cards are displayed to the left **(3)**. The same is true for the dealer **(4)**.
 
 ![image](https://github.com/SimasJakubenas/blackjack-milestone-p2/assets/138577499/188d6301-94f1-4550-a060-4e1d6812c37b)
 
-#### Play Buttons 
+#### Play Buttons
 5, 7, 8, 10, 26
 
 New set of buttons **(26)** is displayed to control the flow of the hand **(5)**.
@@ -323,7 +324,8 @@ When 'Double' button **(10)** is pressed the players doubles the bet (which is t
 
 ![image](https://github.com/SimasJakubenas/blackjack-milestone-p2/assets/138577499/3a5fdfe7-866f-4418-9838-3a69a536e632)  
 
-#### Game outcome (16)
+#### Game outcome
+16
 
 The game outcome is displayed **(16)** once the hand is over and the players balance is updated accordingly.
 
