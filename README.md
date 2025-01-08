@@ -1,4 +1,4 @@
-# SImas's Personal Website - Testing
+# SImas's Blackjack - Testing
 
 ![amiresponsive-picture](https://ui.dev/amiresponsive?url=https://simasjakubenas.github.io/blackjack-milestone-p2/)
 
